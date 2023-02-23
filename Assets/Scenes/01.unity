@@ -929,7 +929,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 226ca8e52c3922d4a85b20831b97caf3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  DefaultToVR: 0
+  DefaultToVR: 1
   DefaultTestInStation: 0
   DefaultTrackingType: 3
   DefaultAnimatorToDebug: 0
@@ -11235,7 +11235,7 @@ PrefabInstance:
     - target: {fileID: 114306833501071601, guid: 72b9fc111639cac41926868b6e89a9fa,
         type: 3}
       propertyPath: specialAnimationLayers.Array.data[0].isDefault
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 114306833501071601, guid: 72b9fc111639cac41926868b6e89a9fa,
         type: 3}
@@ -11276,7 +11276,7 @@ PrefabInstance:
         type: 3}
       propertyPath: specialAnimationLayers.Array.data[0].animatorController
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 9100000, guid: 14a3ed047717bd14e883037e3b63852e, type: 2}
     - target: {fileID: 114306833501071601, guid: 72b9fc111639cac41926868b6e89a9fa,
         type: 3}
       propertyPath: specialAnimationLayers.Array.data[1].animatorController
@@ -11321,7 +11321,7 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Materials.Array.data[9]
       value: 
-      objectReference: {fileID: 2100000, guid: b4917085aab89834183e8f393e8b95ca, type: 2}
+      objectReference: {fileID: 2100000, guid: ba9079501220d054198ef84ada94c8a1, type: 2}
     - target: {fileID: 137335407992998078, guid: 72b9fc111639cac41926868b6e89a9fa,
         type: 3}
       propertyPath: m_BlendShapeWeights.Array.data[31]
