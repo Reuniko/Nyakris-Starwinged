@@ -4810,6 +4810,18 @@ PrefabInstance:
       value: 0.00000004411525
       objectReference: {fileID: 0}
     - target: {fileID: 4460348087578535, guid: 72b9fc111639cac41926868b6e89a9fa, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4460348087578535, guid: 72b9fc111639cac41926868b6e89a9fa, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4460348087578535, guid: 72b9fc111639cac41926868b6e89a9fa, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4460348087578535, guid: 72b9fc111639cac41926868b6e89a9fa, type: 3}
       propertyPath: m_LocalRotation.w
       value: -0.7291043
       objectReference: {fileID: 0}
@@ -5336,6 +5348,18 @@ PrefabInstance:
     - target: {fileID: 4598951928667477, guid: 72b9fc111639cac41926868b6e89a9fa, type: 3}
       propertyPath: m_LocalRotation.z
       value: 0.01056737
+      objectReference: {fileID: 0}
+    - target: {fileID: 4609624732438285, guid: 72b9fc111639cac41926868b6e89a9fa, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4609624732438285, guid: 72b9fc111639cac41926868b6e89a9fa, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4609624732438285, guid: 72b9fc111639cac41926868b6e89a9fa, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 4609624732438285, guid: 72b9fc111639cac41926868b6e89a9fa, type: 3}
       propertyPath: m_LocalRotation.w
@@ -6330,7 +6354,7 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Controller
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 9100000, guid: cfec048047fbd974cb4cd515b4544281, type: 2}
     - target: {fileID: 114306833501071601, guid: 72b9fc111639cac41926868b6e89a9fa,
         type: 3}
       propertyPath: ViewPosition.y
@@ -6536,7 +6560,7 @@ PrefabInstance:
     - target: {fileID: 114306833501071601, guid: 72b9fc111639cac41926868b6e89a9fa,
         type: 3}
       propertyPath: animationHashSet.Array.size
-      value: 444
+      value: 445
       objectReference: {fileID: 0}
     - target: {fileID: 114306833501071601, guid: 72b9fc111639cac41926868b6e89a9fa,
         type: 3}
@@ -11121,12 +11145,12 @@ PrefabInstance:
     - target: {fileID: 114306833501071601, guid: 72b9fc111639cac41926868b6e89a9fa,
         type: 3}
       propertyPath: animationHashSet.Array.data[444].hash
-      value: 245759410
+      value: 1546383786
       objectReference: {fileID: 0}
     - target: {fileID: 114306833501071601, guid: 72b9fc111639cac41926868b6e89a9fa,
         type: 3}
       propertyPath: animationHashSet.Array.data[444].name
-      value: DisableBlinking
+      value: zz_ears
       objectReference: {fileID: 0}
     - target: {fileID: 114306833501071601, guid: 72b9fc111639cac41926868b6e89a9fa,
         type: 3}
