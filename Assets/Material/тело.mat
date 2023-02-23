@@ -18,6 +18,7 @@ Material:
     OptimizedShaderFolder: New Material 3-c80604c6
     OriginalShader: .poiyomi/Poiyomi 8.1/Poiyomi Toon
     RenderType: Opaque
+    _GlitterHueShiftAnimated: 1
     _RimHueShiftAnimated: 1
   disabledShaderPasses: []
   m_SavedProperties:
@@ -1704,8 +1705,8 @@ Material:
     - _GlitterFrequency: 300
     - _GlitterFrequencyAnimated: 0
     - _GlitterHideInShadow: 0
-    - _GlitterHueShift: 0
-    - _GlitterHueShiftEnabled: 0
+    - _GlitterHueShift: 0.5
+    - _GlitterHueShiftEnabled: 1
     - _GlitterHueShiftSpeed: 0
     - _GlitterJaggyFix: 0
     - _GlitterJaggyFixAnimated: 0
@@ -1732,11 +1733,11 @@ Material:
     - _GlitterRandomRotationAnimated: 0
     - _GlitterRandomSize: 0
     - _GlitterRandomSizeAnimated: 0
-    - _GlitterShape: 0
+    - _GlitterShape: 1
     - _GlitterShapeAnimated: 0
-    - _GlitterSize: 0.028
+    - _GlitterSize: 0.875
     - _GlitterSizeAnimated: 0
-    - _GlitterSpeed: 10
+    - _GlitterSpeed: 5
     - _GlitterSpeedAnimated: 0
     - _GlitterTextureAnimated: 0
     - _GlitterTexturePanAnimated: 0
@@ -3339,7 +3340,7 @@ Material:
     - m_start_FXProximityColor: 0
     - m_start_FlipbookAudioLink: 0
     - m_start_Gameboy: 0
-    - m_start_GlitterRandomStuff: 0
+    - m_start_GlitterRandomStuff: 1
     - m_start_GlobalMask: 0
     - m_start_GlobalMaskModifiers: 0
     - m_start_GlobalMaskModifiersBackface: 0
@@ -3400,7 +3401,7 @@ Material:
     - m_start_brdf: 0
     - m_start_brdfadvanced: 0
     - m_start_brdfglobalmask: 0
-    - m_start_clearCoat: 1
+    - m_start_clearCoat: 0
     - m_start_clearcoatadvanced: 0
     - m_start_clearcoatglobalmask: 0
     - m_start_debugOptions: 0
@@ -3417,7 +3418,7 @@ Material:
     - m_start_emission3Options: 0
     - m_start_emissionOptions: 0
     - m_start_flipBook: 0
-    - m_start_glitter: 0
+    - m_start_glitter: 1
     - m_start_glitterRandom: 0
     - m_start_glowInDarkEmissionOptions: 0
     - m_start_glowInDarkEmissionOptions1: 0
@@ -3438,7 +3439,7 @@ Material:
     - m_start_pathing: 0
     - m_start_pointToPoint: 0
     - m_start_postprocess: 0
-    - m_start_reflectionRim: 1
+    - m_start_reflectionRim: 0
     - m_start_rgbanormals: 0
     - m_start_rim2LightOptions: 0
     - m_start_rimLight1Options: 1
@@ -3647,7 +3648,7 @@ Material:
     - _FlipbookScaleOffset: {r: 1, g: 1, b: 0, a: 0}
     - _FlipbookSideOffset: {r: 0, g: 0, b: 0, a: 0}
     - _FlipbookTexArrayPan: {r: 0, g: 0, b: 0, a: 0}
-    - _GlitterColor: {r: 1, g: 1, b: 1, a: 1}
+    - _GlitterColor: {r: 0.084905684, g: 0, b: 0, a: 1}
     - _GlitterColorMapPan: {r: 0, g: 0, b: 0, a: 0}
     - _GlitterMaskPan: {r: 0, g: 0, b: 0, a: 0}
     - _GlitterMinMaxBrightness: {r: 0.8, g: 1, b: 0, a: 1}

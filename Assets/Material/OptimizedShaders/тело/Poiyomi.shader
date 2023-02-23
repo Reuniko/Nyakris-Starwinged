@@ -3027,14 +3027,14 @@ Shader "Hidden/Locked/.poiyomi/Poiyomi 8.1/Poiyomi Toon/da90d9dac20a9744394a79f7
 					}
 				}
 				float randomFromPoint = random(randoPoint);
-				float size = (0.028 /*_GlitterSize*/);
+				float size = (0.875 /*_GlitterSize*/);
 				
 				if ((0.0 /*_GlitterRandomSize*/))
 				{
 					size = remapClamped(0, 1, randomFromPoint, float4(0.1,0.5,0,1).x, float4(0.1,0.5,0,1).y);
 				}
 				half glitterAlpha = 1;
-				switch((0.0 /*_GlitterShape*/))
+				switch((1.0 /*_GlitterShape*/))
 				{
 					case 0: //circle
 					glitterAlpha = saturate((size - m_dist) / clamp(fwidth(m_dist), 0.0001, 1.0));
@@ -3064,16 +3064,16 @@ Shader "Hidden/Locked/.poiyomi/Poiyomi 8.1/Poiyomi Toon/da90d9dac20a9744394a79f7
 					break;
 				}
 				float3 finalGlitter = 0;
-				half3 glitterColor = poiThemeColor(poiMods, float4(1,1,1,1), (0.0 /*_GlitterColorThemeIndex*/));
+				half3 glitterColor = poiThemeColor(poiMods, float4(0.08490568,0,0,1), (0.0 /*_GlitterColorThemeIndex*/));
 				float3 norm = lerp(poiMesh.normals[0], poiMesh.normals[1], (0.0 /*_GlitterUseNormals*/));
 				float3 randomRotation = 0;
 				switch((0.0 /*_GlitterMode*/))
 				{
 					case 0:
 					
-					if ((10.0 /*_GlitterSpeed*/) > 0)
+					if ((5.0 /*_GlitterSpeed*/) > 0)
 					{
-						randomRotation = randomFloat3WiggleRange(randoPoint, (90.0 /*_GlitterAngleRange*/), (10.0 /*_GlitterSpeed*/));
+						randomRotation = randomFloat3WiggleRange(randoPoint, (90.0 /*_GlitterAngleRange*/), (5.0 /*_GlitterSpeed*/));
 					}
 					else
 					{
@@ -3085,13 +3085,13 @@ Shader "Hidden/Locked/.poiyomi/Poiyomi 8.1/Poiyomi Toon/da90d9dac20a9744394a79f7
 					break;
 					case 1:
 					float offset = random(randoPoint);
-					float brightness = sin((_Time.x + offset) * (10.0 /*_GlitterSpeed*/)) * (20.0 /*_glitterFrequencyLinearEmissive*/) - ((20.0 /*_glitterFrequencyLinearEmissive*/) - 1);
+					float brightness = sin((_Time.x + offset) * (5.0 /*_GlitterSpeed*/)) * (20.0 /*_glitterFrequencyLinearEmissive*/) - ((20.0 /*_glitterFrequencyLinearEmissive*/) - 1);
 					finalGlitter = max((0.0 /*_GlitterMinBrightness*/) * glitterAlpha, brightness * glitterAlpha * smoothstep(0, 1, 1 - m_dist * (0.08 /*_GlitterCenterSize*/) * 10));
 					break;
 					case 2:
-					if ((10.0 /*_GlitterSpeed*/) > 0)
+					if ((5.0 /*_GlitterSpeed*/) > 0)
 					{
-						randomRotation = randomFloat3WiggleRange(randoPoint, (90.0 /*_GlitterAngleRange*/), (10.0 /*_GlitterSpeed*/));
+						randomRotation = randomFloat3WiggleRange(randoPoint, (90.0 /*_GlitterAngleRange*/), (5.0 /*_GlitterSpeed*/));
 					}
 					else
 					{
@@ -3117,7 +3117,7 @@ Shader "Hidden/Locked/.poiyomi/Poiyomi 8.1/Poiyomi Toon/da90d9dac20a9744394a79f7
 				#endif
 				float2 uv = remapClamped(-size, size, dank, 0, 1);
 				
-				if ((0.0 /*_GlitterRandomRotation*/) == 1 || (0.0 /*_GlitterTextureRotation*/) != 0 && !(0.0 /*_GlitterShape*/))
+				if ((0.0 /*_GlitterRandomRotation*/) == 1 || (0.0 /*_GlitterTextureRotation*/) != 0 && !(1.0 /*_GlitterShape*/))
 				{
 					float2 fakeUVCenter = float2(.5, .5);
 					float randomBoy = 0;
@@ -3152,9 +3152,9 @@ Shader "Hidden/Locked/.poiyomi/Poiyomi 8.1/Poiyomi Toon/da90d9dac20a9744394a79f7
 					glitterColor *= RandomColorFromPoint(random2(randoPoint.x + randoPoint.y));
 				}
 				
-				if ((0.0 /*_GlitterHueShiftEnabled*/))
+				if ((1.0 /*_GlitterHueShiftEnabled*/))
 				{
-					glitterColor.rgb = hueShift(glitterColor.rgb, (0.0 /*_GlitterHueShift*/) + _Time.x * (0.0 /*_GlitterHueShiftSpeed*/));
+					glitterColor.rgb = hueShift(glitterColor.rgb, _GlitterHueShift + _Time.x * (0.0 /*_GlitterHueShiftSpeed*/));
 				}
 				
 				if ((0.0 /*_GlitterBlendType*/) == 1)
@@ -6108,14 +6108,14 @@ Shader "Hidden/Locked/.poiyomi/Poiyomi 8.1/Poiyomi Toon/da90d9dac20a9744394a79f7
 					}
 				}
 				float randomFromPoint = random(randoPoint);
-				float size = (0.028 /*_GlitterSize*/);
+				float size = (0.875 /*_GlitterSize*/);
 				
 				if ((0.0 /*_GlitterRandomSize*/))
 				{
 					size = remapClamped(0, 1, randomFromPoint, float4(0.1,0.5,0,1).x, float4(0.1,0.5,0,1).y);
 				}
 				half glitterAlpha = 1;
-				switch((0.0 /*_GlitterShape*/))
+				switch((1.0 /*_GlitterShape*/))
 				{
 					case 0: //circle
 					glitterAlpha = saturate((size - m_dist) / clamp(fwidth(m_dist), 0.0001, 1.0));
@@ -6145,16 +6145,16 @@ Shader "Hidden/Locked/.poiyomi/Poiyomi 8.1/Poiyomi Toon/da90d9dac20a9744394a79f7
 					break;
 				}
 				float3 finalGlitter = 0;
-				half3 glitterColor = poiThemeColor(poiMods, float4(1,1,1,1), (0.0 /*_GlitterColorThemeIndex*/));
+				half3 glitterColor = poiThemeColor(poiMods, float4(0.08490568,0,0,1), (0.0 /*_GlitterColorThemeIndex*/));
 				float3 norm = lerp(poiMesh.normals[0], poiMesh.normals[1], (0.0 /*_GlitterUseNormals*/));
 				float3 randomRotation = 0;
 				switch((0.0 /*_GlitterMode*/))
 				{
 					case 0:
 					
-					if ((10.0 /*_GlitterSpeed*/) > 0)
+					if ((5.0 /*_GlitterSpeed*/) > 0)
 					{
-						randomRotation = randomFloat3WiggleRange(randoPoint, (90.0 /*_GlitterAngleRange*/), (10.0 /*_GlitterSpeed*/));
+						randomRotation = randomFloat3WiggleRange(randoPoint, (90.0 /*_GlitterAngleRange*/), (5.0 /*_GlitterSpeed*/));
 					}
 					else
 					{
@@ -6166,13 +6166,13 @@ Shader "Hidden/Locked/.poiyomi/Poiyomi 8.1/Poiyomi Toon/da90d9dac20a9744394a79f7
 					break;
 					case 1:
 					float offset = random(randoPoint);
-					float brightness = sin((_Time.x + offset) * (10.0 /*_GlitterSpeed*/)) * (20.0 /*_glitterFrequencyLinearEmissive*/) - ((20.0 /*_glitterFrequencyLinearEmissive*/) - 1);
+					float brightness = sin((_Time.x + offset) * (5.0 /*_GlitterSpeed*/)) * (20.0 /*_glitterFrequencyLinearEmissive*/) - ((20.0 /*_glitterFrequencyLinearEmissive*/) - 1);
 					finalGlitter = max((0.0 /*_GlitterMinBrightness*/) * glitterAlpha, brightness * glitterAlpha * smoothstep(0, 1, 1 - m_dist * (0.08 /*_GlitterCenterSize*/) * 10));
 					break;
 					case 2:
-					if ((10.0 /*_GlitterSpeed*/) > 0)
+					if ((5.0 /*_GlitterSpeed*/) > 0)
 					{
-						randomRotation = randomFloat3WiggleRange(randoPoint, (90.0 /*_GlitterAngleRange*/), (10.0 /*_GlitterSpeed*/));
+						randomRotation = randomFloat3WiggleRange(randoPoint, (90.0 /*_GlitterAngleRange*/), (5.0 /*_GlitterSpeed*/));
 					}
 					else
 					{
@@ -6198,7 +6198,7 @@ Shader "Hidden/Locked/.poiyomi/Poiyomi 8.1/Poiyomi Toon/da90d9dac20a9744394a79f7
 				#endif
 				float2 uv = remapClamped(-size, size, dank, 0, 1);
 				
-				if ((0.0 /*_GlitterRandomRotation*/) == 1 || (0.0 /*_GlitterTextureRotation*/) != 0 && !(0.0 /*_GlitterShape*/))
+				if ((0.0 /*_GlitterRandomRotation*/) == 1 || (0.0 /*_GlitterTextureRotation*/) != 0 && !(1.0 /*_GlitterShape*/))
 				{
 					float2 fakeUVCenter = float2(.5, .5);
 					float randomBoy = 0;
@@ -6233,9 +6233,9 @@ Shader "Hidden/Locked/.poiyomi/Poiyomi 8.1/Poiyomi Toon/da90d9dac20a9744394a79f7
 					glitterColor *= RandomColorFromPoint(random2(randoPoint.x + randoPoint.y));
 				}
 				
-				if ((0.0 /*_GlitterHueShiftEnabled*/))
+				if ((1.0 /*_GlitterHueShiftEnabled*/))
 				{
-					glitterColor.rgb = hueShift(glitterColor.rgb, (0.0 /*_GlitterHueShift*/) + _Time.x * (0.0 /*_GlitterHueShiftSpeed*/));
+					glitterColor.rgb = hueShift(glitterColor.rgb, _GlitterHueShift + _Time.x * (0.0 /*_GlitterHueShiftSpeed*/));
 				}
 				
 				if ((0.0 /*_GlitterBlendType*/) == 1)
