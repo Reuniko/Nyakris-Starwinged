@@ -45,3 +45,23 @@ MonoBehaviour:
     subParameters:
     - name: Ears
     labels: []
+  - name: 
+    icon: {fileID: 2800000, guid: 85a7dfe0b8549dd46ac2741ebfa54c9d, type: 3}
+    type: 101
+    parameter:
+      name: VRCEmote
+    value: 255
+    style: 0
+    subMenu: {fileID: 0}
+    subParameters: []
+    labels: []
+  - name: Cross
+    icon: {fileID: 2800000, guid: 6d84951a10b0e5a48b73099bbac5548c, type: 3}
+    type: 101
+    parameter:
+      name: VRCEmote
+    value: 246
+    style: 0
+    subMenu: {fileID: 0}
+    subParameters: []
+    labels: []
