@@ -8,7 +8,7 @@ Material:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_Name: "\u0433\u043B\u0430\u0437\u0430 \u0443\u043B\u044C\u0442\u0440\u0430 2"
-  m_Shader: {fileID: 4800000, guid: 69ffc4cd25feef94cb32ad3f15c32a13, type: 3}
+  m_Shader: {fileID: 4800000, guid: 92471c98c291e02429ae1d9f74656785, type: 3}
   m_ShaderKeywords: 
   m_LightmapFlags: 4
   m_EnableInstancingVariants: 0
@@ -2432,10 +2432,10 @@ Material:
     - m_end_vertexManipulation: 0
     - m_end_videoEffects: 0
     - m_lightingCategory: 0
-    - m_mainCategory: 1
-    - m_modifierCategory: 0
-    - m_postprocessing: 0
-    - m_renderingCategory: 0
+    - m_mainCategory: 0
+    - m_modifierCategory: 1
+    - m_postprocessing: 1
+    - m_renderingCategory: 1
     - m_specialFXCategory: 1
     - m_start_ALDecalSpectrum: 0
     - m_start_Alpha: 0
@@ -2523,7 +2523,7 @@ Material:
     - m_start_emission1Options: 1
     - m_start_emission2Options: 0
     - m_start_emission3Options: 0
-    - m_start_emissionOptions: 0
+    - m_start_emissionOptions: 1
     - m_start_flipBook: 0
     - m_start_glitter: 0
     - m_start_internalparallax: 0
@@ -2551,7 +2551,7 @@ Material:
     - m_start_vertexGlitching: 0
     - m_start_vertexManipulation: 0
     - m_start_videoEffects: 0
-    - m_thirdpartyCategory: 0
+    - m_thirdpartyCategory: 1
     - shader_is_using_thry_editor: 69
     - shader_master_label: 0
     m_Colors:
