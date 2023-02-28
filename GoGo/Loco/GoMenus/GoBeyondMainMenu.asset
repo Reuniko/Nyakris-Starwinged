@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: GoBeyondMainMenu
   m_EditorClassIdentifier: 
   controls:
-  - name: <b>GoGo Loco</b></size>
+  - name: GoGo Loco
     icon: {fileID: 2800000, guid: 82ab53a641de2f1448023168217721eb, type: 3}
     type: 103
     parameter:
@@ -45,33 +45,23 @@ MonoBehaviour:
     subParameters:
     - name: Ears
     labels: []
-  - name: 
-    icon: {fileID: 2800000, guid: 85a7dfe0b8549dd46ac2741ebfa54c9d, type: 3}
-    type: 101
-    parameter:
-      name: VRCEmote
-    value: 255
-    style: 0
-    subMenu: {fileID: 0}
-    subParameters: []
-    labels: []
-  - name: Cross
-    icon: {fileID: 2800000, guid: 6d84951a10b0e5a48b73099bbac5548c, type: 3}
-    type: 101
-    parameter:
-      name: VRCEmote
-    value: 246
-    style: 0
-    subMenu: {fileID: 0}
-    subParameters: []
-    labels: []
   - name: Trails
-    icon: {fileID: 0}
+    icon: {fileID: 2800000, guid: ab6dae33d7a158a44a4fff12d8567a91, type: 3}
     type: 102
     parameter:
       name: Trails
     value: 1
     style: 0
     subMenu: {fileID: 0}
+    subParameters: []
+    labels: []
+  - name: Music
+    icon: {fileID: 2800000, guid: 7943de274b5317f4883f3ed9aeb7868f, type: 3}
+    type: 103
+    parameter:
+      name: 
+    value: 1
+    style: 0
+    subMenu: {fileID: 11400000, guid: 0189f34302314e74ea6a44ff6015daae, type: 2}
     subParameters: []
     labels: []
