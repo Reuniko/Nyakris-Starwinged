@@ -2210,7 +2210,7 @@ Shader "Hidden/Locked/.poiyomi/Poiyomi 8.1/Poiyomi Pro/46602a6bc8ea1a644bdc4f760
 				#if defined(PROP_EMISSIONMAP) || !defined(OPTIMIZER_ENABLED)
 				if (!(0.0 /*_EmissionCenterOutEnabled*/))
 				{
-					emissionColor0 = POI2D_SAMPLER_PAN(_EmissionMap, _MainTex, poiUV(poiMesh.uv[(0.0 /*_EmissionMapUV*/)], float4(1,1,0,0)), float4(0,0,0,0)).rgb * lerp(1, poiFragData.baseColor, (0.0 /*_EmissionBaseColorAsMap*/)).rgb * poiThemeColor(poiMods, float4(1,0,0,1).rgb, (0.0 /*_EmissionColorThemeIndex*/));
+					emissionColor0 = POI2D_SAMPLER_PAN(_EmissionMap, _MainTex, poiUV(poiMesh.uv[(0.0 /*_EmissionMapUV*/)], float4(1,1,0,0)), float4(0,1,0,0)).rgb * lerp(1, poiFragData.baseColor, (0.0 /*_EmissionBaseColorAsMap*/)).rgb * poiThemeColor(poiMods, float4(1,0,0,1).rgb, (0.0 /*_EmissionColorThemeIndex*/));
 				}
 				else
 				{
