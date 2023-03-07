@@ -48845,72 +48845,72 @@ PrefabInstance:
     - target: {fileID: 114306833501071601, guid: 72b9fc111639cac41926868b6e89a9fa,
         type: 3}
       propertyPath: animationHashSet.Array.data[451].hash
-      value: -1084011220
-      objectReference: {fileID: 0}
-    - target: {fileID: 114306833501071601, guid: 72b9fc111639cac41926868b6e89a9fa,
-        type: 3}
-      propertyPath: animationHashSet.Array.data[451].name
-      value: Fly Tracking Radial.Fly Tracking Radial
-      objectReference: {fileID: 0}
-    - target: {fileID: 114306833501071601, guid: 72b9fc111639cac41926868b6e89a9fa,
-        type: 3}
-      propertyPath: animationHashSet.Array.data[452].hash
-      value: 1955665206
-      objectReference: {fileID: 0}
-    - target: {fileID: 114306833501071601, guid: 72b9fc111639cac41926868b6e89a9fa,
-        type: 3}
-      propertyPath: animationHashSet.Array.data[452].name
-      value: Fly Tracking Radial.Auto Fly Tracking Radial
-      objectReference: {fileID: 0}
-    - target: {fileID: 114306833501071601, guid: 72b9fc111639cac41926868b6e89a9fa,
-        type: 3}
-      propertyPath: animationHashSet.Array.data[453].hash
-      value: -595549866
-      objectReference: {fileID: 0}
-    - target: {fileID: 114306833501071601, guid: 72b9fc111639cac41926868b6e89a9fa,
-        type: 3}
-      propertyPath: animationHashSet.Array.data[453].name
-      value: Fly Tracking Radial.Fly Tracking Radial FBT
-      objectReference: {fileID: 0}
-    - target: {fileID: 114306833501071601, guid: 72b9fc111639cac41926868b6e89a9fa,
-        type: 3}
-      propertyPath: animationHashSet.Array.data[454].hash
       value: 710098064
       objectReference: {fileID: 0}
     - target: {fileID: 114306833501071601, guid: 72b9fc111639cac41926868b6e89a9fa,
         type: 3}
-      propertyPath: animationHashSet.Array.data[454].name
+      propertyPath: animationHashSet.Array.data[451].name
       value: Fly Tracking Trigger.Auto Fly Tracking Trigger
       objectReference: {fileID: 0}
     - target: {fileID: 114306833501071601, guid: 72b9fc111639cac41926868b6e89a9fa,
         type: 3}
-      propertyPath: animationHashSet.Array.data[455].hash
+      propertyPath: animationHashSet.Array.data[452].hash
       value: -800411438
       objectReference: {fileID: 0}
     - target: {fileID: 114306833501071601, guid: 72b9fc111639cac41926868b6e89a9fa,
         type: 3}
-      propertyPath: animationHashSet.Array.data[455].name
+      propertyPath: animationHashSet.Array.data[452].name
       value: Fly Tracking Trigger.Fly Tracking Trigger
       objectReference: {fileID: 0}
     - target: {fileID: 114306833501071601, guid: 72b9fc111639cac41926868b6e89a9fa,
         type: 3}
-      propertyPath: animationHashSet.Array.data[456].hash
+      propertyPath: animationHashSet.Array.data[453].hash
       value: 353800213
       objectReference: {fileID: 0}
     - target: {fileID: 114306833501071601, guid: 72b9fc111639cac41926868b6e89a9fa,
         type: 3}
-      propertyPath: animationHashSet.Array.data[456].name
+      propertyPath: animationHashSet.Array.data[453].name
       value: Fly Tracking Trigger.Auto Fly Tracking Radial
       objectReference: {fileID: 0}
     - target: {fileID: 114306833501071601, guid: 72b9fc111639cac41926868b6e89a9fa,
         type: 3}
-      propertyPath: animationHashSet.Array.data[457].hash
+      propertyPath: animationHashSet.Array.data[454].hash
       value: -1636908189
       objectReference: {fileID: 0}
     - target: {fileID: 114306833501071601, guid: 72b9fc111639cac41926868b6e89a9fa,
         type: 3}
-      propertyPath: animationHashSet.Array.data[457].name
+      propertyPath: animationHashSet.Array.data[454].name
       value: Fly Tracking Trigger.Fly Tracking Trigger FBT
+      objectReference: {fileID: 0}
+    - target: {fileID: 114306833501071601, guid: 72b9fc111639cac41926868b6e89a9fa,
+        type: 3}
+      propertyPath: animationHashSet.Array.data[455].hash
+      value: -1084011220
+      objectReference: {fileID: 0}
+    - target: {fileID: 114306833501071601, guid: 72b9fc111639cac41926868b6e89a9fa,
+        type: 3}
+      propertyPath: animationHashSet.Array.data[455].name
+      value: Fly Tracking Radial.Fly Tracking Radial
+      objectReference: {fileID: 0}
+    - target: {fileID: 114306833501071601, guid: 72b9fc111639cac41926868b6e89a9fa,
+        type: 3}
+      propertyPath: animationHashSet.Array.data[456].hash
+      value: 1955665206
+      objectReference: {fileID: 0}
+    - target: {fileID: 114306833501071601, guid: 72b9fc111639cac41926868b6e89a9fa,
+        type: 3}
+      propertyPath: animationHashSet.Array.data[456].name
+      value: Fly Tracking Radial.Auto Fly Tracking Radial
+      objectReference: {fileID: 0}
+    - target: {fileID: 114306833501071601, guid: 72b9fc111639cac41926868b6e89a9fa,
+        type: 3}
+      propertyPath: animationHashSet.Array.data[457].hash
+      value: -595549866
+      objectReference: {fileID: 0}
+    - target: {fileID: 114306833501071601, guid: 72b9fc111639cac41926868b6e89a9fa,
+        type: 3}
+      propertyPath: animationHashSet.Array.data[457].name
+      value: Fly Tracking Radial.Fly Tracking Radial FBT
       objectReference: {fileID: 0}
     - target: {fileID: 114306833501071601, guid: 72b9fc111639cac41926868b6e89a9fa,
         type: 3}
@@ -49145,7 +49145,7 @@ PrefabInstance:
     - target: {fileID: 114306833501071601, guid: 72b9fc111639cac41926868b6e89a9fa,
         type: 3}
       propertyPath: specialAnimationLayers.Array.data[1].isDefault
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 114306833501071601, guid: 72b9fc111639cac41926868b6e89a9fa,
         type: 3}
@@ -49206,7 +49206,7 @@ PrefabInstance:
         type: 3}
       propertyPath: specialAnimationLayers.Array.data[1].animatorController
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 9100000, guid: e181dde2c056d2a44994051db88e036c, type: 2}
     - target: {fileID: 114306833501071601, guid: 72b9fc111639cac41926868b6e89a9fa,
         type: 3}
       propertyPath: specialAnimationLayers.Array.data[2].animatorController
