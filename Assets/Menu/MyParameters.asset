@@ -10,9 +10,13 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: -1506855854, guid: 67cc4cb7839cd3741b63733d5adf0442, type: 3}
-  m_Name: GoBeyondParameters
+  m_Name: MyParameters
   m_EditorClassIdentifier: 
   parameters:
+  - name: VRCEmote
+    valueType: 0
+    saved: 0
+    defaultValue: 0
   - name: Go/Float
     valueType: 1
     saved: 0
@@ -29,22 +33,26 @@ MonoBehaviour:
     valueType: 2
     saved: 1
     defaultValue: 0
+  - name: Go/ScaleFloat
+    valueType: 1
+    saved: 1
+    defaultValue: 0.25
+  - name: Go/Horizon
+    valueType: 2
+    saved: 0
+    defaultValue: 0
+  - name: Go/ThirdPerson
+    valueType: 1
+    saved: 1
+    defaultValue: 0
+  - name: Go/ThirdPersonMirror
+    valueType: 2
+    saved: 1
+    defaultValue: 0
   - name: Color
     valueType: 1
     saved: 1
     defaultValue: 0.5
-  - name: VRCEmote
-    valueType: 0
-    saved: 1
-    defaultValue: 0
-  - name: VRCFaceBlendH
-    valueType: 1
-    saved: 1
-    defaultValue: 0
-  - name: VRCFaceBlendV
-    valueType: 1
-    saved: 1
-    defaultValue: 0
   - name: Ears
     valueType: 1
     saved: 1
@@ -52,8 +60,8 @@ MonoBehaviour:
   - name: Trails
     valueType: 2
     saved: 1
-    defaultValue: 0
+    defaultValue: 1
   - name: Wings
     valueType: 2
     saved: 1
-    defaultValue: 0
+    defaultValue: 1

@@ -17397,87 +17397,87 @@ AnimatorStateMachine:
   - {fileID: 6007349270666470823}
   - {fileID: -2503126556359207932}
   m_StateMachineTransitions:
-  - first: {fileID: 5405963995392152253}
-    second: []
-  - first: {fileID: -3240294119697596916}
-    second: []
-  - first: {fileID: -2086967856935747551}
-    second: []
-  - first: {fileID: 1850235730867603849}
-    second: []
-  - first: {fileID: -3476794017146442940}
-    second: []
-  - first: {fileID: -2530125242901732701}
-    second: []
   - first: {fileID: -9050739907233261665}
-    second: []
-  - first: {fileID: -6350096148583534998}
-    second: []
-  - first: {fileID: -665459616940496305}
-    second: []
-  - first: {fileID: -4179456047219095877}
-    second: []
-  - first: {fileID: 855522290645482584}
-    second: []
-  - first: {fileID: 5214348640939992033}
-    second: []
-  - first: {fileID: 1340978198782484741}
-    second: []
-  - first: {fileID: -7980236412612644173}
-    second: []
-  - first: {fileID: 3736555044208221519}
     second: []
   - first: {fileID: -8396728124636808043}
     second: []
-  - first: {fileID: 717461510106841384}
-    second: []
-  - first: {fileID: 5443585254926671364}
-    second: []
-  - first: {fileID: -7262993054781321668}
+  - first: {fileID: -7980236412612644173}
     second: []
   - first: {fileID: -7489540870009440747}
     second: []
-  - first: {fileID: 5257892764500375596}
+  - first: {fileID: -7262993054781321668}
     second: []
-  - first: {fileID: 5879194207090283412}
+  - first: {fileID: -6350096148583534998}
     second: []
   - first: {fileID: -5104560389927725179}
     second: []
-  - first: {fileID: 4762228524493423735}
-    second: []
   - first: {fileID: -4382057522790619790}
     second: []
-  - first: {fileID: 6999772051174087433}
-    second: []
-  - first: {fileID: -421704704724910670}
-    second: []
-  - first: {fileID: 4469148941888148922}
-    second: []
-  - first: {fileID: 5542223568287951547}
-    second: []
-  - first: {fileID: 4960850886075231928}
-    second: []
-  - first: {fileID: 1276968953087933717}
+  - first: {fileID: -4179456047219095877}
     second: []
   - first: {fileID: -3983965803454826083}
     second: []
-  - first: {fileID: 6701789269346260412}
+  - first: {fileID: -3960611117735990975}
     second: []
-  - first: {fileID: 1400652324655539719}
+  - first: {fileID: -3476794017146442940}
+    second: []
+  - first: {fileID: -3240294119697596916}
+    second: []
+  - first: {fileID: -2530125242901732701}
     second: []
   - first: {fileID: -2088146110065391303}
     second: []
-  - first: {fileID: 7232014008909568184}
-    second: []
-  - first: {fileID: 3780249946244083317}
-    second: []
-  - first: {fileID: 6069016764455215365}
-    second: []
-  - first: {fileID: -3960611117735990975}
+  - first: {fileID: -2086967856935747551}
     second: []
   - first: {fileID: -1771225094456758777}
     second: []
+  - first: {fileID: -665459616940496305}
+    second: []
+  - first: {fileID: -421704704724910670}
+    second: []
   - first: {fileID: 470860645793678215}
+    second: []
+  - first: {fileID: 717461510106841384}
+    second: []
+  - first: {fileID: 855522290645482584}
+    second: []
+  - first: {fileID: 1276968953087933717}
+    second: []
+  - first: {fileID: 1340978198782484741}
+    second: []
+  - first: {fileID: 1400652324655539719}
+    second: []
+  - first: {fileID: 1850235730867603849}
+    second: []
+  - first: {fileID: 3736555044208221519}
+    second: []
+  - first: {fileID: 3780249946244083317}
+    second: []
+  - first: {fileID: 4469148941888148922}
+    second: []
+  - first: {fileID: 4762228524493423735}
+    second: []
+  - first: {fileID: 4960850886075231928}
+    second: []
+  - first: {fileID: 5214348640939992033}
+    second: []
+  - first: {fileID: 5257892764500375596}
+    second: []
+  - first: {fileID: 5405963995392152253}
+    second: []
+  - first: {fileID: 5443585254926671364}
+    second: []
+  - first: {fileID: 5542223568287951547}
+    second: []
+  - first: {fileID: 5879194207090283412}
+    second: []
+  - first: {fileID: 6069016764455215365}
+    second: []
+  - first: {fileID: 6701789269346260412}
+    second: []
+  - first: {fileID: 6999772051174087433}
+    second: []
+  - first: {fileID: 7232014008909568184}
     second: []
   - first: {fileID: 7845913946710116172}
     second: []
@@ -18654,7 +18654,7 @@ AnimatorState:
   m_MirrorParameterActive: 0
   m_CycleOffsetParameterActive: 0
   m_TimeParameterActive: 0
-  m_Motion: {fileID: 3025672743698570896}
+  m_Motion: {fileID: 7400000, guid: 85a005bee2c6ff7419cce5ade328ede5, type: 2}
   m_Tag: 
   m_SpeedParameter: 
   m_MirrorParameter: 
@@ -25774,247 +25774,247 @@ AnimatorController:
     m_DefaultFloat: 0
     m_DefaultInt: 0
     m_DefaultBool: 0
-    m_Controller: {fileID: 0}
+    m_Controller: {fileID: 9100000}
   - m_Name: Viseme
     m_Type: 3
     m_DefaultFloat: 0
     m_DefaultInt: 0
     m_DefaultBool: 0
-    m_Controller: {fileID: 0}
+    m_Controller: {fileID: 9100000}
   - m_Name: Voice
     m_Type: 1
     m_DefaultFloat: 0
     m_DefaultInt: 0
     m_DefaultBool: 0
-    m_Controller: {fileID: 0}
+    m_Controller: {fileID: 9100000}
   - m_Name: GestureLeft
     m_Type: 3
     m_DefaultFloat: 0
     m_DefaultInt: 0
     m_DefaultBool: 0
-    m_Controller: {fileID: 0}
+    m_Controller: {fileID: 9100000}
   - m_Name: GestureRight
     m_Type: 3
     m_DefaultFloat: 0
     m_DefaultInt: 0
     m_DefaultBool: 0
-    m_Controller: {fileID: 0}
+    m_Controller: {fileID: 9100000}
   - m_Name: GestureLeftWeight
     m_Type: 1
     m_DefaultFloat: 0
     m_DefaultInt: 0
     m_DefaultBool: 0
-    m_Controller: {fileID: 0}
+    m_Controller: {fileID: 9100000}
   - m_Name: GestureRightWeight
     m_Type: 1
     m_DefaultFloat: 0
     m_DefaultInt: 0
     m_DefaultBool: 0
-    m_Controller: {fileID: 0}
+    m_Controller: {fileID: 9100000}
   - m_Name: AngularY
     m_Type: 1
     m_DefaultFloat: 0
     m_DefaultInt: 0
     m_DefaultBool: 0
-    m_Controller: {fileID: 0}
+    m_Controller: {fileID: 9100000}
   - m_Name: VelocityX
     m_Type: 1
     m_DefaultFloat: 0
     m_DefaultInt: 0
     m_DefaultBool: 0
-    m_Controller: {fileID: 0}
+    m_Controller: {fileID: 9100000}
   - m_Name: VelocityY
     m_Type: 1
     m_DefaultFloat: 0
     m_DefaultInt: 0
     m_DefaultBool: 0
-    m_Controller: {fileID: 0}
+    m_Controller: {fileID: 9100000}
   - m_Name: VelocityZ
     m_Type: 1
     m_DefaultFloat: 0
     m_DefaultInt: 0
     m_DefaultBool: 0
-    m_Controller: {fileID: 0}
+    m_Controller: {fileID: 9100000}
   - m_Name: Grounded
     m_Type: 4
     m_DefaultFloat: 0
     m_DefaultInt: 0
     m_DefaultBool: 0
-    m_Controller: {fileID: 0}
+    m_Controller: {fileID: 9100000}
   - m_Name: Upright
     m_Type: 1
     m_DefaultFloat: 1
     m_DefaultInt: 0
     m_DefaultBool: 0
-    m_Controller: {fileID: 0}
+    m_Controller: {fileID: 9100000}
   - m_Name: Seated
     m_Type: 4
     m_DefaultFloat: 0
     m_DefaultInt: 0
     m_DefaultBool: 0
-    m_Controller: {fileID: 0}
+    m_Controller: {fileID: 9100000}
   - m_Name: AFK
     m_Type: 4
     m_DefaultFloat: 0
     m_DefaultInt: 0
     m_DefaultBool: 0
-    m_Controller: {fileID: 0}
+    m_Controller: {fileID: 9100000}
   - m_Name: TrackingType
     m_Type: 3
     m_DefaultFloat: 0
     m_DefaultInt: 0
     m_DefaultBool: 0
-    m_Controller: {fileID: 0}
+    m_Controller: {fileID: 9100000}
   - m_Name: VRMode
     m_Type: 3
     m_DefaultFloat: 0
     m_DefaultInt: 0
     m_DefaultBool: 0
-    m_Controller: {fileID: 0}
+    m_Controller: {fileID: 9100000}
   - m_Name: MuteSelf
     m_Type: 4
     m_DefaultFloat: 0
     m_DefaultInt: 0
     m_DefaultBool: 0
-    m_Controller: {fileID: 0}
+    m_Controller: {fileID: 9100000}
   - m_Name: InStation
     m_Type: 4
     m_DefaultFloat: 0
     m_DefaultInt: 0
     m_DefaultBool: 0
-    m_Controller: {fileID: 0}
+    m_Controller: {fileID: 9100000}
   - m_Name: AvatarVersion
     m_Type: 3
     m_DefaultFloat: 0
     m_DefaultInt: 0
     m_DefaultBool: 0
-    m_Controller: {fileID: 0}
+    m_Controller: {fileID: 9100000}
   - m_Name: GroundProximity
     m_Type: 1
     m_DefaultFloat: 0
     m_DefaultInt: 0
     m_DefaultBool: 0
-    m_Controller: {fileID: 0}
+    m_Controller: {fileID: 9100000}
   - m_Name: VRCEmote
     m_Type: 3
     m_DefaultFloat: 0
     m_DefaultInt: 0
     m_DefaultBool: 0
-    m_Controller: {fileID: 0}
+    m_Controller: {fileID: 9100000}
   - m_Name: Go/Float
     m_Type: 1
     m_DefaultFloat: 0.25
     m_DefaultInt: 0
     m_DefaultBool: 0
-    m_Controller: {fileID: 0}
+    m_Controller: {fileID: 9100000}
   - m_Name: Go/Stationary
     m_Type: 4
     m_DefaultFloat: 0
     m_DefaultInt: 0
     m_DefaultBool: 0
-    m_Controller: {fileID: 0}
+    m_Controller: {fileID: 9100000}
   - m_Name: Go/Locomotion
     m_Type: 4
     m_DefaultFloat: 0
     m_DefaultInt: 0
     m_DefaultBool: 0
-    m_Controller: {fileID: 0}
+    m_Controller: {fileID: 9100000}
   - m_Name: Go/JumpAndFall
     m_Type: 4
     m_DefaultFloat: 0
     m_DefaultInt: 0
     m_DefaultBool: 0
-    m_Controller: {fileID: 0}
+    m_Controller: {fileID: 9100000}
   - m_Name: Go/Jump
     m_Type: 4
     m_DefaultFloat: 0
     m_DefaultInt: 0
     m_DefaultBool: 0
-    m_Controller: {fileID: 0}
+    m_Controller: {fileID: 9100000}
   - m_Name: Go/JSRF/ReadyToGrind
     m_Type: 4
     m_DefaultFloat: 0
     m_DefaultInt: 0
     m_DefaultBool: 0
-    m_Controller: {fileID: 0}
+    m_Controller: {fileID: 9100000}
   - m_Name: Go/JSRF/Timer
     m_Type: 4
     m_DefaultFloat: 0
     m_DefaultInt: 0
     m_DefaultBool: 0
-    m_Controller: {fileID: 0}
+    m_Controller: {fileID: 9100000}
   - m_Name: Go/SVRB/Grounded
     m_Type: 4
     m_DefaultFloat: 0
     m_DefaultInt: 0
     m_DefaultBool: 0
-    m_Controller: {fileID: 0}
+    m_Controller: {fileID: 9100000}
   - m_Name: Go/Scaling
     m_Type: 4
     m_DefaultFloat: 0
     m_DefaultInt: 0
     m_DefaultBool: 0
-    m_Controller: {fileID: 0}
+    m_Controller: {fileID: 9100000}
   - m_Name: Go/ScaleFloat
     m_Type: 1
     m_DefaultFloat: 0.25
     m_DefaultInt: 0
     m_DefaultBool: 0
-    m_Controller: {fileID: 0}
+    m_Controller: {fileID: 9100000}
   - m_Name: Go/ScaleSave
     m_Type: 1
     m_DefaultFloat: 0.25
     m_DefaultInt: 0
     m_DefaultBool: 0
-    m_Controller: {fileID: 0}
+    m_Controller: {fileID: 9100000}
   - m_Name: Go/Pose
     m_Type: 4
     m_DefaultFloat: 0
     m_DefaultInt: 0
     m_DefaultBool: 0
-    m_Controller: {fileID: 0}
+    m_Controller: {fileID: 9100000}
   - m_Name: Go/PosePlaySpace
     m_Type: 4
     m_DefaultFloat: 0
     m_DefaultInt: 0
     m_DefaultBool: 0
-    m_Controller: {fileID: 0}
+    m_Controller: {fileID: 9100000}
   - m_Name: Go/Mirror
     m_Type: 4
     m_DefaultFloat: 0
     m_DefaultInt: 0
     m_DefaultBool: 0
-    m_Controller: {fileID: 0}
+    m_Controller: {fileID: 9100000}
   - m_Name: Go/Height
     m_Type: 1
     m_DefaultFloat: 0.1
     m_DefaultInt: 0
     m_DefaultBool: 0
-    m_Controller: {fileID: 0}
+    m_Controller: {fileID: 9100000}
   - m_Name: Go/Emote
     m_Type: 4
     m_DefaultFloat: 0
     m_DefaultInt: 0
     m_DefaultBool: 0
-    m_Controller: {fileID: 0}
+    m_Controller: {fileID: 9100000}
   - m_Name: Go/Horizon
     m_Type: 4
     m_DefaultFloat: 0
     m_DefaultInt: 0
     m_DefaultBool: 0
-    m_Controller: {fileID: 0}
+    m_Controller: {fileID: 9100000}
   - m_Name: Go/SmoothingFactor
     m_Type: 1
     m_DefaultFloat: 0.925
     m_DefaultInt: 0
     m_DefaultBool: 0
-    m_Controller: {fileID: 0}
+    m_Controller: {fileID: 9100000}
   - m_Name: Go/SmoothFloat
     m_Type: 1
     m_DefaultFloat: 0
     m_DefaultInt: 0
     m_DefaultBool: 0
-    m_Controller: {fileID: 0}
+    m_Controller: {fileID: 9100000}
   m_AnimatorLayers:
   - serializedVersion: 5
     m_Name: Locomotion
@@ -38370,7 +38370,7 @@ AnimatorState:
   m_MirrorParameterActive: 0
   m_CycleOffsetParameterActive: 0
   m_TimeParameterActive: 0
-  m_Motion: {fileID: 7400000, guid: c2726cd9afead0e47855ec485ee9d08d, type: 2}
+  m_Motion: {fileID: 7400000, guid: 160744972e3c68642897009510de5414, type: 2}
   m_Tag: 
   m_SpeedParameter: 
   m_MirrorParameter: 
@@ -38405,7 +38405,7 @@ AnimatorState:
   m_MirrorParameterActive: 0
   m_CycleOffsetParameterActive: 0
   m_TimeParameterActive: 0
-  m_Motion: {fileID: 7400000, guid: 61e639293c81e164e8001d7329ac3f24, type: 2}
+  m_Motion: {fileID: 7400000, guid: 85a005bee2c6ff7419cce5ade328ede5, type: 2}
   m_Tag: 
   m_SpeedParameter: 
   m_MirrorParameter: 
@@ -48416,7 +48416,7 @@ AnimatorState:
   m_MirrorParameterActive: 0
   m_CycleOffsetParameterActive: 0
   m_TimeParameterActive: 0
-  m_Motion: {fileID: 2872189923458957903}
+  m_Motion: {fileID: 7400000, guid: 160744972e3c68642897009510de5414, type: 2}
   m_Tag: 
   m_SpeedParameter: 
   m_MirrorParameter: 
