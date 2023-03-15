@@ -68,4 +68,8 @@ MonoBehaviour:
   - name: Sword
     valueType: 2
     saved: 1
+    defaultValue: 0
+  - name: Halo
+    valueType: 2
+    saved: 1
     defaultValue: 1

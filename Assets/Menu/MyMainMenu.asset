@@ -75,3 +75,13 @@ MonoBehaviour:
     subMenu: {fileID: 0}
     subParameters: []
     labels: []
+  - name: Halo
+    icon: {fileID: 2800000, guid: 4e3135949acaf714c917f24c9bfcd965, type: 3}
+    type: 102
+    parameter:
+      name: Halo
+    value: 1
+    style: 0
+    subMenu: {fileID: 0}
+    subParameters: []
+    labels: []
