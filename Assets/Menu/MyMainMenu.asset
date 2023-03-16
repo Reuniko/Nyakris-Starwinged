@@ -13,6 +13,16 @@ MonoBehaviour:
   m_Name: MyMainMenu
   m_EditorClassIdentifier: 
   controls:
+  - name: GoGoGo
+    icon: {fileID: 2800000, guid: f3998131de85a12408698d86355c3aa4, type: 3}
+    type: 103
+    parameter:
+      name: 
+    value: 1
+    style: 0
+    subMenu: {fileID: 11400000, guid: ac6ebd68f4ec4e8409d372ca32f51621, type: 2}
+    subParameters: []
+    labels: []
   - name: GoGo Loco
     icon: {fileID: 2800000, guid: 82ab53a641de2f1448023168217721eb, type: 3}
     type: 103
@@ -24,7 +34,7 @@ MonoBehaviour:
     subParameters: []
     labels: []
   - name: Color
-    icon: {fileID: 0}
+    icon: {fileID: 2800000, guid: 85b7bc839affc35478ec7c30876efef6, type: 3}
     type: 203
     parameter:
       name: 
@@ -35,7 +45,7 @@ MonoBehaviour:
     - name: Color
     labels: []
   - name: Ears
-    icon: {fileID: 0}
+    icon: {fileID: 2800000, guid: 29b4286f41c93f84f9ffc6ca7551f2d3, type: 3}
     type: 203
     parameter:
       name: 
