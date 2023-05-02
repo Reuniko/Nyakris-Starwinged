@@ -560,7 +560,7 @@ Shader "Hidden/Locked/.poiyomi/Poiyomi 8.1/Poiyomi Toon/da90d9dac20a9744394a79f7
  #define POI_VERTEXLIGHT_ON 
  #define VIGNETTE_MASKED 
  #define _GLOSSYREFLECTIONS_OFF 
- #define _LIGHTINGMODE_TEXTURERAMP 
+ #define _LIGHTINGMODE_FLAT 
  #define _RIM2STYLE_POIYOMI 
  #define _RIMSTYLE_POIYOMI 
  #define _STOCHASTICMODE_DELIOT_HEITZ 
@@ -745,9 +745,6 @@ Shader "Hidden/Locked/.poiyomi/Poiyomi 8.1/Poiyomi Toon/da90d9dac20a9744394a79f7
 			float _AlphaBoostFA;
 			float _AlphaGlobalMask;
 			float _AlphaGlobalMaskBlendType;
-			#ifdef _LIGHTINGMODE_TEXTURERAMP
-			UNITY_DECLARE_TEX2D(_ToonRamp);
-			#endif
 			float _ShadowOffset;
 			float _ShadowStrength;
 			float _LightingIgnoreAmbientColor;
@@ -2641,9 +2638,9 @@ Shader "Hidden/Locked/.poiyomi/Poiyomi 8.1/Poiyomi Toon/da90d9dac20a9744394a79f7
 				#ifdef POI_PASS_OUTLINE
 				shadowStrength = lerp(0, shadowStrength, _OutlineShadowStrength);
 				#endif
-				#ifdef _LIGHTINGMODE_TEXTURERAMP
-				poiLight.rampedLightMap = lerp(1, UNITY_SAMPLE_TEX2D(_ToonRamp, poiLight.lightMap + (0.0 /*_ShadowOffset*/)).rgb, shadowStrength);
-				poiLight.finalLighting = lerp(float4(1,1,1,1) * lerp(poiLight.indirectColor, poiLight.rampedLightMap * poiLight.directColor, (0.0 /*_LightingIgnoreAmbientColor*/)) * poiLight.occlusion, poiLight.directColor, poiLight.rampedLightMap);
+				#ifdef _LIGHTINGMODE_FLAT
+				poiLight.finalLighting = poiLight.directColor;
+				poiLight.rampedLightMap = poiLight.nDotLSaturated;
 				#endif
 				#endif
 				#ifdef POI_PASS_ADD
@@ -3646,7 +3643,7 @@ Shader "Hidden/Locked/.poiyomi/Poiyomi 8.1/Poiyomi Toon/da90d9dac20a9744394a79f7
  #define POI_VERTEXLIGHT_ON 
  #define VIGNETTE_MASKED 
  #define _GLOSSYREFLECTIONS_OFF 
- #define _LIGHTINGMODE_TEXTURERAMP 
+ #define _LIGHTINGMODE_FLAT 
  #define _RIM2STYLE_POIYOMI 
  #define _RIMSTYLE_POIYOMI 
  #define _STOCHASTICMODE_DELIOT_HEITZ 
@@ -3830,9 +3827,6 @@ Shader "Hidden/Locked/.poiyomi/Poiyomi 8.1/Poiyomi Toon/da90d9dac20a9744394a79f7
 			float _AlphaBoostFA;
 			float _AlphaGlobalMask;
 			float _AlphaGlobalMaskBlendType;
-			#ifdef _LIGHTINGMODE_TEXTURERAMP
-			UNITY_DECLARE_TEX2D(_ToonRamp);
-			#endif
 			float _ShadowOffset;
 			float _ShadowStrength;
 			float _LightingIgnoreAmbientColor;
@@ -5722,9 +5716,9 @@ Shader "Hidden/Locked/.poiyomi/Poiyomi 8.1/Poiyomi Toon/da90d9dac20a9744394a79f7
 				#ifdef POI_PASS_OUTLINE
 				shadowStrength = lerp(0, shadowStrength, _OutlineShadowStrength);
 				#endif
-				#ifdef _LIGHTINGMODE_TEXTURERAMP
-				poiLight.rampedLightMap = lerp(1, UNITY_SAMPLE_TEX2D(_ToonRamp, poiLight.lightMap + (0.0 /*_ShadowOffset*/)).rgb, shadowStrength);
-				poiLight.finalLighting = lerp(float4(1,1,1,1) * lerp(poiLight.indirectColor, poiLight.rampedLightMap * poiLight.directColor, (0.0 /*_LightingIgnoreAmbientColor*/)) * poiLight.occlusion, poiLight.directColor, poiLight.rampedLightMap);
+				#ifdef _LIGHTINGMODE_FLAT
+				poiLight.finalLighting = poiLight.directColor;
+				poiLight.rampedLightMap = poiLight.nDotLSaturated;
 				#endif
 				#endif
 				#ifdef POI_PASS_ADD
@@ -6730,7 +6724,7 @@ Shader "Hidden/Locked/.poiyomi/Poiyomi 8.1/Poiyomi Toon/da90d9dac20a9744394a79f7
  #define POI_VERTEXLIGHT_ON 
  #define VIGNETTE_MASKED 
  #define _GLOSSYREFLECTIONS_OFF 
- #define _LIGHTINGMODE_TEXTURERAMP 
+ #define _LIGHTINGMODE_FLAT 
  #define _RIM2STYLE_POIYOMI 
  #define _RIMSTYLE_POIYOMI 
  #define _STOCHASTICMODE_DELIOT_HEITZ 

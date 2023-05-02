@@ -9,15 +9,16 @@ Material:
   m_PrefabAsset: {fileID: 0}
   m_Name: "\u0433\u043E\u043B\u043E\u0432\u0430 \u0441\u043F\u0435\u0446\u044D\u0444\u0444\u0435\u043A\u0442\u044B"
   m_Shader: {fileID: 4800000, guid: 594a035517dc6074ca188475cd330b23, type: 3}
-  m_ShaderKeywords: 
+  m_ShaderKeywords: POI_LIGHT_DATA_ADDITIVE_DIRECTIONAL_ENABLE POI_LIGHT_DATA_ADDITIVE_ENABLE
+    POI_VERTEXLIGHT_ON VIGNETTE_MASKED
   m_LightmapFlags: 4
   m_EnableInstancingVariants: 0
   m_DoubleSidedGI: 0
-  m_CustomRenderQueue: 2000
+  m_CustomRenderQueue: 3000
   stringTagMap:
     OptimizedShaderFolder: New Material 7-613c149b
     OriginalShader: .poiyomi/Poiyomi 8.1/Poiyomi Toon
-    RenderType: Opaque
+    RenderType: Transparent
   disabledShaderPasses: []
   m_SavedProperties:
     serializedVersion: 3
@@ -685,7 +686,7 @@ Material:
     - _AddDstBlend: 1
     - _AddDstBlendAlpha: 1
     - _AddSrcBlend: 1
-    - _AddSrcBlendAlpha: 1
+    - _AddSrcBlendAlpha: 0
     - _Add_Antipodean_Rim2Light: 0
     - _Add_Antipodean_RimLight: 0
     - _AlphaAlphaAdd: 0
@@ -907,7 +908,7 @@ Material:
     - _BlackLightMasking3Key: 4
     - _BlackLightMaskingEnabled: 0
     - _BlendOp: 0
-    - _BlendOpAlpha: 0
+    - _BlendOpAlpha: 4
     - _BlendOpAlphaAnimated: 0
     - _BlendOpAnimated: 0
     - _BlueAlphaAdd: 0
