@@ -44112,6 +44112,11 @@ PrefabInstance:
       propertyPath: m_StitchLightmapSeams
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 95225769591095964, guid: 72b9fc111639cac41926868b6e89a9fa,
+        type: 3}
+      propertyPath: m_Controller
+      value: 
+      objectReference: {fileID: 0}
     - target: {fileID: 114306833501071601, guid: 72b9fc111639cac41926868b6e89a9fa,
         type: 3}
       propertyPath: ViewPosition.y
@@ -49383,7 +49388,7 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Materials.Array.data[9]
       value: 
-      objectReference: {fileID: 2100000, guid: ba9079501220d054198ef84ada94c8a1, type: 2}
+      objectReference: {fileID: 2100000, guid: 11e923e1901a7394891b3cb2125931ea, type: 2}
     - target: {fileID: 137335407992998078, guid: 72b9fc111639cac41926868b6e89a9fa,
         type: 3}
       propertyPath: m_BlendShapeWeights.Array.data[31]
