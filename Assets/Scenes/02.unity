@@ -1559,6 +1559,16 @@ PrefabInstance:
       propertyPath: m_Materials.Array.data[1]
       value: 
       objectReference: {fileID: 2100000, guid: 46602a6bc8ea1a644bdc4f760510e97b, type: 2}
+    - target: {fileID: -3551960246506442466, guid: e3ca3f68a491c734ea5d74bd041aa1e0,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0.18105161
+      objectReference: {fileID: 0}
+    - target: {fileID: -3551960246506442466, guid: e3ca3f68a491c734ea5d74bd041aa1e0,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0.26935446
+      objectReference: {fileID: 0}
     - target: {fileID: -2494190212625496673, guid: e3ca3f68a491c734ea5d74bd041aa1e0,
         type: 3}
       propertyPath: m_Materials.Array.data[0]
@@ -1707,27 +1717,32 @@ PrefabInstance:
     - target: {fileID: 2969787096564693424, guid: e3ca3f68a491c734ea5d74bd041aa1e0,
         type: 3}
       propertyPath: m_LocalRotation.w
-      value: 0.54544365
+      value: 0.5454437
       objectReference: {fileID: 0}
     - target: {fileID: 2969787096564693424, guid: e3ca3f68a491c734ea5d74bd041aa1e0,
         type: 3}
       propertyPath: m_LocalRotation.x
-      value: -0.4499904
+      value: -0.44999042
       objectReference: {fileID: 0}
     - target: {fileID: 2969787096564693424, guid: e3ca3f68a491c734ea5d74bd041aa1e0,
         type: 3}
       propertyPath: m_LocalRotation.y
-      value: -0.4499791
+      value: -0.44997913
       objectReference: {fileID: 0}
     - target: {fileID: 2969787096564693424, guid: e3ca3f68a491c734ea5d74bd041aa1e0,
         type: 3}
       propertyPath: m_LocalRotation.z
-      value: -0.54545265
+      value: -0.5454527
       objectReference: {fileID: 0}
     - target: {fileID: 3198896233827727512, guid: e3ca3f68a491c734ea5d74bd041aa1e0,
         type: 3}
       propertyPath: m_IsActive
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5866666021909216657, guid: e3ca3f68a491c734ea5d74bd041aa1e0,
+        type: 3}
+      propertyPath: m_Controller
+      value: 
       objectReference: {fileID: 0}
     - target: {fileID: 6371836146868173509, guid: e3ca3f68a491c734ea5d74bd041aa1e0,
         type: 3}
@@ -2784,60 +2799,6 @@ MonoBehaviour:
     name: PP & Scaling.Pose Space PP
   - hash: 1453130624
     name: PP & Scaling.Scaling 3 pt
-  - hash: -201220167
-    name: Init
-  - hash: 200646699
-    name: Enter Virtual-0
-  - hash: 2041191075
-    name: Exit Virtual-0
-  - hash: 2096271549
-    name: Enter Virtual-1
-  - hash: 246229557
-    name: Exit Virtual-1
-  - hash: 382275149
-    name: Waiting
-  - hash: 984510009
-    name: Listening
-  - hash: 592811251
-    name: Waiting
-  - hash: 1345495753
-    name: Listening
-  - hash: -863505198
-    name: Interpolating
-  - hash: 1860898976
-    name: Interpolating
-  - hash: -1609019259
-    name: Default
-  - hash: -831505803
-    name: xx_Idle
-  - hash: 1778124150
-    name: xx_Fist BlendLef
-  - hash: -1527319402
-    name: xx_Fist BlendRig
-  - hash: 622671042
-    name: xx_Rock
-  - hash: -100284685
-    name: xx_Point
-  - hash: -395191807
-    name: xx_Victory
-  - hash: 1666981381
-    name: xx_ThumbsUp
-  - hash: 737780392
-    name: xx_Fist Dual xx_
-  - hash: -1239151420
-    name: xx_Open
-  - hash: -1591736987
-    name: xx_VictoryDouble
-  - hash: -1442974462
-    name: xx_Gun
-  - hash: 2135621116
-    name: empty
-  - hash: -690754817
-    name: EnableBlinking
-  - hash: 245759410
-    name: DisableBlinking
-  - hash: 814330056
-    name: SuspendBlinking
   - hash: -397159656
     name: HUE_SHIFT
   - hash: -416180611
@@ -2894,6 +2855,96 @@ MonoBehaviour:
     name: Off
   - hash: -107007495
     name: On
+  - hash: -201220167
+    name: Init
+  - hash: 200646699
+    name: Enter Virtual-0
+  - hash: 2041191075
+    name: Exit Virtual-0
+  - hash: 2096271549
+    name: Enter Virtual-1
+  - hash: 246229557
+    name: Exit Virtual-1
+  - hash: 382275149
+    name: Waiting
+  - hash: 984510009
+    name: Listening
+  - hash: 592811251
+    name: Waiting
+  - hash: 1345495753
+    name: Listening
+  - hash: -863505198
+    name: Interpolating
+  - hash: 1860898976
+    name: Interpolating
+  - hash: -1609019259
+    name: Default
+  - hash: -831505803
+    name: xx_Idle
+  - hash: -1182162143
+    name: xx_Shure
+  - hash: -100284685
+    name: xx_Point
+  - hash: -395191807
+    name: xx_Victory
+  - hash: 622671042
+    name: xx_Rock
+  - hash: 1134570860
+    name: xx_Lust
+  - hash: 1666981381
+    name: xx_ThumbsUp
+  - hash: 737780392
+    name: xx_Fist Dual xx_
+  - hash: -1239151420
+    name: xx_Open
+  - hash: -1295027245
+    name: xx_Shure+xx_Poin
+  - hash: -1801174707
+    name: xx_Shure+xx_Vict
+  - hash: -1841060003
+    name: xx_Shure+xx_Rock
+  - hash: -184631565
+    name: xx_Shure+xx_Lust
+  - hash: 1201471206
+    name: xx_Shure+xx_Thum
+  - hash: -304587819
+    name: xx_Point_x2
+  - hash: 2134091092
+    name: xx_Point+xx_Vict
+  - hash: 2043953988
+    name: xx_Point+xx_Rock
+  - hash: 526998250
+    name: xx_Point+xx_Lust
+  - hash: -1408558337
+    name: xx_Point+xx_Thum
+  - hash: -1591736987
+    name: xx_VictoryDouble
+  - hash: -175395067
+    name: xx_Victory+xx_Ro
+  - hash: -592942688
+    name: xx_Victory+xx_Lu
+  - hash: 1035312416
+    name: xx_Victory+xx_Th
+  - hash: -40382524
+    name: xx_Rock_x2
+  - hash: 1514895905
+    name: xx_Rock+xx_Lust_
+  - hash: 1867362459
+    name: xx_Rock+xx_Thumb
+  - hash: 10607073
+    name: xx_Lust_x2
+  - hash: -1076887102
+    name: xx_Lust+xx_Thumb
+  - hash: 130544233
+    name: xx_ThumbsUp_x2
+  - hash: 2135621116
+    name: empty
+  - hash: -690754817
+    name: EnableBlinking
+  - hash: 245759410
+    name: DisableBlinking
+  - hash: 814330056
+    name: SuspendBlinking
   autoFootsteps: 1
   autoLocomotion: 1
   collider_head:
@@ -3026,3 +3077,16 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 1878863064}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &1878863072
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1878863065}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 229740497, guid: 4ecd63eff847044b68db9453ce219299, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  contentType: 0
