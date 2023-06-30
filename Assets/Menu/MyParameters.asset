@@ -53,19 +53,19 @@ MonoBehaviour:
     valueType: 1
     saved: 1
     defaultValue: 0.5
-  - name: Ears
-    valueType: 1
-    saved: 1
-    defaultValue: 1
-  - name: Trails
+  - name: LSD
     valueType: 2
     saved: 1
-    defaultValue: 1
+    defaultValue: 0
   - name: Wings
     valueType: 2
     saved: 1
+    defaultValue: 0
+  - name: Ears
+    valueType: 2
+    saved: 1
     defaultValue: 1
-  - name: Sword
+  - name: Blade
     valueType: 2
     saved: 1
     defaultValue: 0
@@ -73,11 +73,3 @@ MonoBehaviour:
     valueType: 2
     saved: 1
     defaultValue: 1
-  - name: LSD
-    valueType: 2
-    saved: 1
-    defaultValue: 0
-  - name: Levitate
-    valueType: 2
-    saved: 0
-    defaultValue: 0

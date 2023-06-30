@@ -30,6 +30,9 @@ ModelImporter:
   - first:
       74: -4315265403366749507
     second: inner|outerAction
+  - first:
+      74: -623603649343465320
+    second: Scene
   externalObjects: {}
   materials:
     materialImportMode: 1
