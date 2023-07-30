@@ -63,11 +63,21 @@ MonoBehaviour:
     subMenu: {fileID: 0}
     subParameters: []
     labels: []
-  - name: Sword2
+  - name: Sword 2
     icon: {fileID: 2800000, guid: 8b4cc96dcc6fb484cb2b3d55c4997d99, type: 3}
     type: 102
     parameter:
       name: sword2
+    value: 1
+    style: 0
+    subMenu: {fileID: 0}
+    subParameters: []
+    labels: []
+  - name: Sword 2 EFFECTS
+    icon: {fileID: 2800000, guid: e5afc9f6ee88c964cbc59accc832fbbe, type: 3}
+    type: 102
+    parameter:
+      name: Sword 2 EFFECTS
     value: 1
     style: 0
     subMenu: {fileID: 0}

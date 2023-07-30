@@ -1366,7 +1366,7 @@ PrefabInstance:
     - target: {fileID: 1665193221343275969, guid: 0331f36341a34cb49a05016f7d02ce86,
         type: 3}
       propertyPath: m_RootOrder
-      value: 8
+      value: 9
       objectReference: {fileID: 0}
     - target: {fileID: 1665193221343275969, guid: 0331f36341a34cb49a05016f7d02ce86,
         type: 3}
@@ -2880,7 +2880,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 411722354}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0.03971, y: -0.00068, z: -0}
+  m_LocalPosition: {x: 0.04086, y: 0, z: -0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 650704351}
@@ -2964,7 +2964,7 @@ ParticleSystem:
   ringBufferMode: 0
   ringBufferLoopRange: {x: 0, y: 1}
   looping: 1
-  prewarm: 0
+  prewarm: 1
   playOnAwake: 1
   useUnscaledTime: 0
   autoRandomSeed: 1
@@ -3835,7 +3835,7 @@ ParticleSystem:
     rateOverDistance:
       serializedVersion: 2
       minMaxState: 0
-      scalar: 100
+      scalar: 75
       minScalar: 0
       maxCurve:
         serializedVersion: 2
@@ -3900,20 +3900,20 @@ ParticleSystem:
         - serializedVersion: 3
           time: 0
           value: 1
-          inSlope: -0.14442
-          outSlope: -0.14442
+          inSlope: -0.8259909
+          outSlope: -0.8259909
           tangentMode: 0
           weightedMode: 0
           inWeight: 0.33333334
-          outWeight: 1
+          outWeight: 0.13215859
         - serializedVersion: 3
           time: 1
           value: 0
-          inSlope: -0.22195548
-          outSlope: -0.22195548
+          inSlope: -0.6447787
+          outSlope: -0.6447787
           tangentMode: 0
           weightedMode: 0
-          inWeight: 0.25000006
+          inWeight: 0.154185
           outWeight: 0.33333334
         m_PreInfinity: 2
         m_PostInfinity: 2
@@ -16519,7 +16519,7 @@ PrefabInstance:
     - target: {fileID: -9048794901157447202, guid: e3ca3f68a491c734ea5d74bd041aa1e0,
         type: 3}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: e3ca3f68a491c734ea5d74bd041aa1e0,
         type: 3}
@@ -16601,6 +16601,21 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: -7334951474422550414, guid: e3ca3f68a491c734ea5d74bd041aa1e0,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -7311254465461002018, guid: e3ca3f68a491c734ea5d74bd041aa1e0,
+        type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 821b179888663e54f9fbea6c16b9fcdc, type: 2}
+    - target: {fileID: -7296742891649885728, guid: e3ca3f68a491c734ea5d74bd041aa1e0,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: -6452266432751415832, guid: e3ca3f68a491c734ea5d74bd041aa1e0,
         type: 3}
       propertyPath: m_IsActive
@@ -16644,7 +16659,7 @@ PrefabInstance:
     - target: {fileID: -2494694711851296478, guid: e3ca3f68a491c734ea5d74bd041aa1e0,
         type: 3}
       propertyPath: m_RootOrder
-      value: 9
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: -2494190212625496673, guid: e3ca3f68a491c734ea5d74bd041aa1e0,
         type: 3}
@@ -16654,6 +16669,11 @@ PrefabInstance:
     - target: {fileID: -1128456160903397595, guid: e3ca3f68a491c734ea5d74bd041aa1e0,
         type: 3}
       propertyPath: m_RootOrder
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: -419558700768859187, guid: e3ca3f68a491c734ea5d74bd041aa1e0,
+        type: 3}
+      propertyPath: m_IsActive
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: -191168428489674004, guid: e3ca3f68a491c734ea5d74bd041aa1e0,
@@ -16856,6 +16876,11 @@ PrefabInstance:
       propertyPath: m_Materials.Array.data[2]
       value: 
       objectReference: {fileID: 2100000, guid: 5f5890662388326498cef58c69d8f512, type: 2}
+    - target: {fileID: 8567094875112489961, guid: e3ca3f68a491c734ea5d74bd041aa1e0,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 8
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e3ca3f68a491c734ea5d74bd041aa1e0, type: 3}
 --- !u!1 &1878863065 stripped
@@ -18039,6 +18064,10 @@ MonoBehaviour:
   - hash: 250157029
     name: Off
   - hash: 858664826
+    name: On
+  - hash: 1369297217
+    name: Off
+  - hash: 1113621315
     name: On
   autoFootsteps: 1
   autoLocomotion: 1

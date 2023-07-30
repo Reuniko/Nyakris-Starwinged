@@ -81,3 +81,7 @@ MonoBehaviour:
     valueType: 2
     saved: 1
     defaultValue: 0
+  - name: Sword 2 EFFECTS
+    valueType: 2
+    saved: 1
+    defaultValue: 1

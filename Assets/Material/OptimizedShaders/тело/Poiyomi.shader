@@ -566,7 +566,6 @@ Shader "Hidden/Locked/.poiyomi/Poiyomi 8.1/Poiyomi Toon/da90d9dac20a9744394a79f7
  #define _STOCHASTICMODE_DELIOT_HEITZ 
  #define _SUNDISK_SIMPLE 
  #define PROP_MATCAP 
- #define PROP_MATCAPMASK 
  #define PROP_MATCAP2 
  #define PROP_MATCAP2MASK 
  #define PROP_RIMMASK 
@@ -3649,7 +3648,6 @@ Shader "Hidden/Locked/.poiyomi/Poiyomi 8.1/Poiyomi Toon/da90d9dac20a9744394a79f7
  #define _STOCHASTICMODE_DELIOT_HEITZ 
  #define _SUNDISK_SIMPLE 
  #define PROP_MATCAP 
- #define PROP_MATCAPMASK 
  #define PROP_MATCAP2 
  #define PROP_MATCAP2MASK 
  #define PROP_RIMMASK 
@@ -6730,7 +6728,6 @@ Shader "Hidden/Locked/.poiyomi/Poiyomi 8.1/Poiyomi Toon/da90d9dac20a9744394a79f7
  #define _STOCHASTICMODE_DELIOT_HEITZ 
  #define _SUNDISK_SIMPLE 
  #define PROP_MATCAP 
- #define PROP_MATCAPMASK 
  #define PROP_MATCAP2 
  #define PROP_MATCAP2MASK 
  #define PROP_RIMMASK 
