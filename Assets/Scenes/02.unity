@@ -1366,7 +1366,7 @@ PrefabInstance:
     - target: {fileID: 1665193221343275969, guid: 0331f36341a34cb49a05016f7d02ce86,
         type: 3}
       propertyPath: m_RootOrder
-      value: 6
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 1665193221343275969, guid: 0331f36341a34cb49a05016f7d02ce86,
         type: 3}
@@ -16511,6 +16511,16 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: -9187157706865871965, guid: e3ca3f68a491c734ea5d74bd041aa1e0,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: -9048794901157447202, guid: e3ca3f68a491c734ea5d74bd041aa1e0,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: e3ca3f68a491c734ea5d74bd041aa1e0,
         type: 3}
       propertyPath: m_RootOrder
@@ -16631,6 +16641,11 @@ PrefabInstance:
       propertyPath: m_Materials.Array.data[0]
       value: 
       objectReference: {fileID: 2100000, guid: 68dedaab4caa6524cadc25d547a7d2e3, type: 2}
+    - target: {fileID: -1128456160903397595, guid: e3ca3f68a491c734ea5d74bd041aa1e0,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: -191168428489674004, guid: e3ca3f68a491c734ea5d74bd041aa1e0,
         type: 3}
       propertyPath: m_Materials.Array.data[0]
@@ -16796,6 +16811,11 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 5631970234333447461, guid: e3ca3f68a491c734ea5d74bd041aa1e0,
+        type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 11de8ccd8bf476449aec6d6bee5559b2, type: 2}
     - target: {fileID: 5866666021909216657, guid: e3ca3f68a491c734ea5d74bd041aa1e0,
         type: 3}
       propertyPath: m_Controller
@@ -18005,6 +18025,10 @@ MonoBehaviour:
   - hash: -53266446
     name: Off
   - hash: 1796109865
+    name: On
+  - hash: 250157029
+    name: Off
+  - hash: 858664826
     name: On
   autoFootsteps: 1
   autoLocomotion: 1
