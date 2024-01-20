@@ -101,3 +101,31 @@ MonoBehaviour:
     valueType: 2
     saved: 0
     defaultValue: 1
+  - name: PenUse
+    valueType: 2
+    saved: 0
+    defaultValue: 0
+  - name: PenErase
+    valueType: 2
+    saved: 0
+    defaultValue: 0
+  - name: PenPressure
+    valueType: 2
+    saved: 0
+    defaultValue: 0
+  - name: PenColor
+    valueType: 0
+    saved: 0
+    defaultValue: 0
+  - name: PenTracking
+    valueType: 0
+    saved: 0
+    defaultValue: 0
+  - name: PenSize
+    valueType: 1
+    saved: 1
+    defaultValue: 0.5
+  - name: PenEmission
+    valueType: 1
+    saved: 1
+    defaultValue: 0

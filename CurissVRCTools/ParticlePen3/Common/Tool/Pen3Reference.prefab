@@ -1,0 +1,64 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &9114151887421110904
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 9114151887421110907}
+  - component: {fileID: 667120551465698456}
+  m_Layer: 0
+  m_Name: Pen3Reference
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &9114151887421110907
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 9114151887421110904}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &667120551465698456
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 9114151887421110904}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4900117724a0aad46861eff2c710ca25, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  root: {fileID: 102900000, guid: d3268d30c012cb84b8c2150abe50d973, type: 3}
+  PenPrefab: {fileID: 2290560006300590952, guid: cd5a334d1472d4444872b84c2e8be0c2,
+    type: 3}
+  fxBase: {fileID: 9100000, guid: e38d81135f5a56c47996d6dc6d311098, type: 2}
+  gestureBase: {fileID: 9100000, guid: bf953dd82b2a16649be70e458be11c07, type: 2}
+  gestureR: {fileID: 9100000, guid: 0d7144fd12ffcc8478f1fd683977edb6, type: 2}
+  gestureL: {fileID: 9100000, guid: 601a54b7de4f87a429f5db446304578d, type: 2}
+  fxR: {fileID: 9100000, guid: 7202e90b5b7a09b4d806eb044ba00486, type: 2}
+  fxL: {fileID: 9100000, guid: 7eff61978e5b8914d818a4ae00933774, type: 2}
+  fxRemove: {fileID: 9100000, guid: 120903db1cc9a814fac101b3f678be2a, type: 2}
+  menuBase: {fileID: 11400000, guid: e2b63bb49468c0e44a7d079adf6b65a9, type: 2}
+  menuPen: {fileID: 11400000, guid: 295dd8f0086ce9c41a6ae6eb913cd3d3, type: 2}
+  menuMain: {fileID: 11400000, guid: 24e89a416ad107b4abf2b9b02461f1eb, type: 2}
+  param: {fileID: 11400000, guid: c6ac2a823897081439db38d441660b85, type: 2}
+  paramBase: {fileID: 11400000, guid: b6ca9c6e8efc4c849a2ce648fd1ae946, type: 2}
+  colorDummy: {fileID: 2800000, guid: 84a0097b7df2f4c43a1173cbb20d4a87, type: 3}
+  gradientDummy: {fileID: 2800000, guid: 13da6845a5d3728409154a00d6ee911f, type: 3}
+  TitleBG: {fileID: 2800000, guid: 2312448f173c89a47b4a276ddc80083c, type: 3}
+  TitleContent: {fileID: 2800000, guid: 35bf22f8f0e5d6040abff3b1c92d0aa3, type: 3}

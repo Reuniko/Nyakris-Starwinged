@@ -1,0 +1,16 @@
+fileFormatVersion: 2
+guid: af50629ffe0b7f44e9671036a5ce1d28
+MonoImporter:
+  externalObjects: {}
+  serializedVersion: 2
+  defaultReferences:
+  - reference: {fileID: 667120551465698456, guid: c3976e156301f7c439706324f8bb74a6,
+      type: 3}
+  - avatar: {instanceID: 0}
+  - InkTarget: {instanceID: 0}
+  - penObject: {instanceID: 0}
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
