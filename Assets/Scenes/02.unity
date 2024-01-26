@@ -23,7 +23,7 @@ RenderSettings:
   m_AmbientSkyColor: {r: 0.212, g: 0.227, b: 0.259, a: 1}
   m_AmbientEquatorColor: {r: 0.114, g: 0.125, b: 0.133, a: 1}
   m_AmbientGroundColor: {r: 0.047, g: 0.043, b: 0.035, a: 1}
-  m_AmbientIntensity: 1
+  m_AmbientIntensity: 0
   m_AmbientMode: 0
   m_SubtractiveShadowColor: {r: 0.42, g: 0.478, b: 0.627, a: 1}
   m_SkyboxMaterial: {fileID: 10304, guid: 0000000000000000f000000000000000, type: 0}
@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.18028378, g: 0.22571412, b: 0.30692285, a: 1}
+  m_IndirectSpecularColor: {r: 0.17584112, g: 0.22004634, b: 0.30237427, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -6184,7 +6184,7 @@ PrefabInstance:
     - target: {fileID: 1665193221343275969, guid: 0331f36341a34cb49a05016f7d02ce86,
         type: 3}
       propertyPath: m_RootOrder
-      value: 8
+      value: 11
       objectReference: {fileID: 0}
     - target: {fileID: 1665193221343275969, guid: 0331f36341a34cb49a05016f7d02ce86,
         type: 3}
@@ -16481,7 +16481,7 @@ Light:
   serializedVersion: 10
   m_Type: 1
   m_Shape: 0
-  m_Color: {r: 1, g: 0.95686275, b: 0.8392157, a: 1}
+  m_Color: {r: 1, g: 0.99082524, b: 0.9858491, a: 1}
   m_Intensity: 0.5
   m_Range: 10
   m_SpotAngle: 30
@@ -16538,13 +16538,13 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 891555653}
-  m_LocalRotation: {x: 0.40821788, y: -0.23456968, z: 0.10938163, w: 0.8754261}
+  m_LocalRotation: {x: 0.8064011, y: -0.14247489, z: 0.2160745, w: 0.5317236}
   m_LocalPosition: {x: 0, y: 3, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 2
-  m_LocalEulerAnglesHint: {x: 50, y: -30, z: 0}
+  m_LocalEulerAnglesHint: {x: 113.2, y: -30, z: 0}
 --- !u!1 &897459292
 GameObject:
   m_ObjectHideFlags: 0
@@ -19657,7 +19657,7 @@ Transform:
   - {fileID: 152661878}
   - {fileID: 437951690}
   m_Father: {fileID: 1878863069}
-  m_RootOrder: 12
+  m_RootOrder: 8
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1174358475
 GameObject:
@@ -28661,7 +28661,7 @@ PrefabInstance:
     - target: {fileID: -2494694711851296478, guid: e3ca3f68a491c734ea5d74bd041aa1e0,
         type: 3}
       propertyPath: m_RootOrder
-      value: 11
+      value: 12
       objectReference: {fileID: 0}
     - target: {fileID: -2494694711851296478, guid: e3ca3f68a491c734ea5d74bd041aa1e0,
         type: 3}
@@ -28752,12 +28752,12 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Materials.Array.data[1]
       value: 
-      objectReference: {fileID: 2100000, guid: da90d9dac20a9744394a79f775e4a25f, type: 2}
+      objectReference: {fileID: 2100000, guid: 5989c9110e4c98b4ea28a32a83a98275, type: 2}
     - target: {fileID: 1630794972795428178, guid: e3ca3f68a491c734ea5d74bd041aa1e0,
         type: 3}
       propertyPath: m_Materials.Array.data[2]
       value: 
-      objectReference: {fileID: 2100000, guid: 44c555058e6bf314bae39fcccee65b92, type: 2}
+      objectReference: {fileID: 2100000, guid: 1f3cb3374a5de244b9282c699b253f3f, type: 2}
     - target: {fileID: 1630794972795428178, guid: e3ca3f68a491c734ea5d74bd041aa1e0,
         type: 3}
       propertyPath: m_Materials.Array.data[3]
@@ -29012,7 +29012,7 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Controller
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 9100000, guid: 0adf40c5fa4b6e048b0a5c46be590cc9, type: 2}
     - target: {fileID: 6371836146868173509, guid: e3ca3f68a491c734ea5d74bd041aa1e0,
         type: 3}
       propertyPath: m_IsActive
@@ -30350,6 +30350,10 @@ MonoBehaviour:
     name: SizeWeight
   - hash: 260882296
     name: PenEmission
+  - hash: 708260481
+    name: to_human
+  - hash: 1614916856
+    name: to_furry
   autoFootsteps: 1
   autoLocomotion: 1
   collider_head:

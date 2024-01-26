@@ -1700,7 +1700,7 @@ Material:
     - _GlitterColorThemeIndex: 0
     - _GlitterContrast: 300
     - _GlitterContrastAnimated: 0
-    - _GlitterEnable: 1
+    - _GlitterEnable: 0
     - _GlitterEnableAnimated: 0
     - _GlitterFrequency: 300
     - _GlitterFrequencyAnimated: 0

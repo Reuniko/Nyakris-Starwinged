@@ -392,56 +392,6 @@ Shader "Hidden/Locked/.poiyomi/Poiyomi 8.1/Poiyomi Toon/da90d9dac20a9744394a79f7
 		[HideInInspector] m_end_rim1LightOptions ("Rim Lighting", Float) = 0
 		[HideInInspector] m_end_rimLightOptions ("Rim Lighting", Float) = 0
 		[HideInInspector] m_specialFXCategory ("Special FX", Float) = 0
-		[HideInInspector] m_start_glitter ("Glitter / Sparkle--{reference_property:_GlitterEnable,button_help:{text:Tutorial,action:{type:URL,data:https://www.poiyomi.com/special-fx/glitter},hover:Documentation}}", Float) = 0
-		[HideInInspector][ThryToggle(_SUNDISK_SIMPLE)]_GlitterEnable ("Enable Glitter", Float) = 0
-		[ThryWideEnum(UV0, 0, UV1, 1, UV2, 2, UV3, 3, Panosphere, 4, World Pos XZ, 5, Polar UV, 6, Distorted UV, 7)] _GlitterUV ("UV", Int) = 0
-		[Enum(Angle, 0, Linear Emission, 1, Light Reflections, 2)]_GlitterMode ("Mode", Int) = 0
-		[Enum(Circle, 0, Square, 1)]_GlitterShape ("Shape", Int) = 0
-		[Enum(Add, 0, Replace, 1)] _GlitterBlendType ("Blend Mode", Int) = 0
-		_GlitterUseNormals ("Use Normals", Range(0, 1)) = 0
-		[HDR]_GlitterColor ("Color--{reference_property:_GlitterColorThemeIndex}", Color) = (1, 1, 1)
-		[HideInInspector][ThryWideEnum(Off, 0, Theme Color 0, 1, Theme Color 1, 2, Theme Color 2, 3, Theme Color 3, 4, ColorChord 0, 5, ColorChord 1, 6, ColorChord 2, 7, ColorChord 3, 8, AL Theme 0, 9, AL Theme 1, 10, AL Theme 2, 11, AL Theme 3, 12)] _GlitterColorThemeIndex ("", Int) = 0
-		_GlitterUseSurfaceColor ("Use Surface Color", Range(0, 1)) = 0
-		[sRGBWarning(true)]_GlitterColorMap ("Glitter Color Map--{reference_properties:[_GlitterColorMapPan, _GlitterColorMapUV]}", 2D) = "white" { }
-		[HideInInspector][Vector2]_GlitterColorMapPan ("Panning", Vector) = (0, 0, 0, 0)
-		[HideInInspector][ThryWideEnum(UV0, 0, UV1, 1, UV2, 2, UV3, 3, Panosphere, 4, World Pos XZ, 5, Polar UV, 6, Distorted UV, 7)] _GlitterColorMapUV ("UV", Int) = 0
-		[HideInInspector][Vector2]_GlitterPan ("Panning", Vector) = (0, 0, 0, 0)
-		[sRGBWarning]_GlitterMask ("Glitter Mask--{reference_properties:[_GlitterMaskPan, _GlitterMaskUV, _GlitterMaskChannel]}", 2D) = "white" { }
-		[HideInInspector][Vector2]_GlitterMaskPan ("Panning", Vector) = (0, 0, 0, 0)
-		[HideInInspector][ThryWideEnum(UV0, 0, UV1, 1, UV2, 2, UV3, 3, Panosphere, 4, World Pos XZ, 5, Polar UV, 6, Distorted UV, 7)] _GlitterMaskUV ("UV", Int) = 0
-		[HideInInspector][Enum(R, 0, G, 1, B, 2, A, 3)]_GlitterMaskChannel ("Channel", Float) = 0
-		[ThryWideEnum(Off, 0, 1R, 1, 1G, 2, 1B, 3, 1A, 4, 2R, 5, 2G, 6, 2B, 7, 2A, 8, 3R, 9, 3G, 10, 3B, 11, 3A, 12, 4R, 13, 4G, 14, 4B, 15, 4A, 16)] _GlitterMaskGlobalMask ("Global Mask--{reference_property:_GlitterMaskGlobalMaskBlendType}", Int) = 0
-		[HideInInspector][ThryWideEnum(Replace, 0, Darken, 1, Multiply, 2, Color Burn, 3, Linear Burn, 4, Lighten, 5, Screen, 6, Color Dodge, 7, Linear Dodge(Add), 8, Overlay, 9, Soft Lighten, 10, Hard Light, 11, Vivid Light, 12, Linear Light, 13, Pin Light, 14, Hard Mix, 15, Difference, 16, Exclusion, 17, Subtract, 18, Divide, 19)]_GlitterMaskGlobalMaskBlendType ("Blending", Range(0, 1)) = 2
-		_GlitterTexture ("Glitter Texture--{reference_properties:[_GlitterTexturePan]}", 2D) = "white" { }
-		[HideInInspector][Vector2]_GlitterTexturePan ("Panning", Vector) = (0, 0, 0, 0)
-		[Vector2]_GlitterUVPanning ("Panning Speed", Vector) = (0, 0, 0, 0)
-		_GlitterTextureRotation ("Rotation Speed", Float) = 0
-		_GlitterFrequency ("Glitter Density", Float) = 300.0
-		_GlitterJitter ("Glitter Jitter", Range(0, 1)) = 1.0
-		_GlitterSpeed ("Glitter Speed", Float) = 10.0
-		_GlitterSize ("Glitter Size", Range(0, 1)) = .3
-		_GlitterContrast ("Glitter Contrast--{condition_showS:(_GlitterMode==0||_GlitterMode==2)}", Range(1, 1000)) = 300
-		_GlitterAngleRange ("Glitter Angle Range--{condition_showS:(_GlitterMode==0||_GlitterMode==2)}", Range(0, 90)) = 90
-		_GlitterMinBrightness ("Glitter Min Brightness", Range(0, 1)) = 0
-		_GlitterBrightness ("Glitter Max Brightness", Range(0, 40)) = 3
-		_GlitterBias ("Glitter Bias--{condition_show:(_GlitterMode==0)}", Range(0, 1)) = .8
-		_GlitterHideInShadow ("Hide in shadow", Range(0, 1)) = 0
-		_GlitterCenterSize ("dim light--{condition_show:{type:AND,condition1:{type:PROPERTY_BOOL,data:_GlitterMode==1},condition2:{type:PROPERTY_BOOL,data:_GlitterShape==1}}}", Range(0, 1)) = .08
-		_glitterFrequencyLinearEmissive ("Frequency--{condition_show:{type:PROPERTY_BOOL,data:_GlitterMode==1}}", Range(0, 100)) = 20
-		_GlitterJaggyFix ("Jaggy Fix--{condition_show:{type:PROPERTY_BOOL,data:_GlitterShape==1}}", Range(0, .1)) = .0
-		[Space(10)]
-		[ThryToggleUI(true)]_GlitterHueShiftEnabled ("<size=13><b>  Hue Shift</b></size>", Float) = 0
-		_GlitterHueShiftSpeed ("Shift Speed--{condition_showS:(_GlitterHueShiftEnabled==1)}", Float) = 0
-		_GlitterHueShift ("Hue Shift--{condition_showS:(_GlitterHueShiftEnabled==1)}", Range(0, 1)) = 0
-		[HideInInspector] m_start_GlitterRandomStuff ("Random Stuff", Float) = 0
-		[ToggleUI]_GlitterRandomColors ("Random Colors", Float) = 0
-		[MultiSlider]_GlitterMinMaxSaturation ("Saturation Range", Vector) = (0.8, 1, 0, 1)
-		[MultiSlider]_GlitterMinMaxBrightness ("Brightness Range", Vector) = (0.8, 1, 0, 1)
-		[ToggleUI]_GlitterRandomSize ("Random Size", Float) = 0
-		[MultiSlider]_GlitterMinMaxSize ("Size Range", Vector) = (0.1, 0.5, 0, 1)
-		[ToggleUI]_GlitterRandomRotation ("Random Tex Rotation", Float) = 0
-		[HideInInspector] m_end_GlitterRandomStuff ("Random Stuff", Float) = 0
-		[HideInInspector] m_end_glitter ("Glitter / Sparkle", Float) = 0
 		[HideInInspector] m_modifierCategory ("Modifiers", Float) = 0
 		[HideInInspector] m_start_Stochastic ("Stochastic Sampling", Float) = 0
 		[KeywordEnum(Deliot Heitz, Hextile, None)] _StochasticMode ("Sampling Mode", Float) = 0
@@ -564,12 +514,10 @@ Shader "Hidden/Locked/.poiyomi/Poiyomi 8.1/Poiyomi Toon/da90d9dac20a9744394a79f7
  #define _RIM2STYLE_POIYOMI 
  #define _RIMSTYLE_POIYOMI 
  #define _STOCHASTICMODE_DELIOT_HEITZ 
- #define _SUNDISK_SIMPLE 
  #define PROP_MATCAP 
  #define PROP_MATCAP2 
  #define PROP_MATCAP2MASK 
  #define PROP_RIMMASK 
- #define PROP_GLITTERMASK 
  #define OPTIMIZER_ENABLED 
 			#pragma target 5.0
 			#pragma skip_variants LIGHTMAP_ON DYNAMICLIGHTMAP_ON LIGHTMAP_SHADOW_MIXING SHADOWS_SHADOWMASK DIRLIGHTMAP_COMBINED _MIXED_LIGHTING_SUBTRACTIVE
@@ -884,62 +832,6 @@ Shader "Hidden/Locked/.poiyomi/Poiyomi 8.1/Poiyomi Toon/da90d9dac20a9744394a79f7
 			float _RimHueShiftEnabled;
 			float _RimHueShiftSpeed;
 			float _RimHueShift;
-			#endif
-			#ifdef _SUNDISK_SIMPLE
-			float _GlitterUseNormals;
-			float _GlitterUV;
-			half3 _GlitterColor;
-			float _GlitterColorThemeIndex;
-			float2 _GlitterPan;
-			half _GlitterSpeed;
-			half _GlitterBrightness;
-			float _GlitterFrequency;
-			float _GlitterJitter;
-			half _GlitterSize;
-			half _GlitterContrast;
-			half _GlitterAngleRange;
-			half _GlitterMinBrightness;
-			half _GlitterBias;
-			fixed _GlitterUseSurfaceColor;
-			float _GlitterBlendType;
-			float _GlitterMode;
-			float _GlitterShape;
-			float _GlitterCenterSize;
-			float _glitterFrequencyLinearEmissive;
-			float _GlitterJaggyFix;
-			float _GlitterTextureRotation;
-			float2 _GlitterUVPanning;
-			float _GlitterHueShiftEnabled;
-			float _GlitterHueShiftSpeed;
-			float _GlitterHueShift;
-			float _GlitterHideInShadow;
-			float _GlitterRandomColors;
-			float2 _GlitterMinMaxSaturation;
-			float2 _GlitterMinMaxBrightness;
-			float _GlitterRandomSize;
-			float4 _GlitterMinMaxSize;
-			float _GlitterRandomRotation;
-			#if defined(PROP_GLITTERMASK) || !defined(OPTIMIZER_ENABLED)
-			Texture2D _GlitterMask;
-			#endif
-			float4 _GlitterMask_ST;
-			float2 _GlitterMaskPan;
-			float _GlitterMaskUV;
-			float _GlitterMaskChannel;
-			float _GlitterMaskGlobalMask;
-			float _GlitterMaskGlobalMaskBlendType;
-			#if defined(PROP_GLITTERCOLORMAP) || !defined(OPTIMIZER_ENABLED)
-			Texture2D _GlitterColorMap;
-			#endif
-			float4 _GlitterColorMap_ST;
-			float2 _GlitterColorMapPan;
-			float _GlitterColorMapUV;
-			#if defined(PROP_GLITTERTEXTURE) || !defined(OPTIMIZER_ENABLED)
-			Texture2D _GlitterTexture;
-			#endif
-			float4 _GlitterTexture_ST;
-			float2 _GlitterTexturePan;
-			float _GlitterTextureUV;
 			#endif
 			float _PPLightingMultiplier;
 			float _PPLightingAddition;
@@ -2985,185 +2877,6 @@ Shader "Hidden/Locked/.poiyomi/Poiyomi 8.1/Poiyomi Toon/da90d9dac20a9744394a79f7
 			}
 			#endif
 			#endif
-			#ifdef _SUNDISK_SIMPLE
-			float3 RandomColorFromPoint(float2 rando)
-			{
-				fixed hue = random2(rando.x + rando.y).x;
-				fixed saturation = lerp(float4(0.8,1,0,1).x, float4(0.8,1,0,1).y, rando.x);
-				fixed value = lerp(float4(0.8,1,0,1).x, float4(0.8,1,0,1).y, rando.y);
-				float3 hsv = float3(hue, saturation, value);
-				return HSVtoRGB(hsv);
-			}
-			void applyGlitter(inout PoiFragData poiFragData, in PoiMesh poiMesh, in PoiCam poiCam, in PoiLight poiLight, in PoiMods poiMods)
-			{
-				float2 st = frac(poiMesh.uv[(0.0 /*_GlitterUV*/)] + float4(0,0,0,0).xy * _Time.x) * (300.0 /*_GlitterFrequency*/);
-				float2 i_st = floor(st);
-				float2 f_st = frac(st);
-				float m_dist = 10.;  // minimun distance
-				float2 m_point = 0;        // minimum point
-				float2 randoPoint = 0;
-				float2 dank;
-				for (int j = -1; j <= 1; j++)
-				{
-					for (int i = -1; i <= 1; i++)
-					{
-						float2 neighbor = float2(i, j);
-						float2 pos = random2(i_st + neighbor);
-						float2 rando = pos;
-						pos = 0.5 + 0.5 * sin((1.0 /*_GlitterJitter*/) * 6.2831 * pos);
-						float2 diff = neighbor + pos - f_st;
-						float dist = length(diff);
-						if (dist < m_dist)
-						{
-							dank = diff;
-							m_dist = dist;
-							m_point = pos;
-							randoPoint = rando;
-						}
-					}
-				}
-				float randomFromPoint = random(randoPoint);
-				float size = (0.875 /*_GlitterSize*/);
-				
-				if ((0.0 /*_GlitterRandomSize*/))
-				{
-					size = remapClamped(0, 1, randomFromPoint, float4(0.1,0.5,0,1).x, float4(0.1,0.5,0,1).y);
-				}
-				half glitterAlpha = 1;
-				switch((1.0 /*_GlitterShape*/))
-				{
-					case 0: //circle
-					glitterAlpha = saturate((size - m_dist) / clamp(fwidth(m_dist), 0.0001, 1.0));
-					break;
-					case 1: //sqaure
-					float jaggyFix = pow(poiCam.distanceToVert, 2) * (0.0 /*_GlitterJaggyFix*/);
-					
-					if ((0.0 /*_GlitterRandomRotation*/) == 1 || (0.0 /*_GlitterTextureRotation*/) != 0)
-					{
-						float2 center = float2(0, 0);
-						float randomBoy = 0;
-						
-						if ((0.0 /*_GlitterRandomRotation*/))
-						{
-							randomBoy = random(randoPoint);
-						}
-						float theta = radians((randomBoy + _Time.x * (0.0 /*_GlitterTextureRotation*/)) * 360);
-						float cs = cos(theta);
-						float sn = sin(theta);
-						dank = float2((dank.x - center.x) * cs - (dank.y - center.y) * sn + center.x, (dank.x - center.x) * sn + (dank.y - center.y) * cs + center.y);
-						glitterAlpha = (1. - smoothstep(size - .1 * jaggyFix, size, abs(dank.x))) * (1. - smoothstep(size - .1 * jaggyFix, size, abs(dank.y)));
-					}
-					else
-					{
-						glitterAlpha = (1. - smoothstep(size - .1 * jaggyFix, size, abs(dank.x))) * (1. - smoothstep(size - .1 * jaggyFix, size, abs(dank.y)));
-					}
-					break;
-				}
-				float3 finalGlitter = 0;
-				half3 glitterColor = poiThemeColor(poiMods, float4(0.08490568,0,0,1), (0.0 /*_GlitterColorThemeIndex*/));
-				float3 norm = lerp(poiMesh.normals[0], poiMesh.normals[1], (0.0 /*_GlitterUseNormals*/));
-				float3 randomRotation = 0;
-				switch((0.0 /*_GlitterMode*/))
-				{
-					case 0:
-					
-					if ((5.0 /*_GlitterSpeed*/) > 0)
-					{
-						randomRotation = randomFloat3WiggleRange(randoPoint, (90.0 /*_GlitterAngleRange*/), (5.0 /*_GlitterSpeed*/));
-					}
-					else
-					{
-						randomRotation = randomFloat3Range(randoPoint, (90.0 /*_GlitterAngleRange*/));
-					}
-					float3 glitterReflectionDirection = normalize(mul(poiRotationMatrixFromAngles(randomRotation), norm));
-					finalGlitter = lerp(0, (0.0 /*_GlitterMinBrightness*/) * glitterAlpha, glitterAlpha) + max(pow(saturate(dot(lerp(glitterReflectionDirection, poiCam.viewDir, (0.8 /*_GlitterBias*/)), poiCam.viewDir)), (300.0 /*_GlitterContrast*/)), 0);
-					finalGlitter *= glitterAlpha;
-					break;
-					case 1:
-					float offset = random(randoPoint);
-					float brightness = sin((_Time.x + offset) * (5.0 /*_GlitterSpeed*/)) * (20.0 /*_glitterFrequencyLinearEmissive*/) - ((20.0 /*_glitterFrequencyLinearEmissive*/) - 1);
-					finalGlitter = max((0.0 /*_GlitterMinBrightness*/) * glitterAlpha, brightness * glitterAlpha * smoothstep(0, 1, 1 - m_dist * (0.08 /*_GlitterCenterSize*/) * 10));
-					break;
-					case 2:
-					if ((5.0 /*_GlitterSpeed*/) > 0)
-					{
-						randomRotation = randomFloat3WiggleRange(randoPoint, (90.0 /*_GlitterAngleRange*/), (5.0 /*_GlitterSpeed*/));
-					}
-					else
-					{
-						randomRotation = randomFloat3Range(randoPoint, (90.0 /*_GlitterAngleRange*/));
-					}
-					float3 glitterLightReflectionDirection = normalize(mul(poiRotationMatrixFromAngles(randomRotation), norm));
-					#ifdef POI_PASS_ADD
-					glitterAlpha *= poiLight.nDotLSaturated * poiLight.attenuation;
-					#endif
-					#ifdef UNITY_PASS_FORWARDBASE
-					glitterAlpha *= poiLight.nDotLSaturated;
-					#endif
-					float3 halfDir = normalize(poiLight.direction + poiCam.viewDir);
-					float specAngle = max(dot(halfDir, glitterLightReflectionDirection), 0.0);
-					finalGlitter = lerp(0, (0.0 /*_GlitterMinBrightness*/) * glitterAlpha, glitterAlpha) + max(pow(specAngle, (300.0 /*_GlitterContrast*/)), 0);
-					glitterColor *= poiLight.directColor;
-					finalGlitter *= glitterAlpha;
-					break;
-				}
-				glitterColor *= lerp(1, poiFragData.baseColor, (0.0 /*_GlitterUseSurfaceColor*/));
-				#if defined(PROP_GLITTERCOLORMAP) || !defined(OPTIMIZER_ENABLED)
-				glitterColor *= POI2D_SAMPLER_PAN(_GlitterColorMap, _MainTex, poiUV(poiMesh.uv[(0.0 /*_GlitterColorMapUV*/)], float4(1,1,0,0)), float4(0,0,0,0)).rgb;
-				#endif
-				float2 uv = remapClamped(-size, size, dank, 0, 1);
-				
-				if ((0.0 /*_GlitterRandomRotation*/) == 1 || (0.0 /*_GlitterTextureRotation*/) != 0 && !(1.0 /*_GlitterShape*/))
-				{
-					float2 fakeUVCenter = float2(.5, .5);
-					float randomBoy = 0;
-					
-					if ((0.0 /*_GlitterRandomRotation*/))
-					{
-						randomBoy = random(randoPoint);
-					}
-					float theta = radians((randomBoy + _Time.x * (0.0 /*_GlitterTextureRotation*/)) * 360);
-					float cs = cos(theta);
-					float sn = sin(theta);
-					uv = float2((uv.x - fakeUVCenter.x) * cs - (uv.y - fakeUVCenter.y) * sn + fakeUVCenter.x, (uv.x - fakeUVCenter.x) * sn + (uv.y - fakeUVCenter.y) * cs + fakeUVCenter.y);
-				}
-				#if defined(PROP_GLITTERTEXTURE) || !defined(OPTIMIZER_ENABLED)
-				float4 glitterTexture = POI2D_SAMPLER_PAN(_GlitterTexture, _MainTex, poiUV(uv, float4(1,1,0,0)), float4(0,0,0,0));
-				#else
-				float4 glitterTexture = 1;
-				#endif
-				glitterColor *= glitterTexture.rgb;
-				#if defined(PROP_GLITTERMASK) || !defined(OPTIMIZER_ENABLED)
-				float glitterMask = POI2D_SAMPLER_PAN(_GlitterMask, _MainTex, poiUV(poiMesh.uv[(0.0 /*_GlitterMaskUV*/)], float4(1,1,0,0)), float4(0,0,0,0))[(0.0 /*_GlitterMaskChannel*/)];
-				#else
-				float glitterMask = 1;
-				#endif
-				glitterMask *= lerp(1, poiLight.rampedLightMap, (0.0 /*_GlitterHideInShadow*/));
-				if ((0.0 /*_GlitterMaskGlobalMask*/) > 0)
-				{
-					glitterMask = customBlend(glitterMask, poiMods.globalMask[(0.0 /*_GlitterMaskGlobalMask*/) - 1], (2.0 /*_GlitterMaskGlobalMaskBlendType*/));
-				}
-				if ((0.0 /*_GlitterRandomColors*/))
-				{
-					glitterColor *= RandomColorFromPoint(random2(randoPoint.x + randoPoint.y));
-				}
-				
-				if ((1.0 /*_GlitterHueShiftEnabled*/))
-				{
-					glitterColor.rgb = hueShift(glitterColor.rgb, _GlitterHueShift + _Time.x * (0.0 /*_GlitterHueShiftSpeed*/));
-				}
-				
-				if ((0.0 /*_GlitterBlendType*/) == 1)
-				{
-					poiFragData.baseColor = lerp(poiFragData.baseColor, finalGlitter * glitterColor * (3.0 /*_GlitterBrightness*/), finalGlitter * glitterTexture.a * glitterMask);
-					poiFragData.emission += finalGlitter * glitterColor * max(0, ((3.0 /*_GlitterBrightness*/) - 1) * glitterTexture.a) * glitterMask;
-				}
-				else
-				{
-					poiFragData.emission += finalGlitter * glitterColor * (3.0 /*_GlitterBrightness*/) * glitterTexture.a * glitterMask;
-				}
-			}
-			#endif
 			float4 frag(VertexOut i, uint facing : SV_IsFrontFace) : SV_Target
 			{
 				UNITY_SETUP_INSTANCE_ID(i);
@@ -3580,9 +3293,6 @@ Shader "Hidden/Locked/.poiyomi/Poiyomi 8.1/Poiyomi Toon/da90d9dac20a9744394a79f7
 				ApplyPoiyomiRimLighting(poiFragData, poiMesh, poiCam, poiLight, poiMods, (1.0 /*_Is_NormalMapToRimLight*/), (0.0 /*_RimLightingInvert*/), (1.0 /*_RimPower*/), (0.7 /*_RimStrength*/), (0.0 /*_RimShadowWidth*/), (0.0 /*_RimShadowToggle*/), (0.8 /*_RimWidth*/), (1.0 /*_RimBlendStrength*/), rimMask, (0.0 /*_RimGlobalMask*/), (2.0 /*_RimGlobalMaskBlendType*/), rimColor, float4(1,0,0,1), (0.0 /*_RimLightColorThemeIndex*/), (1.0 /*_RimHueShiftEnabled*/), _RimHueShift, (0.0 /*_RimHueShiftSpeed*/), (0.0 /*_RimSharpness*/), (0.0 /*_RimShadowMaskRampType*/), (0.0 /*_RimShadowMaskInvert*/), (1.0 /*_RimShadowMaskStrength*/), float4(0,0,0,1), (0.0 /*_RimApplyGlobalMaskIndex*/), (2.0 /*_RimApplyGlobalMaskBlendType*/), (0.0 /*_RimBaseColorMix*/), (1.0 /*_RimBrightness*/), (0.0 /*_RimBlendMode*/), AudioLinkRimWidthBand, AudioLinkRimWidthAdd, AudioLinkRimEmissionBand, AudioLinkRimEmissionAdd, AudioLinkRimBrightnessBand, AudioLinkRimBrightnessAdd, (0.0 /*_RimClamp*/));
 				#endif
 				#endif
-				#ifdef _SUNDISK_SIMPLE
-				applyGlitter(poiFragData, poiMesh, poiCam, poiLight, poiMods);
-				#endif
 				
 				if ((0.0 /*_AlphaPremultiply*/))
 				{
@@ -3646,12 +3356,10 @@ Shader "Hidden/Locked/.poiyomi/Poiyomi 8.1/Poiyomi Toon/da90d9dac20a9744394a79f7
  #define _RIM2STYLE_POIYOMI 
  #define _RIMSTYLE_POIYOMI 
  #define _STOCHASTICMODE_DELIOT_HEITZ 
- #define _SUNDISK_SIMPLE 
  #define PROP_MATCAP 
  #define PROP_MATCAP2 
  #define PROP_MATCAP2MASK 
  #define PROP_RIMMASK 
- #define PROP_GLITTERMASK 
  #define OPTIMIZER_ENABLED 
 			#pragma target 5.0
 			#pragma skip_variants LIGHTMAP_ON DYNAMICLIGHTMAP_ON LIGHTMAP_SHADOW_MIXING SHADOWS_SHADOWMASK DIRLIGHTMAP_COMBINED _MIXED_LIGHTING_SUBTRACTIVE
@@ -3965,62 +3673,6 @@ Shader "Hidden/Locked/.poiyomi/Poiyomi 8.1/Poiyomi Toon/da90d9dac20a9744394a79f7
 			float _RimHueShiftEnabled;
 			float _RimHueShiftSpeed;
 			float _RimHueShift;
-			#endif
-			#ifdef _SUNDISK_SIMPLE
-			float _GlitterUseNormals;
-			float _GlitterUV;
-			half3 _GlitterColor;
-			float _GlitterColorThemeIndex;
-			float2 _GlitterPan;
-			half _GlitterSpeed;
-			half _GlitterBrightness;
-			float _GlitterFrequency;
-			float _GlitterJitter;
-			half _GlitterSize;
-			half _GlitterContrast;
-			half _GlitterAngleRange;
-			half _GlitterMinBrightness;
-			half _GlitterBias;
-			fixed _GlitterUseSurfaceColor;
-			float _GlitterBlendType;
-			float _GlitterMode;
-			float _GlitterShape;
-			float _GlitterCenterSize;
-			float _glitterFrequencyLinearEmissive;
-			float _GlitterJaggyFix;
-			float _GlitterTextureRotation;
-			float2 _GlitterUVPanning;
-			float _GlitterHueShiftEnabled;
-			float _GlitterHueShiftSpeed;
-			float _GlitterHueShift;
-			float _GlitterHideInShadow;
-			float _GlitterRandomColors;
-			float2 _GlitterMinMaxSaturation;
-			float2 _GlitterMinMaxBrightness;
-			float _GlitterRandomSize;
-			float4 _GlitterMinMaxSize;
-			float _GlitterRandomRotation;
-			#if defined(PROP_GLITTERMASK) || !defined(OPTIMIZER_ENABLED)
-			Texture2D _GlitterMask;
-			#endif
-			float4 _GlitterMask_ST;
-			float2 _GlitterMaskPan;
-			float _GlitterMaskUV;
-			float _GlitterMaskChannel;
-			float _GlitterMaskGlobalMask;
-			float _GlitterMaskGlobalMaskBlendType;
-			#if defined(PROP_GLITTERCOLORMAP) || !defined(OPTIMIZER_ENABLED)
-			Texture2D _GlitterColorMap;
-			#endif
-			float4 _GlitterColorMap_ST;
-			float2 _GlitterColorMapPan;
-			float _GlitterColorMapUV;
-			#if defined(PROP_GLITTERTEXTURE) || !defined(OPTIMIZER_ENABLED)
-			Texture2D _GlitterTexture;
-			#endif
-			float4 _GlitterTexture_ST;
-			float2 _GlitterTexturePan;
-			float _GlitterTextureUV;
 			#endif
 			struct appdata
 			{
@@ -6062,185 +5714,6 @@ Shader "Hidden/Locked/.poiyomi/Poiyomi 8.1/Poiyomi Toon/da90d9dac20a9744394a79f7
 			}
 			#endif
 			#endif
-			#ifdef _SUNDISK_SIMPLE
-			float3 RandomColorFromPoint(float2 rando)
-			{
-				fixed hue = random2(rando.x + rando.y).x;
-				fixed saturation = lerp(float4(0.8,1,0,1).x, float4(0.8,1,0,1).y, rando.x);
-				fixed value = lerp(float4(0.8,1,0,1).x, float4(0.8,1,0,1).y, rando.y);
-				float3 hsv = float3(hue, saturation, value);
-				return HSVtoRGB(hsv);
-			}
-			void applyGlitter(inout PoiFragData poiFragData, in PoiMesh poiMesh, in PoiCam poiCam, in PoiLight poiLight, in PoiMods poiMods)
-			{
-				float2 st = frac(poiMesh.uv[(0.0 /*_GlitterUV*/)] + float4(0,0,0,0).xy * _Time.x) * (300.0 /*_GlitterFrequency*/);
-				float2 i_st = floor(st);
-				float2 f_st = frac(st);
-				float m_dist = 10.;  // minimun distance
-				float2 m_point = 0;        // minimum point
-				float2 randoPoint = 0;
-				float2 dank;
-				for (int j = -1; j <= 1; j++)
-				{
-					for (int i = -1; i <= 1; i++)
-					{
-						float2 neighbor = float2(i, j);
-						float2 pos = random2(i_st + neighbor);
-						float2 rando = pos;
-						pos = 0.5 + 0.5 * sin((1.0 /*_GlitterJitter*/) * 6.2831 * pos);
-						float2 diff = neighbor + pos - f_st;
-						float dist = length(diff);
-						if (dist < m_dist)
-						{
-							dank = diff;
-							m_dist = dist;
-							m_point = pos;
-							randoPoint = rando;
-						}
-					}
-				}
-				float randomFromPoint = random(randoPoint);
-				float size = (0.875 /*_GlitterSize*/);
-				
-				if ((0.0 /*_GlitterRandomSize*/))
-				{
-					size = remapClamped(0, 1, randomFromPoint, float4(0.1,0.5,0,1).x, float4(0.1,0.5,0,1).y);
-				}
-				half glitterAlpha = 1;
-				switch((1.0 /*_GlitterShape*/))
-				{
-					case 0: //circle
-					glitterAlpha = saturate((size - m_dist) / clamp(fwidth(m_dist), 0.0001, 1.0));
-					break;
-					case 1: //sqaure
-					float jaggyFix = pow(poiCam.distanceToVert, 2) * (0.0 /*_GlitterJaggyFix*/);
-					
-					if ((0.0 /*_GlitterRandomRotation*/) == 1 || (0.0 /*_GlitterTextureRotation*/) != 0)
-					{
-						float2 center = float2(0, 0);
-						float randomBoy = 0;
-						
-						if ((0.0 /*_GlitterRandomRotation*/))
-						{
-							randomBoy = random(randoPoint);
-						}
-						float theta = radians((randomBoy + _Time.x * (0.0 /*_GlitterTextureRotation*/)) * 360);
-						float cs = cos(theta);
-						float sn = sin(theta);
-						dank = float2((dank.x - center.x) * cs - (dank.y - center.y) * sn + center.x, (dank.x - center.x) * sn + (dank.y - center.y) * cs + center.y);
-						glitterAlpha = (1. - smoothstep(size - .1 * jaggyFix, size, abs(dank.x))) * (1. - smoothstep(size - .1 * jaggyFix, size, abs(dank.y)));
-					}
-					else
-					{
-						glitterAlpha = (1. - smoothstep(size - .1 * jaggyFix, size, abs(dank.x))) * (1. - smoothstep(size - .1 * jaggyFix, size, abs(dank.y)));
-					}
-					break;
-				}
-				float3 finalGlitter = 0;
-				half3 glitterColor = poiThemeColor(poiMods, float4(0.08490568,0,0,1), (0.0 /*_GlitterColorThemeIndex*/));
-				float3 norm = lerp(poiMesh.normals[0], poiMesh.normals[1], (0.0 /*_GlitterUseNormals*/));
-				float3 randomRotation = 0;
-				switch((0.0 /*_GlitterMode*/))
-				{
-					case 0:
-					
-					if ((5.0 /*_GlitterSpeed*/) > 0)
-					{
-						randomRotation = randomFloat3WiggleRange(randoPoint, (90.0 /*_GlitterAngleRange*/), (5.0 /*_GlitterSpeed*/));
-					}
-					else
-					{
-						randomRotation = randomFloat3Range(randoPoint, (90.0 /*_GlitterAngleRange*/));
-					}
-					float3 glitterReflectionDirection = normalize(mul(poiRotationMatrixFromAngles(randomRotation), norm));
-					finalGlitter = lerp(0, (0.0 /*_GlitterMinBrightness*/) * glitterAlpha, glitterAlpha) + max(pow(saturate(dot(lerp(glitterReflectionDirection, poiCam.viewDir, (0.8 /*_GlitterBias*/)), poiCam.viewDir)), (300.0 /*_GlitterContrast*/)), 0);
-					finalGlitter *= glitterAlpha;
-					break;
-					case 1:
-					float offset = random(randoPoint);
-					float brightness = sin((_Time.x + offset) * (5.0 /*_GlitterSpeed*/)) * (20.0 /*_glitterFrequencyLinearEmissive*/) - ((20.0 /*_glitterFrequencyLinearEmissive*/) - 1);
-					finalGlitter = max((0.0 /*_GlitterMinBrightness*/) * glitterAlpha, brightness * glitterAlpha * smoothstep(0, 1, 1 - m_dist * (0.08 /*_GlitterCenterSize*/) * 10));
-					break;
-					case 2:
-					if ((5.0 /*_GlitterSpeed*/) > 0)
-					{
-						randomRotation = randomFloat3WiggleRange(randoPoint, (90.0 /*_GlitterAngleRange*/), (5.0 /*_GlitterSpeed*/));
-					}
-					else
-					{
-						randomRotation = randomFloat3Range(randoPoint, (90.0 /*_GlitterAngleRange*/));
-					}
-					float3 glitterLightReflectionDirection = normalize(mul(poiRotationMatrixFromAngles(randomRotation), norm));
-					#ifdef POI_PASS_ADD
-					glitterAlpha *= poiLight.nDotLSaturated * poiLight.attenuation;
-					#endif
-					#ifdef UNITY_PASS_FORWARDBASE
-					glitterAlpha *= poiLight.nDotLSaturated;
-					#endif
-					float3 halfDir = normalize(poiLight.direction + poiCam.viewDir);
-					float specAngle = max(dot(halfDir, glitterLightReflectionDirection), 0.0);
-					finalGlitter = lerp(0, (0.0 /*_GlitterMinBrightness*/) * glitterAlpha, glitterAlpha) + max(pow(specAngle, (300.0 /*_GlitterContrast*/)), 0);
-					glitterColor *= poiLight.directColor;
-					finalGlitter *= glitterAlpha;
-					break;
-				}
-				glitterColor *= lerp(1, poiFragData.baseColor, (0.0 /*_GlitterUseSurfaceColor*/));
-				#if defined(PROP_GLITTERCOLORMAP) || !defined(OPTIMIZER_ENABLED)
-				glitterColor *= POI2D_SAMPLER_PAN(_GlitterColorMap, _MainTex, poiUV(poiMesh.uv[(0.0 /*_GlitterColorMapUV*/)], float4(1,1,0,0)), float4(0,0,0,0)).rgb;
-				#endif
-				float2 uv = remapClamped(-size, size, dank, 0, 1);
-				
-				if ((0.0 /*_GlitterRandomRotation*/) == 1 || (0.0 /*_GlitterTextureRotation*/) != 0 && !(1.0 /*_GlitterShape*/))
-				{
-					float2 fakeUVCenter = float2(.5, .5);
-					float randomBoy = 0;
-					
-					if ((0.0 /*_GlitterRandomRotation*/))
-					{
-						randomBoy = random(randoPoint);
-					}
-					float theta = radians((randomBoy + _Time.x * (0.0 /*_GlitterTextureRotation*/)) * 360);
-					float cs = cos(theta);
-					float sn = sin(theta);
-					uv = float2((uv.x - fakeUVCenter.x) * cs - (uv.y - fakeUVCenter.y) * sn + fakeUVCenter.x, (uv.x - fakeUVCenter.x) * sn + (uv.y - fakeUVCenter.y) * cs + fakeUVCenter.y);
-				}
-				#if defined(PROP_GLITTERTEXTURE) || !defined(OPTIMIZER_ENABLED)
-				float4 glitterTexture = POI2D_SAMPLER_PAN(_GlitterTexture, _MainTex, poiUV(uv, float4(1,1,0,0)), float4(0,0,0,0));
-				#else
-				float4 glitterTexture = 1;
-				#endif
-				glitterColor *= glitterTexture.rgb;
-				#if defined(PROP_GLITTERMASK) || !defined(OPTIMIZER_ENABLED)
-				float glitterMask = POI2D_SAMPLER_PAN(_GlitterMask, _MainTex, poiUV(poiMesh.uv[(0.0 /*_GlitterMaskUV*/)], float4(1,1,0,0)), float4(0,0,0,0))[(0.0 /*_GlitterMaskChannel*/)];
-				#else
-				float glitterMask = 1;
-				#endif
-				glitterMask *= lerp(1, poiLight.rampedLightMap, (0.0 /*_GlitterHideInShadow*/));
-				if ((0.0 /*_GlitterMaskGlobalMask*/) > 0)
-				{
-					glitterMask = customBlend(glitterMask, poiMods.globalMask[(0.0 /*_GlitterMaskGlobalMask*/) - 1], (2.0 /*_GlitterMaskGlobalMaskBlendType*/));
-				}
-				if ((0.0 /*_GlitterRandomColors*/))
-				{
-					glitterColor *= RandomColorFromPoint(random2(randoPoint.x + randoPoint.y));
-				}
-				
-				if ((1.0 /*_GlitterHueShiftEnabled*/))
-				{
-					glitterColor.rgb = hueShift(glitterColor.rgb, _GlitterHueShift + _Time.x * (0.0 /*_GlitterHueShiftSpeed*/));
-				}
-				
-				if ((0.0 /*_GlitterBlendType*/) == 1)
-				{
-					poiFragData.baseColor = lerp(poiFragData.baseColor, finalGlitter * glitterColor * (3.0 /*_GlitterBrightness*/), finalGlitter * glitterTexture.a * glitterMask);
-					poiFragData.emission += finalGlitter * glitterColor * max(0, ((3.0 /*_GlitterBrightness*/) - 1) * glitterTexture.a) * glitterMask;
-				}
-				else
-				{
-					poiFragData.emission += finalGlitter * glitterColor * (3.0 /*_GlitterBrightness*/) * glitterTexture.a * glitterMask;
-				}
-			}
-			#endif
 			float4 frag(VertexOut i, uint facing : SV_IsFrontFace) : SV_Target
 			{
 				UNITY_SETUP_INSTANCE_ID(i);
@@ -6657,9 +6130,6 @@ Shader "Hidden/Locked/.poiyomi/Poiyomi 8.1/Poiyomi Toon/da90d9dac20a9744394a79f7
 				ApplyPoiyomiRimLighting(poiFragData, poiMesh, poiCam, poiLight, poiMods, (1.0 /*_Is_NormalMapToRimLight*/), (0.0 /*_RimLightingInvert*/), (1.0 /*_RimPower*/), (0.7 /*_RimStrength*/), (0.0 /*_RimShadowWidth*/), (0.0 /*_RimShadowToggle*/), (0.8 /*_RimWidth*/), (1.0 /*_RimBlendStrength*/), rimMask, (0.0 /*_RimGlobalMask*/), (2.0 /*_RimGlobalMaskBlendType*/), rimColor, float4(1,0,0,1), (0.0 /*_RimLightColorThemeIndex*/), (1.0 /*_RimHueShiftEnabled*/), _RimHueShift, (0.0 /*_RimHueShiftSpeed*/), (0.0 /*_RimSharpness*/), (0.0 /*_RimShadowMaskRampType*/), (0.0 /*_RimShadowMaskInvert*/), (1.0 /*_RimShadowMaskStrength*/), float4(0,0,0,1), (0.0 /*_RimApplyGlobalMaskIndex*/), (2.0 /*_RimApplyGlobalMaskBlendType*/), (0.0 /*_RimBaseColorMix*/), (1.0 /*_RimBrightness*/), (0.0 /*_RimBlendMode*/), AudioLinkRimWidthBand, AudioLinkRimWidthAdd, AudioLinkRimEmissionBand, AudioLinkRimEmissionAdd, AudioLinkRimBrightnessBand, AudioLinkRimBrightnessAdd, (0.0 /*_RimClamp*/));
 				#endif
 				#endif
-				#ifdef _SUNDISK_SIMPLE
-				applyGlitter(poiFragData, poiMesh, poiCam, poiLight, poiMods);
-				#endif
 				if ((0.0 /*_AlphaPremultiply*/))
 				{
 					poiFragData.baseColor *= saturate(poiFragData.alpha);
@@ -6726,12 +6196,10 @@ Shader "Hidden/Locked/.poiyomi/Poiyomi 8.1/Poiyomi Toon/da90d9dac20a9744394a79f7
  #define _RIM2STYLE_POIYOMI 
  #define _RIMSTYLE_POIYOMI 
  #define _STOCHASTICMODE_DELIOT_HEITZ 
- #define _SUNDISK_SIMPLE 
  #define PROP_MATCAP 
  #define PROP_MATCAP2 
  #define PROP_MATCAP2MASK 
  #define PROP_RIMMASK 
- #define PROP_GLITTERMASK 
  #define OPTIMIZER_ENABLED 
 			#pragma target 5.0
 			#pragma skip_variants LIGHTMAP_ON DYNAMICLIGHTMAP_ON LIGHTMAP_SHADOW_MIXING SHADOWS_SHADOWMASK DIRLIGHTMAP_COMBINED _MIXED_LIGHTING_SUBTRACTIVE
