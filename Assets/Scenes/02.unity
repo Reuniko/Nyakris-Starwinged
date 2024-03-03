@@ -17519,32 +17519,6 @@ Transform:
   m_Father: {fileID: 932922955}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1102 &409298198
-AnimatorState:
-  serializedVersion: 6
-  m_ObjectHideFlags: 1
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_Name: recorder
-  m_Speed: 1
-  m_CycleOffset: 0
-  m_Transitions: []
-  m_StateMachineBehaviours: []
-  m_Position: {x: 50, y: 50, z: 0}
-  m_IKOnFeet: 0
-  m_WriteDefaultValues: 0
-  m_Mirror: 0
-  m_SpeedParameterActive: 0
-  m_MirrorParameterActive: 0
-  m_CycleOffsetParameterActive: 0
-  m_TimeParameterActive: 0
-  m_Motion: {fileID: 7400000, guid: 9a59fc1b851df6240b41f022f1cdfec8, type: 2}
-  m_Tag: 
-  m_SpeedParameter: 
-  m_MirrorParameter: 
-  m_CycleOffsetParameter: 
-  m_TimeParameter: 
 --- !u!1 &411722354
 GameObject:
   m_ObjectHideFlags: 0
@@ -23026,7 +23000,7 @@ Animator:
   m_GameObject: {fileID: 506453580}
   m_Enabled: 1
   m_Avatar: {fileID: 9000000, guid: e3ca3f68a491c734ea5d74bd041aa1e0, type: 3}
-  m_Controller: {fileID: 791409856}
+  m_Controller: {fileID: 1587669311}
   m_CullingMode: 1
   m_UpdateMode: 0
   m_ApplyRootMotion: 1
@@ -23599,6 +23573,32 @@ SkinnedMeshRenderer:
     m_Center: {x: -0.0000139933545, y: 0.00014286651, z: -0.0011554696}
     m_Extent: {x: 0.0026834123, y: 0.0062050633, z: 0.0018231496}
   m_DirtyAABB: 0
+--- !u!1102 &599082987
+AnimatorState:
+  serializedVersion: 6
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: recorder
+  m_Speed: 1
+  m_CycleOffset: 0
+  m_Transitions: []
+  m_StateMachineBehaviours: []
+  m_Position: {x: 50, y: 50, z: 0}
+  m_IKOnFeet: 0
+  m_WriteDefaultValues: 0
+  m_Mirror: 0
+  m_SpeedParameterActive: 0
+  m_MirrorParameterActive: 0
+  m_CycleOffsetParameterActive: 0
+  m_TimeParameterActive: 0
+  m_Motion: {fileID: 7400000, guid: eeaa80f9191dd98469680640a056f8d7, type: 2}
+  m_Tag: 
+  m_SpeedParameter: 
+  m_MirrorParameter: 
+  m_CycleOffsetParameter: 
+  m_TimeParameter: 
 --- !u!1 &602318488
 GameObject:
   m_ObjectHideFlags: 0
@@ -25334,7 +25334,7 @@ PrefabInstance:
         type: 3}
       propertyPath: anim01
       value: 
-      objectReference: {fileID: 7400000, guid: 3ab09daf269395c45b7e374d25493a7e, type: 2}
+      objectReference: {fileID: 7400000, guid: eeaa80f9191dd98469680640a056f8d7, type: 2}
     - target: {fileID: 258466012350164061, guid: 791f08310e5f43443b06f7860f18a0cd,
         type: 3}
       propertyPath: anim02
@@ -25509,12 +25509,12 @@ PrefabInstance:
         type: 3}
       propertyPath: anim11_L
       value: 
-      objectReference: {fileID: 7400000, guid: 9a59fc1b851df6240b41f022f1cdfec8, type: 2}
+      objectReference: {fileID: 0}
     - target: {fileID: 258466012350164061, guid: 791f08310e5f43443b06f7860f18a0cd,
         type: 3}
       propertyPath: anim11_R
       value: 
-      objectReference: {fileID: 7400000, guid: 610bff7cd2215324f99f2258c9a01b92, type: 2}
+      objectReference: {fileID: 0}
     - target: {fileID: 258466012350164061, guid: 791f08310e5f43443b06f7860f18a0cd,
         type: 3}
       propertyPath: editorTool
@@ -25793,6 +25793,28 @@ ParentConstraint:
   m_Sources:
   - sourceTransform: {fileID: 357058928}
     weight: 1
+--- !u!1107 &779509597
+AnimatorStateMachine:
+  serializedVersion: 6
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: Base
+  m_ChildStates:
+  - serializedVersion: 1
+    m_State: {fileID: 599082987}
+    m_Position: {x: 200, y: 0, z: 0}
+  m_ChildStateMachines: []
+  m_AnyStateTransitions: []
+  m_EntryTransitions: []
+  m_StateMachineTransitions: {}
+  m_StateMachineBehaviours: []
+  m_AnyStatePosition: {x: 50, y: 20, z: 0}
+  m_EntryPosition: {x: 50, y: 120, z: 0}
+  m_ExitPosition: {x: 800, y: 120, z: 0}
+  m_ParentStateMachinePosition: {x: 800, y: 20, z: 0}
+  m_DefaultState: {fileID: 599082987}
 --- !u!1 &789996878
 GameObject:
   m_ObjectHideFlags: 0
@@ -25824,28 +25846,6 @@ Transform:
   m_Father: {fileID: 1672432080}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!91 &791409856
-AnimatorController:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_Name: Fake Temporary Controller__DoNotModify
-  serializedVersion: 5
-  m_AnimatorParameters: []
-  m_AnimatorLayers:
-  - serializedVersion: 5
-    m_Name: Base
-    m_StateMachine: {fileID: 1404945996}
-    m_Mask: {fileID: 0}
-    m_Motions: []
-    m_Behaviours: []
-    m_BlendingMode: 0
-    m_SyncedLayerIndex: -1
-    m_DefaultWeight: 0
-    m_IKPass: 0
-    m_SyncedLayerAffectsTiming: 0
-    m_Controller: {fileID: 791409856}
 --- !u!1 &798382689
 GameObject:
   m_ObjectHideFlags: 0
@@ -30607,28 +30607,6 @@ Transform:
   m_Father: {fileID: 282980400}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1107 &1404945996
-AnimatorStateMachine:
-  serializedVersion: 6
-  m_ObjectHideFlags: 1
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_Name: Base
-  m_ChildStates:
-  - serializedVersion: 1
-    m_State: {fileID: 409298198}
-    m_Position: {x: 200, y: 0, z: 0}
-  m_ChildStateMachines: []
-  m_AnyStateTransitions: []
-  m_EntryTransitions: []
-  m_StateMachineTransitions: {}
-  m_StateMachineBehaviours: []
-  m_AnyStatePosition: {x: 50, y: 20, z: 0}
-  m_EntryPosition: {x: 50, y: 120, z: 0}
-  m_ExitPosition: {x: 800, y: 120, z: 0}
-  m_ParentStateMachinePosition: {x: 800, y: 20, z: 0}
-  m_DefaultState: {fileID: 409298198}
 --- !u!1 &1412747038
 GameObject:
   m_ObjectHideFlags: 0
@@ -36653,6 +36631,28 @@ Transform:
   m_Father: {fileID: 789996879}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!91 &1587669311
+AnimatorController:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: Fake Temporary Controller__DoNotModify
+  serializedVersion: 5
+  m_AnimatorParameters: []
+  m_AnimatorLayers:
+  - serializedVersion: 5
+    m_Name: Base
+    m_StateMachine: {fileID: 779509597}
+    m_Mask: {fileID: 0}
+    m_Motions: []
+    m_Behaviours: []
+    m_BlendingMode: 0
+    m_SyncedLayerIndex: -1
+    m_DefaultWeight: 0
+    m_IKPass: 0
+    m_SyncedLayerAffectsTiming: 0
+    m_Controller: {fileID: 1587669311}
 --- !u!1 &1589051365
 GameObject:
   m_ObjectHideFlags: 0
@@ -39840,6 +39840,8 @@ MonoBehaviour:
     name: Default
   - hash: -831505803
     name: xx_Idle
+  - hash: 13918837
+    name: xx_wink BlendLef
   - hash: -1182162143
     name: xx_Shure
   - hash: -100284685
@@ -39852,8 +39854,6 @@ MonoBehaviour:
     name: xx_Lust
   - hash: 1666981381
     name: xx_ThumbsUp
-  - hash: 1732553896
-    name: xx_Idle Dual xx_
   - hash: -1239151420
     name: xx_Open
   - hash: -1295027245
