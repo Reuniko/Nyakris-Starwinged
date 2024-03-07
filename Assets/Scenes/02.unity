@@ -25334,7 +25334,7 @@ PrefabInstance:
         type: 3}
       propertyPath: anim01
       value: 
-      objectReference: {fileID: 7400000, guid: eeaa80f9191dd98469680640a056f8d7, type: 2}
+      objectReference: {fileID: 7400000, guid: 9a59fc1b851df6240b41f022f1cdfec8, type: 2}
     - target: {fileID: 258466012350164061, guid: 791f08310e5f43443b06f7860f18a0cd,
         type: 3}
       propertyPath: anim02
@@ -25404,7 +25404,7 @@ PrefabInstance:
         type: 3}
       propertyPath: anim22
       value: 
-      objectReference: {fileID: 7400000, guid: 9a59fc1b851df6240b41f022f1cdfec8, type: 2}
+      objectReference: {fileID: 7400000, guid: eeaa80f9191dd98469680640a056f8d7, type: 2}
     - target: {fileID: 258466012350164061, guid: 791f08310e5f43443b06f7860f18a0cd,
         type: 3}
       propertyPath: anim23
@@ -39840,8 +39840,8 @@ MonoBehaviour:
     name: Default
   - hash: -831505803
     name: xx_Idle
-  - hash: 13918837
-    name: xx_wink BlendLef
+  - hash: 152553306
+    name: xx_Open BlendLef
   - hash: -1182162143
     name: xx_Shure
   - hash: -100284685
@@ -39854,8 +39854,8 @@ MonoBehaviour:
     name: xx_Lust
   - hash: 1666981381
     name: xx_ThumbsUp
-  - hash: -1239151420
-    name: xx_Open
+  - hash: 64121137
+    name: xx_wink
   - hash: -1295027245
     name: xx_Shure+xx_Poin
   - hash: -1801174707
