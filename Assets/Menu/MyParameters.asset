@@ -137,3 +137,7 @@ MonoBehaviour:
     valueType: 2
     saved: 1
     defaultValue: 0
+  - name: Trail Sounds
+    valueType: 2
+    saved: 0
+    defaultValue: 0

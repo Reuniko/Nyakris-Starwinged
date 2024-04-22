@@ -13,16 +13,6 @@ MonoBehaviour:
   m_Name: MyToggles
   m_EditorClassIdentifier: 
   controls:
-  - name: LSD
-    icon: {fileID: 2800000, guid: 9c825edcfcc5fb843ac58b1bc88edd00, type: 3}
-    type: 102
-    parameter:
-      name: LSD
-    value: 1
-    style: 0
-    subMenu: {fileID: 0}
-    subParameters: []
-    labels: []
   - name: Wings
     icon: {fileID: 2800000, guid: 29b4286f41c93f84f9ffc6ca7551f2d3, type: 3}
     type: 102
@@ -78,6 +68,16 @@ MonoBehaviour:
     type: 102
     parameter:
       name: Trails
+    value: 1
+    style: 0
+    subMenu: {fileID: 0}
+    subParameters: []
+    labels: []
+  - name: Trail Sounds
+    icon: {fileID: 2800000, guid: 0ff9333af28b8224893850e22c95e496, type: 3}
+    type: 102
+    parameter:
+      name: Trail Sounds
     value: 1
     style: 0
     subMenu: {fileID: 0}
