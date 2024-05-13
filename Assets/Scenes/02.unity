@@ -27633,6 +27633,90 @@ Transform:
   m_Father: {fileID: 1247998120}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1001 &960300818
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 108405959}
+    m_Modifications:
+    - target: {fileID: 3844690005511197917, guid: 3a0a50d739bba3542aebb24e85dd92c2,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 3844690005511197917, guid: 3a0a50d739bba3542aebb24e85dd92c2,
+        type: 3}
+      propertyPath: m_LocalScale.x
+      value: 0.001
+      objectReference: {fileID: 0}
+    - target: {fileID: 3844690005511197917, guid: 3a0a50d739bba3542aebb24e85dd92c2,
+        type: 3}
+      propertyPath: m_LocalScale.y
+      value: 0.001
+      objectReference: {fileID: 0}
+    - target: {fileID: 3844690005511197917, guid: 3a0a50d739bba3542aebb24e85dd92c2,
+        type: 3}
+      propertyPath: m_LocalScale.z
+      value: 0.001
+      objectReference: {fileID: 0}
+    - target: {fileID: 3844690005511197917, guid: 3a0a50d739bba3542aebb24e85dd92c2,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3844690005511197917, guid: 3a0a50d739bba3542aebb24e85dd92c2,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0.0012
+      objectReference: {fileID: 0}
+    - target: {fileID: 3844690005511197917, guid: 3a0a50d739bba3542aebb24e85dd92c2,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -0.00046
+      objectReference: {fileID: 0}
+    - target: {fileID: 3844690005511197917, guid: 3a0a50d739bba3542aebb24e85dd92c2,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3844690005511197917, guid: 3a0a50d739bba3542aebb24e85dd92c2,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3844690005511197917, guid: 3a0a50d739bba3542aebb24e85dd92c2,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3844690005511197917, guid: 3a0a50d739bba3542aebb24e85dd92c2,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0.00000009362675
+      objectReference: {fileID: 0}
+    - target: {fileID: 3844690005511197917, guid: 3a0a50d739bba3542aebb24e85dd92c2,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3844690005511197917, guid: 3a0a50d739bba3542aebb24e85dd92c2,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3844690005511197917, guid: 3a0a50d739bba3542aebb24e85dd92c2,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4472291704779378279, guid: 3a0a50d739bba3542aebb24e85dd92c2,
+        type: 3}
+      propertyPath: m_Name
+      value: Galaxy wings
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 3a0a50d739bba3542aebb24e85dd92c2, type: 3}
 --- !u!1 &969485050
 GameObject:
   m_ObjectHideFlags: 0
@@ -38624,7 +38708,7 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Materials.Array.data[3]
       value: 
-      objectReference: {fileID: 2100000, guid: f062cf1e332c1ea4199cba7f0c173cda, type: 2}
+      objectReference: {fileID: 2100000, guid: 11e923e1901a7394891b3cb2125931ea, type: 2}
     - target: {fileID: 1630794972795428178, guid: e3ca3f68a491c734ea5d74bd041aa1e0,
         type: 3}
       propertyPath: m_Materials.Array.data[4]
@@ -40674,6 +40758,10 @@ MonoBehaviour:
     name: Flying Scale
   - hash: -843705951
     name: Eyes
+  - hash: -80193489
+    name: Off
+  - hash: -307908051
+    name: On
   autoFootsteps: 1
   autoLocomotion: 1
   collider_head:
