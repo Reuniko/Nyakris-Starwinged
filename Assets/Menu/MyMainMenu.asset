@@ -84,3 +84,14 @@ MonoBehaviour:
     subMenu: {fileID: 0}
     subParameters: []
     labels: []
+  - name: Eyes
+    icon: {fileID: 2800000, guid: 13da6845a5d3728409154a00d6ee911f, type: 3}
+    type: 203
+    parameter:
+      name: 
+    value: 1
+    style: 0
+    subMenu: {fileID: 0}
+    subParameters:
+    - name: Eyes
+    labels: []
