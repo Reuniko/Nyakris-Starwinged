@@ -9,7 +9,8 @@ Material:
   m_PrefabAsset: {fileID: 0}
   m_Name: ring_gem
   m_Shader: {fileID: 4800000, guid: b4f0aaf94ecdeb64497615da9e165c6c, type: 3}
-  m_ShaderKeywords: 
+  m_ShaderKeywords: POI_EMISSION_1 POI_LIGHT_DATA_ADDITIVE_DIRECTIONAL_ENABLE POI_LIGHT_DATA_ADDITIVE_ENABLE
+    POI_VERTEXLIGHT_ON VIGNETTE_MASKED _EMISSION _SUNDISK_SIMPLE
   m_LightmapFlags: 4
   m_EnableInstancingVariants: 0
   m_DoubleSidedGI: 0
