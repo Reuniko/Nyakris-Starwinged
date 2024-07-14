@@ -165,3 +165,7 @@ MonoBehaviour:
     valueType: 2
     saved: 1
     defaultValue: 1
+  - name: HairShort
+    valueType: 2
+    saved: 1
+    defaultValue: 0
