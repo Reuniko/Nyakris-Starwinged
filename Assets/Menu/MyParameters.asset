@@ -160,7 +160,7 @@ MonoBehaviour:
   - name: Eyes
     valueType: 1
     saved: 1
-    defaultValue: 0
+    defaultValue: 1
   - name: GalaxyWings
     valueType: 2
     saved: 1

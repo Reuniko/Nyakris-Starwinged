@@ -1,0 +1,76 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!21 &2100000
+Material:
+  serializedVersion: 6
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: Test 1
+  m_Shader: {fileID: 4800000, guid: bb751b81d9422b94b94aae71db234a00, type: 3}
+  m_ShaderKeywords: _FLOAT17_ON
+  m_LightmapFlags: 4
+  m_EnableInstancingVariants: 0
+  m_DoubleSidedGI: 0
+  m_CustomRenderQueue: -1
+  stringTagMap: {}
+  disabledShaderPasses: []
+  m_SavedProperties:
+    serializedVersion: 3
+    m_TexEnvs:
+    - _MainTex:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _Tex2:
+        m_Texture: {fileID: 2800000, guid: 625550b7c878cb94687dfd1cb498df45, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    m_Floats:
+    - _DotSpeed: 2
+    - _Float1: 1
+    - _Float14: 0
+    - _Float15: 33
+    - _Float16: 0.1
+    - _Float17: 1
+    - _Float18: 0.145
+    - _Float2: 0.2
+    - _Float20: 5
+    - _Float3: 0.324
+    - _Float4: 2.66
+    - _Float6: 0.1
+    - _Float8: 3
+    - _HueShift: 0.525
+    - _InvertDotsHelpbox: 0
+    - _Octaves: 1
+    - _ParallaxVinHelpbox: 0
+    - _PupilShape: 1
+    - _Rainbow: 0
+    - _StencilCompareFunction: 8
+    - _StencilFailOp: 0
+    - _StencilPassOp: 2
+    - _StencilRef: 58
+    - _StencilZFailOp: 0
+    - _SurfaceVinHelpbox: 0
+    - _Vesica: 0
+    - _VesicaShapeHelpbox: 0
+    - footer_Discord: 0
+    - footer_Github: 0
+    - footer_Gumroad: 0
+    - footer_Twitter: 0
+    - footer_Youtube: 0
+    - m_ColorSettings: 1
+    - m_DotSettings: 0
+    - m_FallbackTexture: 1
+    - m_NoiseSettings: 1
+    - m_StencilPassOptions: 0
+    - m_TheRest: 0
+    - m_end_Advanced: 0
+    - m_start_Advanced: 0
+    - shader_is_using_thry_editor: 69
+    - shader_master_label: 0
+    m_Colors:
+    - _Col1: {r: 0.88482237, g: 0, b: 1, a: 1}
+    - _Color: {r: 1, g: 1, b: 1, a: 1}
+    - _SwirlRainbow: {r: 1, g: 0, b: 0, a: 0}

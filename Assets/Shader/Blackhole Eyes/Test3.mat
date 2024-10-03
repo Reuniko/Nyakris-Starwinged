@@ -1,0 +1,124 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!21 &2100000
+Material:
+  serializedVersion: 6
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: Test3
+  m_Shader: {fileID: 4800000, guid: 06ba663f0ce634b4f9cfc998f80d5eed, type: 3}
+  m_ShaderKeywords: BH_FLOAT17_ON
+  m_LightmapFlags: 4
+  m_EnableInstancingVariants: 0
+  m_DoubleSidedGI: 0
+  m_CustomRenderQueue: -1
+  stringTagMap: {}
+  disabledShaderPasses: []
+  m_SavedProperties:
+    serializedVersion: 3
+    m_TexEnvs:
+    - _BumpMap:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _DetailAlbedoMap:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _DetailMask:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _DetailNormalMap:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _EmissionMap:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _MainTex:
+        m_Texture: {fileID: 2800000, guid: 9b9f9b3fa41ab244093231be332433e6, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _MetallicGlossMap:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _OcclusionMap:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _ParallaxMap:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _Tex2:
+        m_Texture: {fileID: 2800000, guid: 625550b7c878cb94687dfd1cb498df45, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    m_Floats:
+    - BH_Float1: 1
+    - BH_Float14: 0
+    - BH_Float15: 33
+    - BH_Float16: 0.1
+    - BH_Float17: 1
+    - BH_Float18: 0.1
+    - BH_Float2: 0.2
+    - BH_Float20: 5
+    - BH_Float3: 0.04
+    - BH_Float4: 2
+    - BH_Float6: 0.1
+    - BH_Float8: 3
+    - _BumpScale: 1
+    - _Cutoff: 0.5
+    - _DetailNormalMapScale: 1
+    - _DotSpeed: 2
+    - _DstBlend: 0
+    - _GlossMapScale: 1
+    - _Glossiness: 0.5
+    - _GlossyReflections: 1
+    - _HueShift: 0
+    - _InvertDotsHelpbox: 0
+    - _Metallic: 0
+    - _Mode: 0
+    - _OcclusionStrength: 1
+    - _Parallax: 0.02
+    - _ParallaxVinHelpbox: 0
+    - _Rainbow: 0
+    - _SmoothnessTextureChannel: 0
+    - _SpecularHighlights: 1
+    - _SrcBlend: 1
+    - _StencilCompareFunction: 8
+    - _StencilFailOp: 0
+    - _StencilPassOp: 0
+    - _StencilRef: 0
+    - _StencilZFailOp: 0
+    - _SurfaceVinHelpbox: 0
+    - _UVSec: 0
+    - _Vesica: 0
+    - _VesicaShapeHelpbox: 0
+    - _ZWrite: 1
+    - footer_Discord: 0
+    - footer_Github: 0
+    - footer_Gumroad: 0
+    - footer_Twitter: 0
+    - footer_Youtube: 0
+    - mBH_FallbackTexture: 0
+    - m_ColorSettings: 0
+    - m_DotSettings: 0
+    - m_NoiseSettings: 1
+    - m_StencilPassOptions: 0
+    - m_TheRest: 0
+    - m_end_Advanced: 0
+    - m_start_Advanced: 1
+    - shader_is_using_thry_editor: 69
+    - shader_master_label: 0
+    m_Colors:
+    - BH_Col1: {r: 1, g: 1, b: 1, a: 1}
+    - _Col1: {r: 1, g: 1, b: 1, a: 1}
+    - _Color: {r: 1, g: 1, b: 1, a: 1}
+    - _EmissionColor: {r: 0, g: 0, b: 0, a: 1}
+    - _SwirlRainbow: {r: 0, g: 0, b: 0, a: 0}
