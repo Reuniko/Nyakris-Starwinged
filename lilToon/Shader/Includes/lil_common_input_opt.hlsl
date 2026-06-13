@@ -7,61 +7,61 @@
 
 //------------------------------------------------------------------------------------------------------------------------------
 // Vector
-#define _LightDirectionOverride float4(0.001,0.002,0.001,0)
-#define _BackfaceColor float4(0,0,0,0)
+float4  _LightDirectionOverride;
+float4  _BackfaceColor;
 #if LIL_RENDER == 2 && !defined(LIL_FUR) && !defined(LIL_GEM) && !defined(LIL_REFRACTION)
     float4  _PreColor;
 #endif
 // Main
 float4  _Color;
-#define _MainTex_ST float4(1,1,0,0)
+float4  _MainTex_ST;
 #if defined(LIL_FEATURE_ANIMATE_MAIN_UV)
-    #define _MainTex_ScrollRotate float4(0,0,0,0)
+    float4  _MainTex_ScrollRotate;
 #endif
 #if defined(LIL_FEATURE_MAIN_TONE_CORRECTION)
-    #define _MainTexHSVG float4(0,1,1,1)
+    float4  _MainTexHSVG;
 #endif
 
 // Main2nd
 #if defined(LIL_FEATURE_MAIN2ND)
-    #define _Color2nd float4(1,1,1,1)
-    #define _Main2ndTex_ST float4(1,1,0,0)
-    #define _Main2ndTex_ScrollRotate float4(0,0,0,0)
-    #define _Main2ndDistanceFade float4(0.1,0.01,0,0)
+    float4  _Color2nd;
+    float4  _Main2ndTex_ST;
+    float4  _Main2ndTex_ScrollRotate;
+    float4  _Main2ndDistanceFade;
     #if defined(LIL_FEATURE_DECAL) && defined(LIL_FEATURE_ANIMATE_DECAL)
-        #define _Main2ndTexDecalAnimation float4(1,1,1,30)
-        #define _Main2ndTexDecalSubParam float4(1,1,0,1)
+        float4  _Main2ndTexDecalAnimation;
+        float4  _Main2ndTexDecalSubParam;
     #endif
     #if defined(LIL_FEATURE_LAYER_DISSOLVE)
-        #define _Main2ndDissolveMask_ST float4(1,1,0,0)
-        #define _Main2ndDissolveColor float4(1,1,1,1)
-        #define _Main2ndDissolveParams float4(0,0,0.5,0.1)
-        #define _Main2ndDissolvePos float4(0,0,0,0)
+        float4  _Main2ndDissolveMask_ST;
+        float4  _Main2ndDissolveColor;
+        float4  _Main2ndDissolveParams;
+        float4  _Main2ndDissolvePos;
         #if defined(LIL_FEATURE_Main2ndDissolveNoiseMask)
-            #define _Main2ndDissolveNoiseMask_ST float4(1,1,0,0)
-            #define _Main2ndDissolveNoiseMask_ScrollRotate float4(0,0,0,0)
+            float4  _Main2ndDissolveNoiseMask_ST;
+            float4  _Main2ndDissolveNoiseMask_ScrollRotate;
         #endif
     #endif
 #endif
 
 // Main3rd
 #if defined(LIL_FEATURE_MAIN3RD)
-    #define _Color3rd float4(1,1,1,1)
-    #define _Main3rdTex_ST float4(1,1,0,0)
-    #define _Main3rdTex_ScrollRotate float4(0,0,0,0)
-    #define _Main3rdDistanceFade float4(0.1,0.01,0,0)
+    float4  _Color3rd;
+    float4  _Main3rdTex_ST;
+    float4  _Main3rdTex_ScrollRotate;
+    float4  _Main3rdDistanceFade;
     #if defined(LIL_FEATURE_DECAL) && defined(LIL_FEATURE_ANIMATE_DECAL)
-        #define _Main3rdTexDecalAnimation float4(1,1,1,30)
-        #define _Main3rdTexDecalSubParam float4(1,1,0,1)
+        float4  _Main3rdTexDecalAnimation;
+        float4  _Main3rdTexDecalSubParam;
     #endif
     #if defined(LIL_FEATURE_LAYER_DISSOLVE)
-        #define _Main3rdDissolveMask_ST float4(1,1,0,0)
-        #define _Main3rdDissolveColor float4(1,1,1,1)
-        #define _Main3rdDissolveParams float4(0,0,0.5,0.1)
-        #define _Main3rdDissolvePos float4(0,0,0,0)
+        float4  _Main3rdDissolveMask_ST;
+        float4  _Main3rdDissolveColor;
+        float4  _Main3rdDissolveParams;
+        float4  _Main3rdDissolvePos;
         #if defined(LIL_FEATURE_Main3rdDissolveNoiseMask)
-            #define _Main3rdDissolveNoiseMask_ST float4(1,1,0,0)
-            #define _Main3rdDissolveNoiseMask_ScrollRotate float4(0,0,0,0)
+            float4  _Main3rdDissolveNoiseMask_ST;
+            float4  _Main3rdDissolveNoiseMask_ScrollRotate;
         #endif
     #endif
 #endif
@@ -71,129 +71,129 @@ float4  _Color;
     float4  _ShadowColor;
     float4  _Shadow2ndColor;
     #if defined(LIL_FEATURE_SHADOW_3RD)
-        #define _Shadow3rdColor float4(0,0,0,0)
+        float4  _Shadow3rdColor;
     #endif
-    #define _ShadowBorderColor float4(1,0.01002281,0,1)
-    #define _ShadowAOShift float4(1,0,1,0)
+    float4  _ShadowBorderColor;
+    float4  _ShadowAOShift;
     #if defined(LIL_FEATURE_SHADOW_3RD)
-        #define _ShadowAOShift2 float4(1,0,1,0)
+        float4  _ShadowAOShift2;
     #endif
 #endif
 
 // Backlight
 #if defined(LIL_FEATURE_BACKLIGHT)
-    #define _BacklightColor float4(0.6920712,0.6038274,0.4479884,1)
-    #define _BacklightColorTex_ST float4(1,1,0,0)
+    float4  _BacklightColor;
+    float4  _BacklightColorTex_ST;
 #endif
 
 // Emission
 #if defined(LIL_FEATURE_EMISSION_1ST)
-    #define _EmissionColor float4(0,0,0,1)
-    #define _EmissionBlink float4(0,0,3.141593,0)
-    #define _EmissionMap_ST float4(1,1,0,0)
+    float4  _EmissionColor;
+    float4  _EmissionBlink;
+    float4  _EmissionMap_ST;
     #if defined(LIL_FEATURE_ANIMATE_EMISSION_UV)
-        #define _EmissionMap_ScrollRotate float4(0,0,0,0)
+        float4  _EmissionMap_ScrollRotate;
     #endif
-    #define _EmissionBlendMask_ST float4(1,1,0,0)
+    float4  _EmissionBlendMask_ST;
     #if defined(LIL_FEATURE_ANIMATE_EMISSION_MASK_UV)
-        #define _EmissionBlendMask_ScrollRotate float4(0,0,0,0)
+        float4  _EmissionBlendMask_ScrollRotate;
     #endif
 #endif
 
 // Emission 2nd
 #if defined(LIL_FEATURE_EMISSION_2ND)
-    #define _Emission2ndColor float4(1,1,1,1)
-    #define _Emission2ndBlink float4(0,0,3.141593,0)
-    #define _Emission2ndMap_ST float4(1,1,0,0)
+    float4  _Emission2ndColor;
+    float4  _Emission2ndBlink;
+    float4  _Emission2ndMap_ST;
     #if defined(LIL_FEATURE_ANIMATE_EMISSION_UV)
-        #define _Emission2ndMap_ScrollRotate float4(0,0,0,0)
+        float4  _Emission2ndMap_ScrollRotate;
     #endif
-    #define _Emission2ndBlendMask_ST float4(1,1,0,0)
+    float4  _Emission2ndBlendMask_ST;
     #if defined(LIL_FEATURE_ANIMATE_EMISSION_MASK_UV)
-        #define _Emission2ndBlendMask_ScrollRotate float4(0,0,0,0)
+        float4  _Emission2ndBlendMask_ScrollRotate;
     #endif
 #endif
 
 // Normal Map
 #if defined(LIL_FEATURE_NORMAL_1ST)
-    #define _BumpMap_ST float4(1,1,0,0)
+    float4  _BumpMap_ST;
 #endif
 
 // Normal Map 2nd
 #if defined(LIL_FEATURE_NORMAL_2ND)
-    #define _Bump2ndMap_ST float4(1,1,0,0)
-    #define _Bump2ndScaleMask_ST float4(1,1,0,0)
+    float4  _Bump2ndMap_ST;
+    float4  _Bump2ndScaleMask_ST;
 #endif
 
 // Anisotropy
 #if defined(LIL_FEATURE_ANISOTROPY)
-    #define _AnisotropyTangentMap_ST float4(1,1,0,0)
-    #define _AnisotropyScaleMask_ST float4(1,1,0,0)
-    #define _AnisotropyShiftNoiseMask_ST float4(1,1,0,0)
+    float4  _AnisotropyTangentMap_ST;
+    float4  _AnisotropyScaleMask_ST;
+    float4  _AnisotropyShiftNoiseMask_ST;
 #endif
 
 // Reflection
 #if defined(LIL_FEATURE_REFLECTION)
-    #define _ReflectionColor float4(1,1,1,1)
-    #define _MetallicGlossMap_ST float4(1,1,0,0)
-    #define _ReflectionColorTex_ST float4(1,1,0,0)
+    float4  _ReflectionColor;
+    float4  _MetallicGlossMap_ST;
+    float4  _ReflectionColorTex_ST;
 #endif
 #if defined(LIL_FEATURE_REFLECTION) || defined(LIL_REFRACTION_BLUR2)
-    #define _SmoothnessTex_ST float4(1,1,0,0)
+    float4  _SmoothnessTex_ST;
 #endif
 #if defined(LIL_FEATURE_REFLECTION) || defined(LIL_GEM)
-    #define _ReflectionCubeColor float4(0,0,0,1)
+    float4  _ReflectionCubeColor;
     float4  _ReflectionCubeTex_HDR;
 #endif
 
 // MatCap
 #if defined(LIL_FEATURE_MATCAP)
-    #define _MatCapColor float4(1,1,1,1)
-    #define _MatCapTex_ST float4(1,1,0,0)
-    #define _MatCapBlendMask_ST float4(1,1,0,0)
-    #define _MatCapBlendUV1 float4(0,0,0,0)
+    float4  _MatCapColor;
+    float4  _MatCapTex_ST;
+    float4  _MatCapBlendMask_ST;
+    float4  _MatCapBlendUV1;
     #if defined(LIL_FEATURE_MatCapBumpMap)
-        #define _MatCapBumpMap_ST float4(1,1,0,0)
+        float4  _MatCapBumpMap_ST;
     #endif
 #endif
 
 // MatCap 2nd
 #if defined(LIL_FEATURE_MATCAP_2ND)
-    #define _MatCap2ndColor float4(1,1,1,1)
-    #define _MatCap2ndTex_ST float4(1,1,0,0)
-    #define _MatCap2ndBlendMask_ST float4(1,1,0,0)
-    #define _MatCap2ndBlendUV1 float4(0,0,0,0)
+    float4  _MatCap2ndColor;
+    float4  _MatCap2ndTex_ST;
+    float4  _MatCap2ndBlendMask_ST;
+    float4  _MatCap2ndBlendUV1;
     #if defined(LIL_FEATURE_MatCap2ndBumpMap)
-        #define _MatCap2ndBumpMap_ST float4(1,1,0,0)
+        float4  _MatCap2ndBumpMap_ST;
     #endif
 #endif
 
 // Rim Light
 #if defined(LIL_FEATURE_RIMLIGHT)
-    #define _RimColor float4(0.3931231,0.2140411,0.1959942,1)
-    #define _RimColorTex_ST float4(1,1,0,0)
+    float4  _RimColor;
+    float4  _RimColorTex_ST;
     #if defined(LIL_FEATURE_RIMLIGHT_DIRECTION)
-        #define _RimIndirColor float4(1,1,1,1)
+        float4  _RimIndirColor;
     #endif
 #endif
 
 // Glitter
 #if defined(LIL_FEATURE_GLITTER)
-    #define _GlitterColor float4(1,1,1,1)
-    #define _GlitterColorTex_ST float4(1,1,0,0)
-    #define _GlitterParams1 float4(256,256,0.16,50)
-    #define _GlitterParams2 float4(0.25,0,0,0)
+    float4  _GlitterColor;
+    float4  _GlitterColorTex_ST;
+    float4  _GlitterParams1;
+    float4  _GlitterParams2;
     #if defined(LIL_FEATURE_GlitterShapeTex)
-        #define _GlitterShapeTex_ST float4(1,1,0,0)
-        #define _GlitterAtras float4(1,1,0,0)
+        float4  _GlitterShapeTex_ST;
+        float4  _GlitterAtras;
     #endif
 #endif
 
 // Distance Fade
 #if defined(LIL_FEATURE_DISTANCE_FADE)
-    #define _DistanceFade float4(0.1,0.01,0,0)
-    #define _DistanceFadeColor float4(0,0,0,1)
-    #define _DistanceFadeRimColor float4(0,0,0,0)
+    float4  _DistanceFade;
+    float4  _DistanceFadeColor;
+    float4  _DistanceFadeRimColor;
 #endif
 
 // Dither
@@ -203,49 +203,49 @@ float4  _Color;
 
 // AudioLink
 #if defined(LIL_FEATURE_AUDIOLINK)
-    #define _AudioLinkMask_ST float4(1,1,0,0)
-    #define _AudioLinkMask_ScrollRotate float4(0,0,0,0)
-    #define _AudioLinkDefaultValue float4(0,0,2,0.75)
-    #define _AudioLinkUVParams float4(0.25,0,0,0.125)
-    #define _AudioLinkStart float4(0,0,0,0)
+    float4  _AudioLinkMask_ST;
+    float4  _AudioLinkMask_ScrollRotate;
+    float4  _AudioLinkDefaultValue;
+    float4  _AudioLinkUVParams;
+    float4  _AudioLinkStart;
     #if defined(LIL_FEATURE_AUDIOLINK_VERTEX)
-        #define _AudioLinkVertexUVParams float4(0.25,0,0,0.125)
-        #define _AudioLinkVertexStart float4(0,0,0,0)
-        #define _AudioLinkVertexStrength float4(0,0,0,1)
+        float4  _AudioLinkVertexUVParams;
+        float4  _AudioLinkVertexStart;
+        float4  _AudioLinkVertexStrength;
     #endif
     #if defined(LIL_FEATURE_AUDIOLINK_LOCAL)
-        #define _AudioLinkLocalMapParams float4(120,1,0,0)
+        float4  _AudioLinkLocalMapParams;
     #endif
 #endif
 
 // Dissolve
 #if defined(LIL_FEATURE_DISSOLVE)
-    #define _DissolveMask_ST float4(1,1,0,0)
-    #define _DissolveColor float4(1,1,1,1)
-    #define _DissolveParams float4(0,0,0.5,0.1)
-    #define _DissolvePos float4(0,0,0,0)
+    float4  _DissolveMask_ST;
+    float4  _DissolveColor;
+    float4  _DissolveParams;
+    float4  _DissolvePos;
     #if defined(LIL_FEATURE_DissolveNoiseMask)
-        #define _DissolveNoiseMask_ST float4(1,1,0,0)
-        #define _DissolveNoiseMask_ScrollRotate float4(0,0,0,0)
+        float4  _DissolveNoiseMask_ST;
+        float4  _DissolveNoiseMask_ScrollRotate;
     #endif
 #endif
 
 // Encryption
 #if defined(LIL_FEATURE_ENCRYPTION)
-    #define _Keys float4(0,0,0,0)
+    float4  _Keys;
 #endif
 
 // Outline
 #if !defined(LIL_FUR) && !defined(LIL_REFRACTION) && !defined(LIL_GEM)
-    #define _OutlineColor float4(0.3185468,0.2738385,0.4919051,1)
-    #define _OutlineLitColor float4(1,0.03310476,0,0)
-    #define _OutlineTex_ST float4(1,1,0,0)
+    float4  _OutlineColor;
+    float4  _OutlineLitColor;
+    float4  _OutlineTex_ST;
     #if defined(LIL_FEATURE_ANIMATE_OUTLINE_UV)
-        #define _OutlineTex_ScrollRotate float4(0,0,0,0)
+        float4  _OutlineTex_ScrollRotate;
     #endif
     #if defined(LIL_FEATURE_OutlineTex)
         #if defined(LIL_FEATURE_OUTLINE_TONE_CORRECTION)
-            #define _OutlineTexHSVG float4(0,1,1,1)
+            float4  _OutlineTexHSVG;
         #endif
     #endif
 #endif
@@ -269,240 +269,240 @@ float4  _Color;
 
 //------------------------------------------------------------------------------------------------------------------------------
 // Float
-#define _AsUnlit (0)
-#define _Cutoff (0.001)
+float   _AsUnlit;
+float   _Cutoff;
 #if LIL_RENDER == 2 && !defined(LIL_FUR) && !defined(LIL_GEM) && !defined(LIL_REFRACTION)
     float   _PreCutoff;
 #endif
-#define _SubpassCutoff (0.5)
-#define _FlipNormal (0)
-#define _ShiftBackfaceUV (0)
-#define _VertexLightStrength (0)
-#define _LightMinLimit (0.05)
-#define _LightMaxLimit (1)
-#define _MonochromeLighting (0)
-#define _AAStrength (1)
+float   _SubpassCutoff;
+float   _FlipNormal;
+float   _ShiftBackfaceUV;
+float   _VertexLightStrength;
+float   _LightMinLimit;
+float   _LightMaxLimit;
+float   _MonochromeLighting;
+float   _AAStrength;
 #if defined(LIL_BRP)
-    #define _AlphaBoostFA (10)
+    float   _AlphaBoostFA;
 #endif
 #if defined(LIL_HDRP)
-    #define _BeforeExposureLimit (10000)
-    #define _lilDirectionalLightStrength (1)
+    float   _BeforeExposureLimit;
+    float   _lilDirectionalLightStrength;
 #endif
 #if defined(LIL_FEATURE_MAIN_GRADATION_MAP)
-    #define _MainGradationStrength (0)
+    float   _MainGradationStrength;
 #endif
 #if defined(LIL_FEATURE_MAIN2ND)
-    #define _Main2ndTexAngle (0)
-    #define _Main2ndEnableLighting (1)
+    float   _Main2ndTexAngle;
+    float   _Main2ndEnableLighting;
     #if defined(LIL_FEATURE_Main2ndDissolveNoiseMask)
-        #define _Main2ndDissolveNoiseStrength (0.1)
+        float   _Main2ndDissolveNoiseStrength;
     #endif
 #endif
 #if defined(LIL_FEATURE_MAIN3RD)
-    #define _Main3rdTexAngle (0)
-    #define _Main3rdEnableLighting (1)
+    float   _Main3rdTexAngle;
+    float   _Main3rdEnableLighting;
     #if defined(LIL_FEATURE_Main3rdDissolveNoiseMask)
-        #define _Main3rdDissolveNoiseStrength (0.1)
+        float   _Main3rdDissolveNoiseStrength;
     #endif
 #endif
 #if defined(LIL_FEATURE_ALPHAMASK)
-    #define _AlphaMask_ST float4(1,1,0,0)
-    #define _AlphaMaskScale (1)
-    #define _AlphaMaskValue (0)
+    float4  _AlphaMask_ST;
+    float   _AlphaMaskScale;
+    float   _AlphaMaskValue;
 #endif
 #if defined(LIL_FEATURE_SHADOW)
-    #define _BackfaceForceShadow (0)
-    #define _ShadowStrength (1)
-    #define _ShadowNormalStrength (1)
-    #define _ShadowBorder (0.5)
-    #define _ShadowBlur (0.1)
-    #define _ShadowStrengthMaskLOD (0)
-    #define _ShadowBorderMaskLOD (0)
-    #define _ShadowBlurMaskLOD (0)
-    #define _Shadow2ndNormalStrength (1)
-    #define _Shadow2ndBorder (0.15)
-    #define _Shadow2ndBlur (0.1)
+    float   _BackfaceForceShadow;
+    float   _ShadowStrength;
+    float   _ShadowNormalStrength;
+    float   _ShadowBorder;
+    float   _ShadowBlur;
+    float   _ShadowStrengthMaskLOD;
+    float   _ShadowBorderMaskLOD;
+    float   _ShadowBlurMaskLOD;
+    float   _Shadow2ndNormalStrength;
+    float   _Shadow2ndBorder;
+    float   _Shadow2ndBlur;
     #if defined(LIL_FEATURE_SHADOW_3RD)
-        #define _Shadow3rdNormalStrength (1)
-        #define _Shadow3rdBorder (0.25)
-        #define _Shadow3rdBlur (0.1)
+        float   _Shadow3rdNormalStrength;
+        float   _Shadow3rdBorder;
+        float   _Shadow3rdBlur;
     #endif
-    #define _ShadowMainStrength (0)
-    #define _ShadowEnvStrength (0)
-    #define _ShadowBorderRange (0.08)
+    float   _ShadowMainStrength;
+    float   _ShadowEnvStrength;
+    float   _ShadowBorderRange;
     #if defined(LIL_FEATURE_RECEIVE_SHADOW)
-        #define _ShadowReceive (0)
-        #define _Shadow2ndReceive (0)
-        #define _Shadow3rdReceive (0)
+        float   _ShadowReceive;
+        float   _Shadow2ndReceive;
+        float   _Shadow3rdReceive;
     #endif
-    #define _ShadowFlatBlur (1)
-    #define _ShadowFlatBorder (1)
+    float   _ShadowFlatBlur;
+    float   _ShadowFlatBorder;
 #endif
 #if defined(LIL_FEATURE_BACKLIGHT)
-    #define _BacklightNormalStrength (1)
-    #define _BacklightBorder (0.35)
-    #define _BacklightBlur (0.05)
-    #define _BacklightDirectivity (5)
-    #define _BacklightViewStrength (1)
-    #define _BacklightBackfaceMask (1)
-    #define _BacklightMainStrength (0)
+    float   _BacklightNormalStrength;
+    float   _BacklightBorder;
+    float   _BacklightBlur;
+    float   _BacklightDirectivity;
+    float   _BacklightViewStrength;
+    float   _BacklightBackfaceMask;
+    float   _BacklightMainStrength;
 #endif
 #if defined(LIL_FEATURE_NORMAL_1ST)
-    #define _BumpScale (1)
+    float   _BumpScale;
 #endif
 #if defined(LIL_FEATURE_NORMAL_2ND)
-    #define _Bump2ndScale (1)
+    float   _Bump2ndScale;
 #endif
 #if defined(LIL_FEATURE_ANISOTROPY)
-    #define _AnisotropyScale (1)
-    #define _AnisotropyTangentWidth (1)
-    #define _AnisotropyBitangentWidth (1)
-    #define _AnisotropyShift (0)
-    #define _AnisotropyShiftNoiseScale (0)
-    #define _AnisotropySpecularStrength (1)
-    #define _Anisotropy2ndTangentWidth (1)
-    #define _Anisotropy2ndBitangentWidth (1)
-    #define _Anisotropy2ndShift (0)
-    #define _Anisotropy2ndShiftNoiseScale (0)
-    #define _Anisotropy2ndSpecularStrength (0)
+    float   _AnisotropyScale;
+    float   _AnisotropyTangentWidth;
+    float   _AnisotropyBitangentWidth;
+    float   _AnisotropyShift;
+    float   _AnisotropyShiftNoiseScale;
+    float   _AnisotropySpecularStrength;
+    float   _Anisotropy2ndTangentWidth;
+    float   _Anisotropy2ndBitangentWidth;
+    float   _Anisotropy2ndShift;
+    float   _Anisotropy2ndShiftNoiseScale;
+    float   _Anisotropy2ndSpecularStrength;
 #endif
 #if defined(LIL_FEATURE_REFLECTION) || defined(LIL_GEM)
-    #define _Reflectance (0.003095975)
-    #define _SpecularNormalStrength (1)
-    #define _SpecularBorder (0.5)
-    #define _SpecularBlur (0)
-    #define _ReflectionNormalStrength (1)
-    #define _ReflectionCubeEnableLighting (1)
+    float   _Reflectance;
+    float   _SpecularNormalStrength;
+    float   _SpecularBorder;
+    float   _SpecularBlur;
+    float   _ReflectionNormalStrength;
+    float   _ReflectionCubeEnableLighting;
 #endif
 #if defined(LIL_FEATURE_REFLECTION) || defined(LIL_GEM) || defined(LIL_REFRACTION_BLUR2)
-    #define _Smoothness (1)
+    float   _Smoothness;
 #endif
 #if defined(LIL_FEATURE_REFLECTION)
-    #define _Metallic (0)
-    #define _GSAAStrength (0)
+    float   _Metallic;
+    float   _GSAAStrength;
 #endif
 #if defined(LIL_FEATURE_MATCAP)
-    #define _MatCapBlend (1)
-    #define _MatCapEnableLighting (1)
-    #define _MatCapShadowMask (0)
-    #define _MatCapVRParallaxStrength (1)
-    #define _MatCapBackfaceMask (0)
-    #define _MatCapLod (0)
-    #define _MatCapNormalStrength (1)
-    #define _MatCapMainStrength (0)
+    float   _MatCapBlend;
+    float   _MatCapEnableLighting;
+    float   _MatCapShadowMask;
+    float   _MatCapVRParallaxStrength;
+    float   _MatCapBackfaceMask;
+    float   _MatCapLod;
+    float   _MatCapNormalStrength;
+    float   _MatCapMainStrength;
     #if defined(LIL_FEATURE_MatCapBumpMap)
-        #define _MatCapBumpScale (1)
+        float   _MatCapBumpScale;
     #endif
 #endif
 #if defined(LIL_FEATURE_MATCAP_2ND)
-    #define _MatCap2ndBlend (1)
-    #define _MatCap2ndEnableLighting (1)
-    #define _MatCap2ndShadowMask (0)
-    #define _MatCap2ndVRParallaxStrength (1)
-    #define _MatCap2ndBackfaceMask (0)
-    #define _MatCap2ndLod (0)
-    #define _MatCap2ndNormalStrength (1)
-    #define _MatCap2ndMainStrength (0)
+    float   _MatCap2ndBlend;
+    float   _MatCap2ndEnableLighting;
+    float   _MatCap2ndShadowMask;
+    float   _MatCap2ndVRParallaxStrength;
+    float   _MatCap2ndBackfaceMask;
+    float   _MatCap2ndLod;
+    float   _MatCap2ndNormalStrength;
+    float   _MatCap2ndMainStrength;
     #if defined(LIL_FEATURE_MatCap2ndBumpMap)
-        #define _MatCap2ndBumpScale (1)
+        float   _MatCap2ndBumpScale;
     #endif
 #endif
 #if defined(LIL_FEATURE_RIMLIGHT)
-    #define _RimNormalStrength (1)
-    #define _RimBorder (0.5)
-    #define _RimBlur (0.65)
-    #define _RimFresnelPower (3.5)
-    #define _RimEnableLighting (1)
-    #define _RimShadowMask (0.5)
-    #define _RimVRParallaxStrength (1)
-    #define _RimBackfaceMask (1)
-    #define _RimMainStrength (0)
+    float   _RimNormalStrength;
+    float   _RimBorder;
+    float   _RimBlur;
+    float   _RimFresnelPower;
+    float   _RimEnableLighting;
+    float   _RimShadowMask;
+    float   _RimVRParallaxStrength;
+    float   _RimBackfaceMask;
+    float   _RimMainStrength;
     #if defined(LIL_FEATURE_RIMLIGHT_DIRECTION)
-        #define _RimDirStrength (0)
-        #define _RimDirRange (0)
-        #define _RimIndirRange (0)
-        #define _RimIndirBorder (0.5)
-        #define _RimIndirBlur (0.1)
+        float   _RimDirStrength;
+        float   _RimDirRange;
+        float   _RimIndirRange;
+        float   _RimIndirBorder;
+        float   _RimIndirBlur;
     #endif
 #endif
 #if defined(LIL_FEATURE_GLITTER)
-    #define _GlitterMainStrength (0)
-    #define _GlitterPostContrast (1)
-    #define _GlitterSensitivity (0.25)
-    #define _GlitterNormalStrength (1)
-    #define _GlitterEnableLighting (1)
-    #define _GlitterShadowMask (0)
-    #define _GlitterVRParallaxStrength (0)
-    #define _GlitterBackfaceMask (0)
-    #define _GlitterScaleRandomize (0)
+    float   _GlitterMainStrength;
+    float   _GlitterPostContrast;
+    float   _GlitterSensitivity;
+    float   _GlitterNormalStrength;
+    float   _GlitterEnableLighting;
+    float   _GlitterShadowMask;
+    float   _GlitterVRParallaxStrength;
+    float   _GlitterBackfaceMask;
+    float   _GlitterScaleRandomize;
 #endif
 #if defined(LIL_FEATURE_DISTANCE_FADE)
-    #define _DistanceFadeRimFresnelPower (5)
+    float   _DistanceFadeRimFresnelPower;
 #endif
 #if defined(LIL_FEATURE_EMISSION_1ST)
-    #define _EmissionBlend (1)
-    #define _EmissionParallaxDepth (0)
-    #define _EmissionFluorescence (0)
-    #define _EmissionMainStrength (0)
+    float   _EmissionBlend;
+    float   _EmissionParallaxDepth;
+    float   _EmissionFluorescence;
+    float   _EmissionMainStrength;
     #if defined(LIL_FEATURE_EMISSION_GRADATION)
-        #define _EmissionGradSpeed (1)
+        float   _EmissionGradSpeed;
     #endif
 #endif
 #if defined(LIL_FEATURE_EMISSION_2ND)
-    #define _Emission2ndBlend (1)
-    #define _Emission2ndParallaxDepth (0)
-    #define _Emission2ndFluorescence (0)
-    #define _Emission2ndMainStrength (0)
+    float   _Emission2ndBlend;
+    float   _Emission2ndParallaxDepth;
+    float   _Emission2ndFluorescence;
+    float   _Emission2ndMainStrength;
     #if defined(LIL_FEATURE_EMISSION_GRADATION)
-        #define _Emission2ndGradSpeed (1)
+        float   _Emission2ndGradSpeed;
     #endif
 #endif
 #if defined(LIL_FEATURE_PARALLAX)
-    #define _Parallax (0.02)
-    #define _ParallaxOffset (0.5)
+    float   _Parallax;
+    float   _ParallaxOffset;
 #endif
 #if defined(LIL_FEATURE_DITHER)
-    #define _DitherMaxValue (255)
+    float   _DitherMaxValue;
 #endif
 #if defined(LIL_FEATURE_AUDIOLINK)
-    #define _AudioLink2EmissionGrad (0)
-    #define _AudioLink2Emission2ndGrad (0)
+    float   _AudioLink2EmissionGrad;
+    float   _AudioLink2Emission2ndGrad;
 #endif
 #if defined(LIL_FEATURE_DISSOLVE) &&  defined(LIL_FEATURE_DissolveNoiseMask)
-    #define _DissolveNoiseStrength (0.1)
+    float   _DissolveNoiseStrength;
 #endif
 #if defined(LIL_FEATURE_IDMASK)
-    #define _IDMask1 (0)
-    #define _IDMask2 (0)
-    #define _IDMask3 (0)
-    #define _IDMask4 (0)
-    #define _IDMask5 (0)
-    #define _IDMask6 (0)
-    #define _IDMask7 (0)
-    #define _IDMask8 (0)
+    float   _IDMask1;
+    float   _IDMask2;
+    float   _IDMask3;
+    float   _IDMask4;
+    float   _IDMask5;
+    float   _IDMask6;
+    float   _IDMask7;
+    float   _IDMask8;
 #endif
-#define _lilShadowCasterBias (0)
+float   _lilShadowCasterBias;
 
 #if !defined(LIL_FUR) && !defined(LIL_REFRACTION) && !defined(LIL_GEM)
-    #define _OutlineLitScale (10)
-    #define _OutlineLitOffset (-8)
-    #define _OutlineWidth (0.08)
-    #define _OutlineEnableLighting (1)
-    #define _OutlineVectorScale (1)
-    #define _OutlineFixWidth (0.5)
-    #define _OutlineZBias (0)
+    float   _OutlineLitScale;
+    float   _OutlineLitOffset;
+    float   _OutlineWidth;
+    float   _OutlineEnableLighting;
+    float   _OutlineVectorScale;
+    float   _OutlineFixWidth;
+    float   _OutlineZBias;
 #endif
 
 #if defined(LIL_FUR)
-    #define _FurVectorScale (1)
-    #define _FurGravity (0.25)
-    #define _FurAO (0)
-    #define _FurRootOffset (-1)
-    #define _FurRandomize (0)
-    #define _FurCutoutLength (0.8)
+    float   _FurVectorScale;
+    float   _FurGravity;
+    float   _FurAO;
+    float   _FurRootOffset;
+    float   _FurRandomize;
+    float   _FurCutoutLength;
     #if defined(LIL_FEATURE_FUR_COLLISION)
-        #define _FurTouchStrength (0)
+        float   _FurTouchStrength;
     #endif
 #endif
 #if defined(LIL_REFRACTION)
@@ -510,10 +510,10 @@ float4  _Color;
     float   _RefractionFresnelPower;
 #endif
 #if defined(LIL_TESSELLATION)
-    #define _TessEdge (10)
-    #define _TessStrength (0.5)
-    #define _TessShrink (0)
-    #define _TessFactorMax (3)
+    float   _TessEdge;
+    float   _TessStrength;
+    float   _TessShrink;
+    float   _TessFactorMax;
 #endif
 #if defined(LIL_GEM)
     float   _GemChromaticAberration;
@@ -535,9 +535,9 @@ float4  _Color;
     int     _IDMaskIndex6;
     int     _IDMaskIndex7;
     int     _IDMaskIndex8;
-    #define _IDMaskFrom (8)
+    uint    _IDMaskFrom;
 #endif
-#define _Cull (2)
+uint    _Cull;
 #if !defined(LIL_FUR) && !defined(LIL_REFRACTION) && !defined(LIL_GEM)
     uint    _OutlineCull;
 #endif
@@ -545,213 +545,213 @@ float4  _Color;
     uint    _PreOutType;
 #endif
 #if defined(LIL_FEATURE_MAIN2ND)
-    #define _Main2ndTexBlendMode (0)
-    #define _Main2ndTexAlphaMode (0)
-    #define _Main2ndTex_UVMode (0)
-    #define _Main2ndTex_Cull (0)
+    uint    _Main2ndTexBlendMode;
+    uint    _Main2ndTexAlphaMode;
+    uint    _Main2ndTex_UVMode;
+    uint    _Main2ndTex_Cull;
 #endif
 #if defined(LIL_FEATURE_MAIN3RD)
-    #define _Main3rdTexBlendMode (0)
-    #define _Main3rdTexAlphaMode (0)
-    #define _Main3rdTex_UVMode (0)
-    #define _Main3rdTex_Cull (0)
+    uint    _Main3rdTexBlendMode;
+    uint    _Main3rdTexAlphaMode;
+    uint    _Main3rdTex_UVMode;
+    uint    _Main3rdTex_Cull;
 #endif
 #if defined(LIL_FEATURE_ALPHAMASK)
     uint    _AlphaMaskMode;
 #endif
 #if defined(LIL_FEATURE_SHADOW)
-    #define _ShadowColorType (0)
-    #define _ShadowMaskType (0)
+    uint    _ShadowColorType;
+    uint    _ShadowMaskType;
 #endif
 #if defined(LIL_FEATURE_NORMAL_2ND)
-    #define _Bump2ndMap_UVMode (0)
+    uint    _Bump2ndMap_UVMode;
 #endif
 #if defined(LIL_FEATURE_REFLECTION)
-    #define _ReflectionBlendMode (1)
+    uint    _ReflectionBlendMode;
 #endif
 #if defined(LIL_FEATURE_MATCAP)
-    #define _MatCapBlendMode (1)
+    uint    _MatCapBlendMode;
 #endif
 #if defined(LIL_FEATURE_MATCAP_2ND)
-    #define _MatCap2ndBlendMode (1)
+    uint    _MatCap2ndBlendMode;
 #endif
 #if defined(LIL_FEATURE_RIMLIGHT)
-    #define _RimBlendMode (1)
+    uint    _RimBlendMode;
 #endif
 #if defined(LIL_FEATURE_GLITTER)
-    #define _GlitterUVMode (0)
+    uint    _GlitterUVMode;
 #endif
 #if defined(LIL_FEATURE_EMISSION_1ST)
-    #define _EmissionMap_UVMode (0)
-    #define _EmissionBlendMode (1)
+    uint    _EmissionMap_UVMode;
+    uint    _EmissionBlendMode;
 #endif
 #if defined(LIL_FEATURE_EMISSION_2ND)
-    #define _Emission2ndMap_UVMode (0)
-    #define _Emission2ndBlendMode (1)
+    uint    _Emission2ndMap_UVMode;
+    uint    _Emission2ndBlendMode;
 #endif
 #if defined(LIL_FEATURE_AUDIOLINK)
-    #define _AudioLinkUVMode (1)
-    #define _AudioLinkMask_UVMode (0)
+    uint    _AudioLinkUVMode;
+    uint    _AudioLinkMask_UVMode;
     #if defined(LIL_FEATURE_AUDIOLINK_VERTEX)
-        #define _AudioLinkVertexUVMode (1)
+        uint    _AudioLinkVertexUVMode;
     #endif
 #endif
 #if defined(LIL_FEATURE_DISTANCE_FADE)
-    #define _DistanceFadeMode (0)
+    uint    _DistanceFadeMode;
 #endif
 #if defined(LIL_FEATURE_DITHER)
-    #define _UseDither (0)
+    uint    _UseDither;
 #endif
 #if !defined(LIL_FUR) && !defined(LIL_REFRACTION) && !defined(LIL_GEM)
-    #define _OutlineVertexR2Width (0)
-    #define _OutlineVectorUVMode (0)
+    uint    _OutlineVertexR2Width;
+    uint    _OutlineVectorUVMode;
 #endif
 #if defined(LIL_FUR)
-    #define _FurLayerNum (3)
-    #define _FurMeshType (0)
+    uint    _FurLayerNum;
+    uint    _FurMeshType;
 #endif
 
 //------------------------------------------------------------------------------------------------------------------------------
 // Bool
-#define _Invisible (0)
+lilBool _Invisible;
 #if defined(LIL_FEATURE_MAIN2ND)
-    #define _UseMain2ndTex (0)
-    #define _Main2ndTexIsMSDF (0)
+    lilBool _UseMain2ndTex;
+    lilBool _Main2ndTexIsMSDF;
     #if defined(LIL_FEATURE_DECAL)
-        #define _Main2ndTexIsDecal (0)
-        #define _Main2ndTexIsLeftOnly (0)
-        #define _Main2ndTexIsRightOnly (0)
-        #define _Main2ndTexShouldCopy (0)
-        #define _Main2ndTexShouldFlipMirror (0)
-        #define _Main2ndTexShouldFlipCopy (0)
+        lilBool _Main2ndTexIsDecal;
+        lilBool _Main2ndTexIsLeftOnly;
+        lilBool _Main2ndTexIsRightOnly;
+        lilBool _Main2ndTexShouldCopy;
+        lilBool _Main2ndTexShouldFlipMirror;
+        lilBool _Main2ndTexShouldFlipCopy;
     #endif
 #endif
 #if defined(LIL_FEATURE_MAIN3RD)
-    #define _UseMain3rdTex (0)
-    #define _Main3rdTexIsMSDF (0)
+    lilBool _UseMain3rdTex;
+    lilBool _Main3rdTexIsMSDF;
     #if defined(LIL_FEATURE_DECAL)
-        #define _Main3rdTexIsDecal (0)
-        #define _Main3rdTexIsLeftOnly (0)
-        #define _Main3rdTexIsRightOnly (0)
-        #define _Main3rdTexShouldCopy (0)
-        #define _Main3rdTexShouldFlipMirror (0)
-        #define _Main3rdTexShouldFlipCopy (0)
+        lilBool _Main3rdTexIsDecal;
+        lilBool _Main3rdTexIsLeftOnly;
+        lilBool _Main3rdTexIsRightOnly;
+        lilBool _Main3rdTexShouldCopy;
+        lilBool _Main3rdTexShouldFlipMirror;
+        lilBool _Main3rdTexShouldFlipCopy;
     #endif
 #endif
 #if defined(LIL_FEATURE_SHADOW)
-    #define _UseShadow (1)
-    #define _ShadowPostAO (0)
+    lilBool _UseShadow;
+    lilBool _ShadowPostAO;
 #endif
 #if defined(LIL_FEATURE_BACKLIGHT)
-    #define _UseBacklight (0)
-    #define _BacklightReceiveShadow (1)
+    lilBool _UseBacklight;
+    lilBool _BacklightReceiveShadow;
 #endif
 #if defined(LIL_FEATURE_NORMAL_1ST)
-    #define _UseBumpMap (0)
+    lilBool _UseBumpMap;
 #endif
 #if defined(LIL_FEATURE_NORMAL_2ND)
-    #define _UseBump2ndMap (0)
+    lilBool _UseBump2ndMap;
 #endif
 #if defined(LIL_FEATURE_ANISOTROPY)
-    #define _UseAnisotropy (0)
-    #define _Anisotropy2Reflection (0)
-    #define _Anisotropy2MatCap (0)
-    #define _Anisotropy2MatCap2nd (0)
+    lilBool _UseAnisotropy;
+    lilBool _Anisotropy2Reflection;
+    lilBool _Anisotropy2MatCap;
+    lilBool _Anisotropy2MatCap2nd;
 #endif
 #if defined(LIL_FEATURE_REFLECTION)
-    #define _UseReflection (0)
-    #define _ApplySpecular (1)
-    #define _ApplySpecularFA (1)
-    #define _ApplyReflection (0)
-    #define _SpecularToon (1)
-    #define _ReflectionApplyTransparency (1)
+    lilBool _UseReflection;
+    lilBool _ApplySpecular;
+    lilBool _ApplySpecularFA;
+    lilBool _ApplyReflection;
+    lilBool _SpecularToon;
+    lilBool _ReflectionApplyTransparency;
 #endif
 #if defined(LIL_FEATURE_REFLECTION) || defined(LIL_GEM)
-    #define _ReflectionCubeOverride (0)
+    lilBool _ReflectionCubeOverride;
 #endif
 #if defined(LIL_FEATURE_MATCAP)
-    #define _UseMatCap (0)
-    #define _MatCapApplyTransparency (1)
-    #define _MatCapPerspective (1)
-    #define _MatCapZRotCancel (1)
+    lilBool _UseMatCap;
+    lilBool _MatCapApplyTransparency;
+    lilBool _MatCapPerspective;
+    lilBool _MatCapZRotCancel;
     #if defined(LIL_FEATURE_MatCapBumpMap)
-        #define _MatCapCustomNormal (0)
+        lilBool _MatCapCustomNormal;
     #endif
 #endif
 #if defined(LIL_FEATURE_MATCAP_2ND)
-    #define _UseMatCap2nd (0)
-    #define _MatCap2ndApplyTransparency (1)
-    #define _MatCap2ndPerspective (1)
-    #define _MatCap2ndZRotCancel (1)
+    lilBool _UseMatCap2nd;
+    lilBool _MatCap2ndApplyTransparency;
+    lilBool _MatCap2ndPerspective;
+    lilBool _MatCap2ndZRotCancel;
     #if defined(LIL_FEATURE_MatCap2ndBumpMap)
-        #define _MatCap2ndCustomNormal (0)
+        lilBool _MatCap2ndCustomNormal;
     #endif
 #endif
 #if defined(LIL_FEATURE_RIMLIGHT)
-    #define _UseRim (0)
-    #define _RimApplyTransparency (1)
+    lilBool _UseRim;
+    lilBool _RimApplyTransparency;
 #endif
 #if defined(LIL_FEATURE_GLITTER)
-    #define _UseGlitter (0)
-    #define _GlitterColorTex_UVMode (0)
-    #define _GlitterApplyTransparency (1)
+    lilBool _UseGlitter;
+    lilBool _GlitterColorTex_UVMode;
+    lilBool _GlitterApplyTransparency;
     #if defined(LIL_FEATURE_GlitterShapeTex)
-        #define _GlitterApplyShape (0)
-        #define _GlitterAngleRandomize (0)
+        lilBool _GlitterApplyShape;
+        lilBool _GlitterAngleRandomize;
     #endif
 #endif
 #if defined(LIL_FEATURE_EMISSION_1ST)
-    #define _UseEmission (0)
+    lilBool _UseEmission;
     #if defined(LIL_FEATURE_EMISSION_GRADATION)
-        #define _EmissionUseGrad (0)
+        lilBool _EmissionUseGrad;
     #endif
 #endif
 #if defined(LIL_FEATURE_EMISSION_2ND)
-    #define _UseEmission2nd (0)
+    lilBool _UseEmission2nd;
     #if defined(LIL_FEATURE_EMISSION_GRADATION)
-        #define _Emission2ndUseGrad (0)
+        lilBool _Emission2ndUseGrad;
     #endif
 #endif
 #if defined(LIL_FEATURE_PARALLAX)
-    #define _UseParallax (0)
+    lilBool _UseParallax;
     #if defined(LIL_FEATURE_POM)
-        #define _UsePOM (0)
+        lilBool _UsePOM;
     #endif
 #endif
 #if defined(LIL_FEATURE_AUDIOLINK)
-    #define _UseAudioLink (0)
+    lilBool _UseAudioLink;
     #if defined(LIL_FEATURE_MAIN2ND)
-        #define _AudioLink2Main2nd (0)
+        lilBool _AudioLink2Main2nd;
     #endif
     #if defined(LIL_FEATURE_MAIN3RD)
-        #define _AudioLink2Main3rd (0)
+        lilBool _AudioLink2Main3rd;
     #endif
     #if defined(LIL_FEATURE_EMISSION_1ST)
-        #define _AudioLink2Emission (0)
+        lilBool _AudioLink2Emission;
     #endif
     #if defined(LIL_FEATURE_EMISSION_2ND)
-        #define _AudioLink2Emission2nd (0)
+        lilBool _AudioLink2Emission2nd;
     #endif
     #if defined(LIL_FEATURE_AUDIOLINK_VERTEX)
-        #define _AudioLink2Vertex (0)
+        lilBool _AudioLink2Vertex;
     #endif
     #if defined(LIL_FEATURE_AUDIOLINK_LOCAL)
-        #define _AudioLinkAsLocal (0)
+        lilBool _AudioLinkAsLocal;
     #endif
 #endif
 #if defined(LIL_FEATURE_ENCRYPTION)
-    #define _IgnoreEncryption (0)
+    lilBool _IgnoreEncryption;
 #endif
 
 #if !defined(LIL_FUR) && !defined(LIL_REFRACTION) && !defined(LIL_GEM)
-    #define _OutlineLitApplyTex (0)
-    #define _OutlineLitShadowReceive (0)
-    #define _OutlineDeleteMesh (0)
-    #define _OutlineDisableInVR (0)
+    lilBool _OutlineLitApplyTex;
+    lilBool _OutlineLitShadowReceive;
+    lilBool _OutlineDeleteMesh;
+    lilBool _OutlineDisableInVR;
 #endif
 
 #if defined(LIL_FUR)
-    #define _VertexColor2FurVector (0)
+    lilBool _VertexColor2FurVector;
 #endif
 #if defined(LIL_REFRACTION)
     lilBool _RefractionColorFromMain;
