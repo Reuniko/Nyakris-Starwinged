@@ -6490,28 +6490,6 @@ Transform:
   - {fileID: 774663482}
   m_Father: {fileID: 2144603644}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!91 &204979790
-AnimatorController:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_Name: Fake Temporary Controller__DoNotModify
-  serializedVersion: 5
-  m_AnimatorParameters: []
-  m_AnimatorLayers:
-  - serializedVersion: 5
-    m_Name: Base
-    m_StateMachine: {fileID: 896709533}
-    m_Mask: {fileID: 0}
-    m_Motions: []
-    m_Behaviours: []
-    m_BlendingMode: 0
-    m_SyncedLayerIndex: -1
-    m_DefaultWeight: 0
-    m_IKPass: 0
-    m_SyncedLayerAffectsTiming: 0
-    m_Controller: {fileID: 204979790}
 --- !u!1 &205464344
 GameObject:
   m_ObjectHideFlags: 0
@@ -14419,6 +14397,28 @@ Transform:
   - {fileID: 508406518}
   m_Father: {fileID: 1114807500}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!91 &628907736
+AnimatorController:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: Fake Temporary Controller__DoNotModify
+  serializedVersion: 5
+  m_AnimatorParameters: []
+  m_AnimatorLayers:
+  - serializedVersion: 5
+    m_Name: Base
+    m_StateMachine: {fileID: 1583308443}
+    m_Mask: {fileID: 0}
+    m_Motions: []
+    m_Behaviours: []
+    m_BlendingMode: 0
+    m_SyncedLayerIndex: -1
+    m_DefaultWeight: 0
+    m_IKPass: 0
+    m_SyncedLayerAffectsTiming: 0
+    m_Controller: {fileID: 628907736}
 --- !u!1 &630617825
 GameObject:
   m_ObjectHideFlags: 0
@@ -23098,28 +23098,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 113.2, y: -30, z: 0}
---- !u!1107 &896709533
-AnimatorStateMachine:
-  serializedVersion: 6
-  m_ObjectHideFlags: 1
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_Name: Base
-  m_ChildStates:
-  - serializedVersion: 1
-    m_State: {fileID: 2010206211}
-    m_Position: {x: 200, y: 0, z: 0}
-  m_ChildStateMachines: []
-  m_AnyStateTransitions: []
-  m_EntryTransitions: []
-  m_StateMachineTransitions: {}
-  m_StateMachineBehaviours: []
-  m_AnyStatePosition: {x: 50, y: 20, z: 0}
-  m_EntryPosition: {x: 50, y: 120, z: 0}
-  m_ExitPosition: {x: 800, y: 120, z: 0}
-  m_ParentStateMachinePosition: {x: 800, y: 20, z: 0}
-  m_DefaultState: {fileID: 2010206211}
 --- !u!1 &899676729
 GameObject:
   m_ObjectHideFlags: 0
@@ -30998,37 +30976,6 @@ Transform:
   - {fileID: 1231777307}
   m_Father: {fileID: 250207371}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1 &1296318598
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1296318599}
-  m_Layer: 0
-  m_Name: PenTarget
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &1296318599
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1296318598}
-  serializedVersion: 2
-  m_LocalRotation: {x: 0.5002506, y: 0.50895774, z: 0.49850756, w: 0.49213988}
-  m_LocalPosition: {x: 0.00017859177, y: 0.0012804666, z: 0.000053456537}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 1878863075}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!4 &1303122428 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: -484444037552573092, guid: e3ca3f68a491c734ea5d74bd041aa1e0,
@@ -38671,6 +38618,28 @@ Transform:
   - {fileID: 103908708}
   m_Father: {fileID: 1793169509}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1107 &1583308443
+AnimatorStateMachine:
+  serializedVersion: 6
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: Base
+  m_ChildStates:
+  - serializedVersion: 1
+    m_State: {fileID: 1797513122}
+    m_Position: {x: 200, y: 0, z: 0}
+  m_ChildStateMachines: []
+  m_AnyStateTransitions: []
+  m_EntryTransitions: []
+  m_StateMachineTransitions: {}
+  m_StateMachineBehaviours: []
+  m_AnyStatePosition: {x: 50, y: 20, z: 0}
+  m_EntryPosition: {x: 50, y: 120, z: 0}
+  m_ExitPosition: {x: 800, y: 120, z: 0}
+  m_ParentStateMachinePosition: {x: 800, y: 20, z: 0}
+  m_DefaultState: {fileID: 1797513122}
 --- !u!1 &1593928000
 GameObject:
   m_ObjectHideFlags: 0
@@ -40356,8 +40325,8 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: 0.50519025, y: 0.50515795, z: 0.49478814, w: 0.49475548}
   m_LocalPosition: {x: 0, y: 0.0002, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
+  m_LocalScale: {x: 0.01, y: 0.01, z: 0.01}
+  m_ConstrainProportionsScale: 1
   m_Children: []
   m_Father: {fileID: 1878863068}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -40463,7 +40432,7 @@ TrailRenderer:
   m_MinVertexDistance: 0.003
   m_MaskInteraction: 0
   m_Autodestruct: 0
-  m_Emitting: 0
+  m_Emitting: 1
   m_ApplyActiveColorSpace: 0
 --- !u!1 &1724314267
 GameObject:
@@ -40857,6 +40826,32 @@ Transform:
   - {fileID: 1582778825}
   m_Father: {fileID: 25151376}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1102 &1797513122
+AnimatorState:
+  serializedVersion: 6
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: recorder
+  m_Speed: 1
+  m_CycleOffset: 0
+  m_Transitions: []
+  m_StateMachineBehaviours: []
+  m_Position: {x: 50, y: 50, z: 0}
+  m_IKOnFeet: 0
+  m_WriteDefaultValues: 0
+  m_Mirror: 0
+  m_SpeedParameterActive: 0
+  m_MirrorParameterActive: 0
+  m_CycleOffsetParameterActive: 0
+  m_TimeParameterActive: 0
+  m_Motion: {fileID: 7400000, guid: 7a3b59981211e0947b53a1751c58aa8b, type: 2}
+  m_Tag: 
+  m_SpeedParameter: 
+  m_MirrorParameter: 
+  m_CycleOffsetParameter: 
+  m_TimeParameter: 
 --- !u!1 &1821927225
 GameObject:
   m_ObjectHideFlags: 0
@@ -41294,7 +41289,7 @@ Animator:
   m_GameObject: {fileID: 1828739461}
   m_Enabled: 1
   m_Avatar: {fileID: 9000000, guid: e3ca3f68a491c734ea5d74bd041aa1e0, type: 3}
-  m_Controller: {fileID: 204979790}
+  m_Controller: {fileID: 628907736}
   m_CullingMode: 1
   m_UpdateMode: 0
   m_ApplyRootMotion: 1
@@ -42500,10 +42495,6 @@ PrefabInstance:
         type: 3}
       insertIndex: -1
       addedObject: {fileID: 650704351}
-    - targetCorrespondingSourceObject: {fileID: -2916741891282405652, guid: e3ca3f68a491c734ea5d74bd041aa1e0,
-        type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 1296318599}
     - targetCorrespondingSourceObject: {fileID: -4624282452797382734, guid: e3ca3f68a491c734ea5d74bd041aa1e0,
         type: 3}
       insertIndex: -1
@@ -42570,7 +42561,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   launchedFromSDKPipeline: 0
   completedSDKPipeline: 1
-  blueprintId: avtr_09174d4a-0006-4f50-af39-d73216467c58
+  blueprintId: avtr_591d10d2-1dd0-4de7-8449-61f7b38b6925
   contentType: 0
   assetBundleUnityVersion: 
   fallbackStatus: 1
@@ -44262,8 +44253,6 @@ MonoBehaviour:
     name: Marker OFF
   - hash: -492242888
     name: Marker Draw
-  - hash: 1448283470
-    name: timeout
   - hash: -390971385
     name: Marker Reset
   autoFootsteps: 1
@@ -45694,8 +45683,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1965639741}
   serializedVersion: 2
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0.61095005, y: 1.0746998, z: -0.004150152}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -45728,7 +45717,7 @@ ParentConstraint:
   m_Active: 1
   m_IsLocked: 1
   m_Sources:
-  - sourceTransform: {fileID: 1296318599}
+  - sourceTransform: {fileID: 0}
     weight: 1
 --- !u!1 &1968184357
 GameObject:
@@ -46273,32 +46262,6 @@ Transform:
   - {fileID: 1125552971}
   m_Father: {fileID: 675799959}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1102 &2010206211
-AnimatorState:
-  serializedVersion: 6
-  m_ObjectHideFlags: 1
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_Name: recorder
-  m_Speed: 1
-  m_CycleOffset: 0
-  m_Transitions: []
-  m_StateMachineBehaviours: []
-  m_Position: {x: 50, y: 50, z: 0}
-  m_IKOnFeet: 0
-  m_WriteDefaultValues: 0
-  m_Mirror: 0
-  m_SpeedParameterActive: 0
-  m_MirrorParameterActive: 0
-  m_CycleOffsetParameterActive: 0
-  m_TimeParameterActive: 0
-  m_Motion: {fileID: 7400000, guid: bf8df04543c33464a80d8e15c4b6fe0d, type: 2}
-  m_Tag: 
-  m_SpeedParameter: 
-  m_MirrorParameter: 
-  m_CycleOffsetParameter: 
-  m_TimeParameter: 
 --- !u!1 &2013781519
 GameObject:
   m_ObjectHideFlags: 0
@@ -52331,288 +52294,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: af50629ffe0b7f44e9671036a5ce1d28, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  reference: {fileID: 667120551465698456, guid: c3976e156301f7c439706324f8bb74a6,
-    type: 3}
-  avatar: {fileID: 1878863067}
-  InkTarget: {fileID: 1878863075}
-  penObject: {fileID: 0}
-  hand: 0
-  penSize: 0.005
-  writeDefault: 1
-  paletteCount: 1
-  paletteList:
-  - colorCount: 8
-    color:
-    - r: 1
-      g: 1
-      b: 1
-      a: 1
-    - r: 1
-      g: 0
-      b: 0
-      a: 1
-    - r: 0
-      g: 1
-      b: 0
-      a: 1
-    - r: 0
-      g: 0
-      b: 1
-      a: 1
-    - r: 1
-      g: 0.5019608
-      b: 1
-      a: 1
-    - r: 1
-      g: 1
-      b: 0
-      a: 1
-    - r: 0
-      g: 1
-      b: 1
-      a: 1
-    - r: 0
-      g: 0
-      b: 0
-      a: 1
-  - colorCount: 8
-    color:
-    - r: 0
-      g: 0
-      b: 0
-      a: 1
-    - r: 0
-      g: 0
-      b: 0
-      a: 1
-    - r: 0
-      g: 0
-      b: 0
-      a: 1
-    - r: 0
-      g: 0
-      b: 0
-      a: 1
-    - r: 0
-      g: 0
-      b: 0
-      a: 1
-    - r: 0
-      g: 0
-      b: 0
-      a: 1
-    - r: 0
-      g: 0
-      b: 0
-      a: 1
-    - r: 0
-      g: 0
-      b: 0
-      a: 1
-  - colorCount: 8
-    color:
-    - r: 0
-      g: 0
-      b: 0
-      a: 1
-    - r: 0
-      g: 0
-      b: 0
-      a: 1
-    - r: 0
-      g: 0
-      b: 0
-      a: 1
-    - r: 0
-      g: 0
-      b: 0
-      a: 1
-    - r: 0
-      g: 0
-      b: 0
-      a: 1
-    - r: 0
-      g: 0
-      b: 0
-      a: 1
-    - r: 0
-      g: 0
-      b: 0
-      a: 1
-    - r: 0
-      g: 0
-      b: 0
-      a: 1
-  - colorCount: 8
-    color:
-    - r: 0
-      g: 0
-      b: 0
-      a: 1
-    - r: 0
-      g: 0
-      b: 0
-      a: 1
-    - r: 0
-      g: 0
-      b: 0
-      a: 1
-    - r: 0
-      g: 0
-      b: 0
-      a: 1
-    - r: 0
-      g: 0
-      b: 0
-      a: 1
-    - r: 0
-      g: 0
-      b: 0
-      a: 1
-    - r: 0
-      g: 0
-      b: 0
-      a: 1
-    - r: 0
-      g: 0
-      b: 0
-      a: 1
-  - colorCount: 8
-    color:
-    - r: 0
-      g: 0
-      b: 0
-      a: 1
-    - r: 0
-      g: 0
-      b: 0
-      a: 1
-    - r: 0
-      g: 0
-      b: 0
-      a: 1
-    - r: 0
-      g: 0
-      b: 0
-      a: 1
-    - r: 0
-      g: 0
-      b: 0
-      a: 1
-    - r: 0
-      g: 0
-      b: 0
-      a: 1
-    - r: 0
-      g: 0
-      b: 0
-      a: 1
-    - r: 0
-      g: 0
-      b: 0
-      a: 1
-  - colorCount: 8
-    color:
-    - r: 0
-      g: 0
-      b: 0
-      a: 1
-    - r: 0
-      g: 0
-      b: 0
-      a: 1
-    - r: 0
-      g: 0
-      b: 0
-      a: 1
-    - r: 0
-      g: 0
-      b: 0
-      a: 1
-    - r: 0
-      g: 0
-      b: 0
-      a: 1
-    - r: 0
-      g: 0
-      b: 0
-      a: 1
-    - r: 0
-      g: 0
-      b: 0
-      a: 1
-    - r: 0
-      g: 0
-      b: 0
-      a: 1
-  - colorCount: 8
-    color:
-    - r: 0
-      g: 0
-      b: 0
-      a: 1
-    - r: 0
-      g: 0
-      b: 0
-      a: 1
-    - r: 0
-      g: 0
-      b: 0
-      a: 1
-    - r: 0
-      g: 0
-      b: 0
-      a: 1
-    - r: 0
-      g: 0
-      b: 0
-      a: 1
-    - r: 0
-      g: 0
-      b: 0
-      a: 1
-    - r: 0
-      g: 0
-      b: 0
-      a: 1
-    - r: 0
-      g: 0
-      b: 0
-      a: 1
-  - colorCount: 8
-    color:
-    - r: 0
-      g: 0
-      b: 0
-      a: 1
-    - r: 0
-      g: 0
-      b: 0
-      a: 1
-    - r: 0
-      g: 0
-      b: 0
-      a: 1
-    - r: 0
-      g: 0
-      b: 0
-      a: 1
-    - r: 0
-      g: 0
-      b: 0
-      a: 1
-    - r: 0
-      g: 0
-      b: 0
-      a: 1
-    - r: 0
-      g: 0
-      b: 0
-      a: 1
-    - r: 0
-      g: 0
-      b: 0
-      a: 1
 --- !u!4 &8363865831539199371
 Transform:
   m_ObjectHideFlags: 0
